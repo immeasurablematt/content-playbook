@@ -25,7 +25,7 @@ function Hero() {
         <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink md:text-5xl lg:text-6xl">
           Content Marketing Playbook & Strategy
         </h1>
-        <p className="mt-4 text-xl text-ink-muted md:text-2xl">by Matthew Baggetta</p>
+        <p className="mt-4 text-xl text-ink-muted md:text-2xl">Matthew Baggetta</p>
         <p className="mt-6 max-w-xl mx-auto text-sm text-ink-muted leading-relaxed">
           Everything below was developed over 10+ years working in-house and as a consultant, doing content for Web2 tech SaaS and Web3 companies.
         </p>
@@ -49,7 +49,7 @@ function Footer() {
     <footer className="border-t border-stone-200 py-12">
       <div className="mx-auto max-w-3xl px-6 text-center text-sm text-ink-muted">
         <p>Content Marketing Playbook & Strategy</p>
-        <p className="mt-1">by Matthew Baggetta</p>
+        <p className="mt-1">Matthew Baggetta</p>
       </div>
     </footer>
   );
