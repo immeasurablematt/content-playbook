@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+import crypto from "crypto";
 
 const COOKIE_NAME = "playbook_access";
 const SALT = "playbook-salt-v1";
@@ -7,21 +7,17 @@ function tokenFor(secret) {
   return crypto.createHash("sha256").update(secret + SALT).digest("hex");
 }
 
-module.exports = async function handler(req, res) {
-  if (req.method !== "GET") {
-    return res.status(405).json({ error: "Method not allowed" });
-  }
-
+export async function GET(request) {
   const secret = process.env.PASSWORD_PROTECT_SECRET;
   if (!secret || secret === "") {
-    return res.status(200).json({ ok: true });
+    return Response.json({ ok: true });
   }
 
-  const cookieHeader = req.headers?.cookie || "";
+  const cookieHeader = request.headers.get("cookie") || "";
   const match = cookieHeader.match(new RegExp(`${COOKIE_NAME}=([^;]+)`));
   const cookie = match ? match[1].trim() : null;
   const expected = tokenFor(secret);
   const ok = cookie === expected;
 
-  return res.status(200).json({ ok });
-};
+  return Response.json({ ok });
+}
