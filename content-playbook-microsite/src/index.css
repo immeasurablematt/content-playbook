@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-ink bg-white antialiased;
+  }
+}
+
+/* Custom scrollbar for code blocks */
+.prose pre {
+  @apply overflow-x-auto rounded-lg;
+}
