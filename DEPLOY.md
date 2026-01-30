@@ -62,6 +62,20 @@ The site is set up so only people with the link **and** the password can view it
 - If you don’t set `PASSWORD_PROTECT_SECRET`, the site is open (no password).  
 - **Keep the URL private** if you want “link + password” only access.
 
+**If the password doesn’t work:**
+
+1. **Redeploy after adding the env var**  
+   Vercel only injects env vars at build/deploy time. Add `PASSWORD_PROTECT_SECRET`, save, then **Deployments** → … on latest → **Redeploy**.
+
+2. **Check the value**  
+   No extra spaces: the value is exactly what you type. If the password is `MyPass123`, the value must be `MyPass123` (no leading/trailing space). Re-save the variable and redeploy if you changed it.
+
+3. **Try in a private/incognito window**  
+   Old cookies can cause redirect loops. Open the site in a new incognito window and enter the password again.
+
+4. **Confirm env is for Production**  
+   In **Settings** → **Environment Variables**, ensure `PASSWORD_PROTECT_SECRET` is enabled for **Production** (and **Preview** if you use preview URLs).
+
 ---
 
 ## Quick test before publishing

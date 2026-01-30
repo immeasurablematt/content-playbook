@@ -20,7 +20,16 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ ok: true });
   }
 
-  const { password } = req.body || {};
+  // Parse body (Vercel may give raw string or pre-parsed object)
+  let body = req.body;
+  if (typeof body === "string") {
+    try {
+      body = body ? JSON.parse(body) : {};
+    } catch {
+      body = {};
+    }
+  }
+  const { password } = body || {};
   if (!password || typeof password !== "string") {
     return res.status(400).json({ error: "Password required" });
   }
