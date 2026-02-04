@@ -5,7 +5,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Blockquote } from "@/components/Blockquote";
-import { CodeBlock } from "@/components/CodeBlock";
 
 export function SectionWeb2Web3Content() {
   return (
