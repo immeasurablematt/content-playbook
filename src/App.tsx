@@ -1,20 +1,26 @@
 import { useEffect, useRef, useState } from "react";
 import { TableOfContents } from "@/components/TableOfContents";
 import { SECTIONS, type SectionId } from "@/data/sections";
+import { SectionWeb2Web3Content } from "@/sections/SectionWeb2Web3";
 import { Section1Content } from "@/sections/Section1";
 import { Section2Content } from "@/sections/Section2";
 import { Section3Content } from "@/sections/Section3";
 import { Section4Content } from "@/sections/Section4";
 import { Section5Content } from "@/sections/Section5";
+import { SectionEmailContent } from "@/sections/SectionEmail";
+import { SectionReportingContent } from "@/sections/SectionReporting";
 import { Section8Content } from "@/sections/Section8";
 import { ChevronDown } from "lucide-react";
 
 const SECTION_COMPONENTS = [
+  SectionWeb2Web3Content,
   Section1Content,
   Section2Content,
   Section3Content,
   Section4Content,
   Section5Content,
+  SectionEmailContent,
+  SectionReportingContent,
   Section8Content,
 ] as const;
 
@@ -27,7 +33,7 @@ function Hero() {
         </h1>
         <p className="mt-4 text-xl text-ink-muted md:text-2xl">Matthew Baggetta</p>
         <p className="mt-6 max-w-xl mx-auto text-sm text-ink-muted leading-relaxed">
-          Everything below was developed over 10+ years working in-house and as a consultant, doing content for Web2 tech SaaS and Web3 companies.
+          Everything below was developed over 10+ years as a content marketer and strategist across Web3 and Web2—from DeFi protocols to SaaS platforms. The methodology is universal. The native lens is Web3.
         </p>
         <div className="mt-12 flex justify-center">
           <a
