@@ -6,12 +6,13 @@ import {
 } from "@/components/ui/accordion";
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Web2Callout } from "@/components/Web2Callout";
 
 export function Section1Content() {
   return (
     <>
       <p className="lead text-lg text-ink-muted">
-        Goals, audience, brand voice, messaging matrix, content funnel, and content pillars that drive conversions.
+        I built this framework across Web3 and Web2 projects to nail goals, audience, brand voice, messaging matrix, content funnel, and content pillars that actually drive conversions.
       </p>
 
       <Accordion type="single" collapsible className="mt-8 w-full">
@@ -55,7 +56,11 @@ export function Section1Content() {
             <p><strong>1. Core Values & Motivations</strong> — What brought them to your product category? What do they care about?</p>
             <p>Examples: Web3: Financial freedom vs privacy vs decentralization vs tech experimentation. B2B SaaS: Cost reduction vs innovation leadership vs risk mitigation. Enterprise: Compliance vs competitive advantage vs operational efficiency. Someone motivated by sovereignty needs different messaging than someone motivated by experimentation. This shapes your entire tone.</p>
             <p><strong>2. Success Definition (in context of your product)</strong> — What does winning look like for them? Examples: Crypto native: Financial independence, alpha generation, early access. Startup founder: Product-market fit, fundraising, rapid scaling. Enterprise buyer: Career advancement, risk mitigation, measurable ROI.</p>
-            <p><strong>3. Where They Actually Spend Time (Distribution Strategy)</strong> — Your "watering holes" determine where you show up and how you communicate. Examples: Crypto natives: CT (Crypto Twitter), Discord, Telegram, Farcaster. Technical builders: GitHub, Stack Overflow, Reddit, protocol forums. Enterprise buyers: LinkedIn, industry conferences, analyst reports. Startup founders: Product Hunt, Indie Hackers, YC community. Your content and partnerships should meet them where they already are, not where you wish they were.</p>
+            <p><strong>3. Where They Actually Spend Time (Distribution Strategy)</strong> — Your "watering holes" determine where you show up and how you communicate. In my experience working with Web3 protocols, I've found these are the critical channels: Crypto natives: CT (Crypto Twitter), Discord, Telegram, Farcaster, governance forums. DeFi traders: Crypto Twitter, protocol Discords, Dune Analytics, DeFiLlama. Infrastructure builders: GitHub, protocol forums, technical documentation sites, Discord dev channels. Your content and partnerships should meet them where they already are, not where you wish they were.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 Distribution Channels:</strong> Technical builders: GitHub, Stack Overflow, Reddit, Hacker News. Enterprise buyers: LinkedIn, industry conferences, analyst reports (Gartner, Forrester). Startup founders: Product Hunt, Indie Hackers, YC community, LinkedIn. B2B SaaS buyers: G2, Capterra, industry Slack communities, webinars.</p>
+            </Web2Callout>
             <p><strong>4. What They Care About Beyond Your Category</strong> — The ecosystems they follow, cultural trends they track, other products/communities they support. This context helps you speak their language naturally, find partnership opportunities that feel authentic, create content that references their world, and build positioning that resonates culturally.</p>
             <p className="mt-4 font-medium">Audience Definition Template:</p>
             <CodeBlock title="Template (expand to copy)">{`## Primary Audience: [Segment Name]
@@ -89,14 +94,24 @@ In the context of our product, success means: [Specific, measurable outcome they
 - Decision factors: [What they evaluate, how they decide]`}</CodeBlock>
             <p className="mt-4"><strong>Multiple Audience Segments:</strong> Most products serve 2-4 distinct audience segments. Create a separate definition for each.</p>
             <p><strong>Prioritization:</strong> (1) Which segment has the highest conversion rate? (2) Which has the highest lifetime value? (3) Which is easiest to reach (distribution advantage)? (4) Which provides best word-of-mouth/viral growth? Focus 70% of effort on your #1 segment, 30% on #2. Ignore #3+ until you've saturated the first two.</p>
-            <p className="mt-3"><strong>Context-Dependent Messaging:</strong> The same audience might need different messaging based on market conditions. Bull Market vs Bear Market (Crypto/Web3): Bull = speed, opportunity capture, FOMO prevention; Bear = safety, sustainability, long-term value. Early Stage vs Growth Stage (B2B SaaS): Early = flexibility, speed to value, low commitment; Growth = scalability, integration, enterprise features. Market Leader vs Challenger (Enterprise): Leader = stability, ecosystem, proven results; Challenger = innovation, cost savings, agility. Your product messaging matrix (below) should be adapted for these contexts, not built as a single static document.</p>
+            <p className="mt-3"><strong>Context-Dependent Messaging:</strong> I've learned that the same audience might need different messaging based on market conditions. In Web3, this is critical:</p>
+            
+            <p className="mt-2"><strong>Bull Market vs Bear Market (Crypto/Web3):</strong> Bull = speed, opportunity capture, FOMO prevention ("Don't miss the next 100x"), aggressive calls to action. Bear = safety, sustainability, long-term value ("Build during the bear"), focus on fundamentals and utility over speculation. Jupiter adapted their messaging from "fastest swaps" (bull) to "most reliable liquidity" (bear).</p>
+
+            <Web2Callout>
+              <p><strong>Web2 Market Context Examples:</strong></p>
+              <p><strong>Early Stage vs Growth Stage (B2B SaaS):</strong> Early = flexibility, speed to value, low commitment, month-to-month pricing; Growth = scalability, integration with existing stack, enterprise features, annual contracts.</p>
+              <p><strong>Market Leader vs Challenger (Enterprise):</strong> Leader = stability, ecosystem, proven results, "nobody gets fired for choosing us"; Challenger = innovation, cost savings, agility, "move faster than your competition".</p>
+            </Web2Callout>
+
+            <p className="mt-2">Your product messaging matrix (below) should be adapted for these contexts, not built as a single static document.</p>
           </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="messaging">
           <AccordionTrigger>Product Messaging Matrix</AccordionTrigger>
           <AccordionContent>
-            <p><strong>Why it matters:</strong> Most marketing leads with features and benefits and skips the middle layer—the pain and how users actually feel it. Without that, there's no "aha" moment and no opening for a decision. This approach forces pain-first, user-language messaging.</p>
+            <p><strong>Why it matters:</strong> I developed this approach because most marketing leads with features and benefits and skips the middle layer—the pain and how users actually feel it. Without that, there's no "aha" moment and no opening for a decision. This approach forces pain-first, user-language messaging.</p>
             <p className="mt-3"><strong>The structure:</strong></p>
             <pre className="my-3 rounded-lg border border-stone-200 bg-stone-50 p-3 font-mono text-sm">PAIN POINT → CAPABILITY → FEATURE FUNCTION → VISION OF USE → BENEFIT</pre>
             <p>Start with pain, not features. Focus on your top 3 differentiated features so you can measure what messaging actually performs.</p>
@@ -171,7 +186,24 @@ In the context of our product, success means: [Specific, measurable outcome they
             <p><strong>Feature Function:</strong> Deposit USDC once into a universal gas tank that covers transactions across 36 blockchains automatically.</p>
             <p><strong>Vision of Use:</strong> You're bridging from Ethereum to Solana and the move is happening NOW. No time to source gas. You execute immediately. Your timing is perfect and you watch half of CT scrambling on your timeline.</p>
             <p><strong>Benefit:</strong> Never miss a time-sensitive opportunity because of gas management again.</p>
-            <p className="mt-2 text-sm text-ink-muted">Same structure applies to B2B SaaS, infra, and other categories—pain first, then capability and scenario.</p>
+
+            <h4 className="mt-6 font-semibold">Example: Best Price Aggregation (Jupiter, Solana DEX)</h4>
+            <p><strong>Pain Point:</strong> You're swapping on a single DEX and getting slippage that eats your gains. You know there are better prices out there across multiple pools, but checking them all manually is impossible. You're leaving money on the table with every trade.</p>
+            <p><strong>Capability:</strong> Get the best possible swap price across all Solana DEXs instantly without the manual work.</p>
+            <p><strong>Feature Function:</strong> Smart routing algorithm that checks prices across all major Solana DEXs (Orca, Raydium, Serum) and automatically splits your order for optimal execution.</p>
+            <p><strong>Vision of Use:</strong> You're trading volatile assets and every basis point matters. You execute a large SOL-to-USDC swap. Jupiter routes it across three pools simultaneously, saving you 0.8% compared to a single DEX. That's $800 on a $100k trade—instant alpha.</p>
+            <p><strong>Benefit:</strong> Maximize returns on every trade without manual price checking or complex routing logic.</p>
+
+            <Web2Callout>
+              <p><strong>B2B SaaS Example: CRM Contact Enrichment</strong></p>
+              <p><strong>Pain Point:</strong> Your sales team is manually researching prospects on LinkedIn, company websites, and scattered databases before every call. It takes 15-20 minutes per lead and the data is often outdated. They're spending more time researching than selling.</p>
+              <p><strong>Capability:</strong> Automatically enrich every contact with current firmographic, technographic, and intent data the moment they enter your CRM.</p>
+              <p><strong>Feature Function:</strong> Real-time API integrations with data providers (Clearbit, ZoomInfo, etc.) that populate contact records automatically with company size, tech stack, recent funding, and buying signals.</p>
+              <p><strong>Vision of Use:</strong> A hot lead fills out your demo form at 9 AM. By 9:02 AM, your AE sees their complete profile: Series B, 200 employees, using Salesforce, recently posted a job for a sales ops manager. Your AE personalizes the outreach in seconds and books the call while the lead is still engaged.</p>
+              <p><strong>Benefit:</strong> Sales team spends 80% less time on research and 3x more time having qualified conversations.</p>
+            </Web2Callout>
+
+            <p className="mt-2 text-sm text-ink-muted">Same structure applies across any category—pain first, then capability and scenario.</p>
 
             <p className="mt-6 font-medium">Where it gets used</p>
             <ul className="list-disc pl-6 space-y-0.5">
