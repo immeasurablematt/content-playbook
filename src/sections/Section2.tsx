@@ -6,12 +6,13 @@ import {
 } from "@/components/ui/accordion";
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Web2Callout } from "@/components/Web2Callout";
 
 export function Section2Content() {
   return (
     <>
       <p className="lead text-lg text-ink-muted">
-        The three-tier keyword model, competitor analysis, and cluster strategy focused on conversions over traffic.
+        I developed this three-tier keyword model after seeing too many teams chase traffic over conversions. It works across Web3 and Web2—the buying intent signals are universal.
       </p>
 
       <Accordion type="single" collapsible className="mt-8 w-full">
@@ -32,8 +33,13 @@ export function Section2Content() {
           <AccordionContent>
             <p>People searching these terms are ready to buy. They don't need education or nurturing.</p>
             <p><strong>Characteristics:</strong> Direct product/service category searches; searcher already knows the solution type; high commercial intent; often high competition but worth fighting for.</p>
-            <p className="mt-2"><strong>Examples [GPU Cloud Industry]:</strong> "decentralized GPU platform", "GPU cloud computing service", "distributed GPU infrastructure", "bare metal GPU hosting", "decentralized AI compute".</p>
+            <p className="mt-2"><strong>Examples I've targeted [DeFi/Web3]:</strong> "best Solana DEX", "Solana DEX aggregator", "decentralized perp exchange", "best decentralized derivatives platform", "Solana swap platform", "on-chain perpetual futures".</p>
+            <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "decentralized GPU platform", "GPU cloud computing service", "distributed GPU infrastructure", "bare metal GPU hosting", "decentralized AI compute".</p>
             <p><strong>Content Formats:</strong> Product/service landing pages, feature comparison pages, pricing pages optimized for these terms, "Best [category]" listicles that position your product.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 Category Keywords (B2B SaaS):</strong> "customer data platform", "marketing automation software", "sales engagement platform", "project management tool for agencies", "accounting software for startups".</p>
+            </Web2Callout>
             <p><strong>Research Process:</strong> (1) List all ways someone could describe your product category. (2) Ask sales team: "What do prospects search for before finding us?" (3) Ask customers: "If you were to research our product, what would you search for?" (4) Check competitor title tags and H1s for category positioning. (5) Use DataForSEO to find variations and search volumes.</p>
           </AccordionContent>
         </AccordionItem>
@@ -43,8 +49,13 @@ export function Section2Content() {
           <AccordionContent>
             <p>People searching these are comparing options or looking to switch. They're deep in the buying process.</p>
             <p><strong>Characteristics:</strong> Indicates active product evaluation; often underestimated search volume (tools show zero, reality differs); lower competition than category keywords; very high conversion rates.</p>
-            <p className="mt-2"><strong>Examples [GPU Cloud Industry]:</strong> "AWS GPU pricing vs [Your Product]", "CoreWeave alternatives", "Lambda Labs vs [Your Product]", "Paperspace alternatives for AI training", "RunPod vs [Your Product] comparison", "Best alternatives to [competitor]".</p>
+            <p className="mt-2"><strong>Examples I've used [DeFi/Web3]:</strong> "Jupiter vs Raydium", "Hyperliquid vs dYdX", "best Hyperliquid alternatives", "Jupiter vs 1inch comparison", "dYdX alternatives for perpetual futures", "Raydium vs Orca swap comparison", "how to reduce swap slippage on Solana".</p>
+            <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "AWS GPU pricing vs [Your Product]", "CoreWeave alternatives", "Lambda Labs vs [Your Product]", "Paperspace alternatives for AI training", "RunPod vs [Your Product] comparison".</p>
             <p><strong>Content Formats:</strong> Head-to-head comparison articles, "X Alternatives" listicles, feature comparison tables, migration guides from competitors.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 Comparison Keywords (B2B SaaS):</strong> "HubSpot vs Salesforce", "Marketo alternatives", "best alternatives to Asana", "Slack vs Microsoft Teams for enterprise", "Figma vs Adobe XD comparison", "migrating from Intercom to [Your Product]".</p>
+            </Web2Callout>
             <p><strong>Research Process:</strong> (1) Identify your top 5-10 competitors. (2) Create comparison keyword list for each: "[Competitor] vs [You]", "[You] vs [Competitor]", "[Competitor] alternative", "Best [Competitor] alternatives", "[Competitor] competitors". (3) Don't be discouraged by "zero search volume" in tools. (4) Write the content anyway if the competitor has significant market share. (5) Track actual traffic in GSC to validate.</p>
             <p className="mt-2 text-sm text-ink-muted">See also: Advanced: "Zero Volume" Keyword Strategy below.</p>
           </AccordionContent>
@@ -55,8 +66,13 @@ export function Section2Content() {
           <AccordionContent>
             <p>These keywords indicate someone has a problem your product solves, even if they're not explicitly searching for your solution type yet.</p>
             <p><strong>Characteristics:</strong> Problem-aware, not necessarily solution-aware; still have buying intent (some fraction will purchase); often "how to" queries; medium competition; higher volume than Tier 1 & 2, lower conversion than Tier 1 & 2.</p>
-            <p className="mt-2"><strong>Examples [GPU Cloud Industry]:</strong> "how to reduce GPU training costs", "how to scale AI inference workloads", "how to migrate from AWS to decentralized GPU", "how to manage distributed GPU clusters", "how to optimize GPU utilization for AI", "how to avoid GPU vendor lock-in".</p>
+            <p className="mt-2"><strong>Examples I've targeted [DeFi/Web3]:</strong> "how to reduce swap slippage on Solana", "how to find best DEX prices automatically", "how to trade perpetual futures on-chain", "how to avoid front-running on DEX swaps", "how to maximize liquidity provider returns", "how to get started with DeFi trading".</p>
+            <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "how to reduce GPU training costs", "how to scale AI inference workloads", "how to migrate from AWS to decentralized GPU", "how to manage distributed GPU clusters", "how to optimize GPU utilization for AI".</p>
             <p><strong>Content Formats:</strong> How-to guides that present your product as a solution, problem-solution tutorials, technical implementation guides, best practices articles.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 JTBD Keywords (B2B SaaS):</strong> "how to improve sales team productivity", "how to automate lead scoring", "how to reduce customer churn", "how to build a content marketing funnel", "how to integrate CRM with marketing automation".</p>
+            </Web2Callout>
             <p><strong>Research Process:</strong> (1) Interview customers: "What problem were you trying to solve before finding us?" (2) Interview sales: "What do prospects say they need help with?" (3) Extract "jobs to be done" from customer conversations. (4) Prefix with "how to" / "ways to" / "best practices for". (5) Validate that your product legitimately solves this problem. (6) Ensure content provides value beyond just pitching your product.</p>
             <p className="mt-2"><strong>Critical Rule for JTBD Content:</strong> Your product should be presented as one solution among several, not the only solution. Provide genuine value first, conversion opportunity second. This builds trust and improves conversion rates.</p>
           </AccordionContent>
@@ -89,7 +105,19 @@ export function Section2Content() {
               <li>"What do prospects say they've already tried before talking to us?" — Failed solutions indicate problem awareness → JTBD keywords.</li>
               <li>"What objections do you hear most often?" — Objections reveal concerns → create content addressing them.</li>
             </ol>
-            <p className="mt-3"><strong>Implementation:</strong> Conduct 10-15 customer interviews; survey 20-30 customers with open-ended questions; interview entire sales team; look for repeated phrases (5+ people saying same thing); exact customer language often differs from how marketing describes the product.</p>
+            <p className="mt-3"><strong>Question Set 5: Web3-Specific Discovery</strong> (ask customers):</p>
+            <ol className="list-decimal pl-6 mt-1 space-y-1" start={13}>
+              <li>"Which chains or L2s are you most active on?" — Chain-specific keywords (Solana, Base, Arbitrum).</li>
+              <li>"Where do you go to find alpha or research protocols?" — Distribution channels for content (CT, Discord, Dune).</li>
+              <li>"What metrics do you track most closely?" — TVL, APY, transaction volume, slippage → keyword opportunities.</li>
+              <li>"Which DEXs or protocols have you switched away from, and why?" — Competitor comparison content gold.</li>
+            </ol>
+
+            <Web2Callout>
+              <p><strong>Web2-Specific Questions (B2B SaaS):</strong> "What's your current tech stack?" "What tools did you evaluate before choosing us?" "What's your biggest bottleneck right now?" "How do you measure success for this tool category?" "Who else was involved in the buying decision?"</p>
+            </Web2Callout>
+
+            <p className="mt-3"><strong>Implementation:</strong> Conduct 10-15 customer interviews; survey 20-30 customers with open-ended questions; interview entire sales or BD team; look for repeated phrases (5+ people saying same thing); exact customer language often differs from how marketing describes the product.</p>
           </AccordionContent>
         </AccordionItem>
 
@@ -134,10 +162,25 @@ Intent Tier Multipliers:
           <AccordionTrigger>Topic Cluster Strategy (Conversion-Focused)</AccordionTrigger>
           <AccordionContent>
             <p><strong>Traditional Cluster Problem:</strong> Most cluster strategies organize content by topical relevance, not buying intent. This creates beautiful architecture that doesn't convert.</p>
-            <p><strong>Pain Point SEO Cluster Approach:</strong> Organize clusters by customer journey stage and conversion potential.</p>
-            <p className="mt-3"><strong>Cluster Type 1: Product Category Cluster</strong> — Hub: "[Product Category] Complete Guide" (e.g. "Decentralized GPU Computing: Complete Guide"). Spokes (all bottom-of-funnel): "Best [Product Category]", "[Your Product] Pricing Guide", "[Product Category] Use Cases", "[Product Category] vs [Alternative Category]", "How to Choose [Product Category]". Internal linking: all spokes link to hub and to each other; hub links to all spokes. Conversion: Hub has product demo CTA; each spoke has contextual CTA.</p>
-            <p className="mt-3"><strong>Cluster Type 2: Competitor Alternative Cluster</strong> — Hub: "Top [Competitor] Alternatives in 2026". Spokes: "[Competitor] vs [You]", "[Competitor] vs [Other Competitor]", "Migrating from [Competitor] to [You]", "[Competitor] Pricing Comparison", "[Competitor] Pros and Cons". Conversion: Each page presents your product as superior alternative with migration path.</p>
-            <p className="mt-3"><strong>Cluster Type 3: Jobs-to-be-Done Cluster</strong> — Hub: "How to [Solve Major Problem]" (e.g. "How to Reduce AI Training Costs by 90%"). Spokes: "How to [specific method 1/2/3]" with your product as solution, "[Problem] Best Practices", "[Problem] Common Mistakes". Conversion: Hub presents multiple solutions including competitors, positions you favorably; spokes show how to implement with your product.</p>
+            <p><strong>Pain Point SEO Cluster Approach I've used:</strong> Organize clusters by customer journey stage and conversion potential.</p>
+
+            <p className="mt-3"><strong>Cluster Type 1: Product Category Cluster (Web3 example)</strong> — Hub: "Best Solana DEX Aggregators: Complete Guide 2026". Spokes (all bottom-of-funnel): "What is a DEX Aggregator?", "Jupiter Pricing and Fees", "Solana DEX Aggregator Comparison", "Best DEX for Solana Trading", "How to Choose a DEX Aggregator". Internal linking: all spokes link to hub and to each other; hub links to all spokes. Conversion: Hub has "Try Jupiter" CTA; each spoke has contextual CTA.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 Category Cluster Example:</strong> Hub: "Best Marketing Automation Platforms 2026". Spokes: "[Your Product] Pricing", "Email Marketing Software Comparison", "How to Choose Marketing Automation", "[Category] vs CRM Platforms".</p>
+            </Web2Callout>
+
+            <p className="mt-3"><strong>Cluster Type 2: Competitor Alternative Cluster (Web3 example)</strong> — Hub: "Top dYdX Alternatives for Perpetual Trading". Spokes: "Hyperliquid vs dYdX", "dYdX vs GMX", "Migrating from dYdX to Hyperliquid", "dYdX Fees vs Hyperliquid Fees", "dYdX Pros and Cons Analysis". Conversion: Each page presents Hyperliquid as superior alternative with migration path and feature comparison.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 Competitor Cluster Example:</strong> Hub: "Best HubSpot Alternatives for Growth Teams". Spokes: "[Your Product] vs HubSpot", "HubSpot vs Marketo", "Migrating from HubSpot to [Your Product]", "HubSpot Pricing Comparison".</p>
+            </Web2Callout>
+
+            <p className="mt-3"><strong>Cluster Type 3: Jobs-to-be-Done Cluster (Web3 example)</strong> — Hub: "How to Trade Perpetual Futures On-Chain Without CEX Risk". Spokes: "How to Get Started with Decentralized Perps", "How to Reduce Trading Fees on Perpetual DEXs", "Best Practices for On-Chain Margin Trading", "Common Mistakes Trading Decentralized Perpetuals". Conversion: Hub presents multiple solutions (Hyperliquid, dYdX, GMX), positions Hyperliquid favorably; spokes show implementation with Hyperliquid features.</p>
+
+            <Web2Callout>
+              <p><strong>Web2 JTBD Cluster Example:</strong> Hub: "How to Reduce Customer Churn by 50%". Spokes: "How to Identify At-Risk Customers", "How to Build a Customer Health Score", "Best Practices for Retention Campaigns", "Common Churn Reduction Mistakes".</p>
+            </Web2Callout>
             <p className="mt-3 font-medium">Implementation Phasing:</p>
             <ul className="list-disc pl-6">
               <li><strong>Phase 1 (Months 1-3):</strong> Category Cluster — establish category authority, capture ready-to-buy traffic, generate early conversions.</li>
@@ -168,12 +211,16 @@ Intent Tier Multipliers:
           <AccordionTrigger>Advanced: "Zero Volume" Keyword Strategy</AccordionTrigger>
           <AccordionContent>
             <p><strong>The Pattern:</strong> Tools like Ahrefs, SEMrush, and Moz frequently show zero search volume for keywords that actually drive conversions.</p>
-            <p><strong>Why This Happens:</strong> (1) Long-tail combinations not in tool databases. (2) Emerging search patterns not yet captured. (3) B2B searches with small absolute volume but high value. (4) Localized or industry-specific terminology.</p>
+            <p><strong>Why This Happens:</strong> (1) Long-tail combinations not in tool databases. (2) Emerging search patterns not yet captured. (3) B2B searches with small absolute volume but high value. (4) Localized or industry-specific terminology. (5) <strong>Web3-specific:</strong> Crypto terminology moves faster than SEO tools can index—new protocols, meme coins, and trading slang emerge weekly.</p>
             <p className="mt-2 font-medium">How to Identify Valuable Zero-Volume Keywords:</p>
             <p><strong>Method 1: Customer Language Audit</strong> — Transcribe 10 sales calls; extract exact questions prospects ask; turn questions into keywords; write content even if tools show zero volume.</p>
             <p><strong>Method 2: Competitor Analysis</strong> — Find competitor content with no keyword ranking in tools; check if it gets backlinks (signals value); check if they're running PPC to it (signals conversions); create competing content.</p>
             <p><strong>Method 3: Search Suggestion Mining</strong> — Type seed keywords into Google; review "People Also Ask" and "Related Searches"; capture autocomplete suggestions; many won't show volume in tools but get actual searches.</p>
-            <p><strong>Method 4: Forum and Community Mining</strong> — Find industry communities (Reddit, Discord, Slack); extract common questions/problems; turn into keywords; create content addressing them.</p>
+            <p><strong>Method 4: Forum and Community Mining</strong> — Find industry communities (Reddit, Discord, Slack, Crypto Twitter, Telegram, Farcaster); extract common questions/problems; turn into keywords; create content addressing them. In Web3: monitor protocol Discords, governance forums, and CT threads for emerging pain points.</p>
+
+            <Web2Callout>
+              <p><strong>Web2-Specific Mining:</strong> Industry forums (Product Hunt, Indie Hackers, niche Subreddits), Slack/Discord communities, G2 and Capterra reviews for competitor pain points.</p>
+            </Web2Callout>
             <p className="mt-2"><strong>Validation Process:</strong> (1) Create content targeting "zero volume" keyword. (2) Track in Google Search Console for 90 days. (3) Measure actual impressions and clicks. (4) If receives traffic: tool was wrong, keyword is valuable. (5) If no traffic after 90 days: keyword genuinely has no volume.</p>
             <p><strong>Success Rate:</strong> Approximately 30% of "zero volume" keywords actually drive meaningful traffic and conversions. Worth the experimentation investment.</p>
           </AccordionContent>
