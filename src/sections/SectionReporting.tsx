@@ -136,7 +136,7 @@ Status: 🟢 Green (high conversion, ranking up)`}</CodeBlock>
             <p>Every quarter, tag every published article with a zone color. Create action plan: 70% effort maintaining/expanding Green Zone, 25% optimizing Yellow, 5% deciding on Orange/Red.</p>
 
             <Web2Callout>
-              <p><strong>Web2 B2B Zone Tweaks:</strong> Green = >5% MQL conversion (Tier 1/2), >1% (Tier 3). Yellow = 2–5% (Tier 1/2). Measure pipeline $ influenced instead of just conversions—higher impact visibility to leadership.</p>
+              <p><strong>Web2 B2B Zone Tweaks:</strong> Green = {'>'} 5% MQL conversion (Tier 1/2), {'>'} 1% (Tier 3). Yellow = 2–5% (Tier 1/2). Measure pipeline $ influenced instead of just conversions—higher impact visibility to leadership.</p>
             </Web2Callout>
           </AccordionContent>
         </AccordionItem>
@@ -152,12 +152,12 @@ Status: 🟢 Green (high conversion, ranking up)`}</CodeBlock>
               <li><strong>Keyword Rankings:</strong> Position for target keywords. Track weekly or monthly. Focus on Tier 1/2 keywords.</li>
               <li><strong>Impressions (GSC):</strong> How many times your content appeared in search results. Leading indicator of traffic.</li>
               <li><strong>Click-Through Rate (GSC):</strong> Impressions → clicks. Low CTR = bad title/meta description. Optimize.</li>
-              <li><strong>Backlinks:</strong> Number of referring domains linking to your content. Quality > quantity.</li>
+              <li><strong>Backlinks:</strong> Number of referring domains linking to your content. Quality {'>'} quantity.</li>
             </ul>
 
             <p className="mt-3 font-medium">2. Engagement Metrics</p>
             <ul className="list-disc pl-6 space-y-0.5">
-              <li><strong>Time on Page:</strong> Are readers actually reading? <1 min = bounce. >3 min = engaged.</li>
+              <li><strong>Time on Page:</strong> Are readers actually reading? {'<'} 1 min = bounce. {'>'} 3 min = engaged.</li>
               <li><strong>Scroll Depth:</strong> What % of readers scroll to bottom? Tracks content quality and CTA placement effectiveness.</li>
               <li><strong>Bounce Rate:</strong> % of single-page sessions. High bounce on Tier 1/2 = problem (wrong audience or bad content).</li>
               <li><strong>Internal Click-Through:</strong> Did they click internal links to other content or product pages? Measures funnel progression.</li>

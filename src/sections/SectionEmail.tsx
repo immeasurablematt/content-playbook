@@ -220,12 +220,12 @@ P.S. If you're done with Jupiter, no hard feelings. [Unsubscribe]`}</CodeBlock>
 
             <p className="mt-3 font-medium">Segmentation dimensions I've used:</p>
             <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Transaction volume:</strong> Whales (>$100K), mid-tier ($10K–$100K), retail (<$10K). Different messaging, offers, and features.</li>
-              <li><strong>Activity frequency:</strong> Daily traders, weekly traders, monthly traders, dormant (>30 days no activity).</li>
+              <li><strong>Transaction volume:</strong> Whales ({'>'} $100K), mid-tier ($10K–$100K), retail ({'<'} $10K). Different messaging, offers, and features.</li>
+              <li><strong>Activity frequency:</strong> Daily traders, weekly traders, monthly traders, dormant ({'>'} 30 days no activity).</li>
               <li><strong>Product usage:</strong> Spot only, perps only, both, liquidity providers, governance participants.</li>
               <li><strong>Token holdings:</strong> Governance token holders (eligible for proposals), non-holders (incentivize to acquire).</li>
               <li><strong>Chain preference:</strong> Solana-native users, ETH L2 users (Base, Arbitrum), multi-chain users.</li>
-              <li><strong>Onboarding stage:</strong> Wallet connected only, first transaction completed, multiple transactions, power user (>50 transactions).</li>
+              <li><strong>Onboarding stage:</strong> Wallet connected only, first transaction completed, multiple transactions, power user ({'>'} 50 transactions).</li>
             </ul>
 
             <p className="mt-3 font-medium">Example: Whale vs Retail Messaging</p>
@@ -279,7 +279,7 @@ You've made [X] swaps on Jupiter. Here are 5 tips to save even more:
             <p>One-click unsubscribe at bottom of every email. Don't make users hunt for it. Respecting their choice builds trust.</p>
 
             <p className="mt-2 font-medium">3. Sender reputation:</p>
-            <p>Use dedicated domain for email (email.jupiter.com, not jupiter.com). Set up SPF, DKIM, DMARC. Monitor bounce rates and spam complaints (keep both <2%).</p>
+            <p>Use dedicated domain for email (email.jupiter.com, not jupiter.com). Set up SPF, DKIM, DMARC. Monitor bounce rates and spam complaints (keep both {'<'} 2%).</p>
 
             <p className="mt-2 font-medium">4. Frequency caps:</p>
             <p>Web3 users have low tolerance for email volume. Max 2–3 emails/week for onboarding; 1–2/month for established users (unless governance or security critical).</p>
