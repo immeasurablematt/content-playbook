@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function SectionReportingContent() {
   return (
@@ -64,20 +65,23 @@ export function SectionReportingContent() {
               </tbody>
             </table>
 
-            <p className="mt-3 font-medium">Web3-Specific Metrics to Add:</p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li><strong>Content → Wallet Connections:</strong> How many wallet connects originated from content (tracked via UTM or referral param)</li>
-              <li><strong>Content → TVL Influenced:</strong> Track wallet addresses that came from content → measure their contributed TVL over 30/60/90 days</li>
-              <li><strong>Content → Transaction Volume:</strong> Similar to TVL—how much tx volume came from content-acquired users</li>
-              <li><strong>Content → Governance Participation:</strong> Did content-acquired users vote in governance? (Higher quality users)</li>
-            </ul>
+            <Web3Content>
+              <p className="mt-3 font-medium">Web3-Specific Metrics to Add:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Content → Wallet Connections:</strong> How many wallet connects originated from content (tracked via UTM or referral param)</li>
+                <li><strong>Content → TVL Influenced:</strong> Track wallet addresses that came from content → measure their contributed TVL over 30/60/90 days</li>
+                <li><strong>Content → Transaction Volume:</strong> Similar to TVL—how much tx volume came from content-acquired users</li>
+                <li><strong>Content → Governance Participation:</strong> Did content-acquired users vote in governance? (Higher quality users)</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B Metrics to Add:</strong> Content → MQLs generated, Content → Pipeline influenced ($), Content → Closed-won revenue, Content → Customer LTV (segment by acquisition source). For B2C: Content → Free trial starts, Content → Paid conversions, Content → Retention rate by source.</p>
             </Web2Callout>
 
-            <p className="mt-3 font-medium">Example Dashboard View (Spreadsheet or BI Tool):</p>
-            <CodeBlock title="Sample Row (Jupiter Blog Article)">{`Article: "Jupiter vs Raydium: Best Solana DEX for Traders"
+            <Web3Content>
+              <p className="mt-3 font-medium">Example Dashboard View (Spreadsheet or BI Tool):</p>
+              <CodeBlock title="Sample Row (Jupiter Blog Article)">{`Article: "Jupiter vs Raydium: Best Solana DEX for Traders"
 Keyword Tier: Tier 2 (Comparison)
 Target Keyword: "jupiter vs raydium"
 Publish Date: 2025-01-15
@@ -89,6 +93,7 @@ Avg. TVL per User (90d): $12,400
 TVL Influenced: $843,200
 Ranking: #2 (up from #5 last month)
 Status: 🟢 Green (high conversion, ranking up)`}</CodeBlock>
+            </Web3Content>
           </AccordionContent>
         </AccordionItem>
 
@@ -171,13 +176,15 @@ Status: 🟢 Green (high conversion, ranking up)`}</CodeBlock>
               <li><strong>Customer LTV by Source:</strong> Do content-acquired users stay longer or spend more? (Web2-specific, but trackable on-chain for Web3.)</li>
             </ul>
 
-            <p className="mt-4"><strong>Web3 Business Impact Examples:</strong></p>
-            <CodeBlock title="Jupiter Article Performance (90 days)">{`Article: "How to Reduce Swap Slippage on Solana"
+            <Web3Content>
+              <p className="mt-4"><strong>Web3 Business Impact Examples:</strong></p>
+              <CodeBlock title="Jupiter Article Performance (90 days)">{`Article: "How to Reduce Swap Slippage on Solana"
 Conversions (Wallet Connects): 142
 Avg. Swap Volume per User: $8,200
 Total Tx Volume Influenced: $1,164,800
 Avg. Tx per User (90d): 12.3
 Retention (still active 90d later): 68%`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Business Impact Examples:</strong> MQLs generated: 87. Pipeline influenced: $430K. Closed-won revenue: $68K. Customer LTV (cohort): $12,400. Payback period: 4 months (content cost / revenue influenced).</p>
@@ -235,7 +242,8 @@ Retention (still active 90d later): 68%`}</CodeBlock>
             </ul>
             <p className="mt-2"><strong>Format:</strong> Slide deck or narrative memo. 60-min strategy session. Tie content performance to company OKRs.</p>
 
-            <CodeBlock title="Example Monthly Report Summary (Jupiter, Web3)">{`## Jupiter Content Marketing — January 2026
+            <Web3Content>
+              <CodeBlock title="Example Monthly Report Summary (Jupiter, Web3)">{`## Jupiter Content Marketing — January 2026
 
 ### 🎯 Key Results
 - **Conversions:** 1,247 wallet connects (+18% MoM)
@@ -262,6 +270,7 @@ Retention (still active 90d later): 68%`}</CodeBlock>
 1. Build cluster around "Best Solana DEX" (hub + 5 spokes)
 2. Optimize 8 Yellow Zone articles (improve rankings + CTAs)
 3. Publish 3 new Tier 2 comparison articles (vs Orca, vs Meteora, vs Phoenix)`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B Quarterly Report Add:</strong> Marketing-sourced pipeline $ (how much opportunity pipeline came from content), Sales cycle impact (do content-engaged leads close faster?), Content-assisted deals (multi-touch attribution showing content influence on closed deals). Tie to company revenue targets.</p>
@@ -293,14 +302,16 @@ Retention (still active 90d later): 68%`}</CodeBlock>
             <p><strong>When to use:</strong> My preferred model for Web3 and Web2. Balances simplicity with accuracy.</p>
 
             <p className="mt-4 font-medium">Implementation:</p>
-            <p><strong>Web3 (Wallet-Based Tracking):</strong></p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li>User visits "Jupiter vs Raydium" → cookie or UTM param stores visit</li>
-              <li>User returns to "How to Swap on Jupiter" → second touchpoint tracked</li>
-              <li>User connects wallet → conversion event tied to wallet address + touchpoint history</li>
-              <li>Track wallet's subsequent on-chain behavior (swaps, volume, retention) → attribute back to content</li>
-            </ul>
-            <p className="mt-2 italic text-sm">Tool: Google Analytics 4, Mixpanel, Amplitude, or custom on-chain analytics (Dune, Flipside).</p>
+            <Web3Content>
+              <p><strong>Web3 (Wallet-Based Tracking):</strong></p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>User visits "Jupiter vs Raydium" → cookie or UTM param stores visit</li>
+                <li>User returns to "How to Swap on Jupiter" → second touchpoint tracked</li>
+                <li>User connects wallet → conversion event tied to wallet address + touchpoint history</li>
+                <li>Track wallet's subsequent on-chain behavior (swaps, volume, retention) → attribute back to content</li>
+              </ul>
+              <p className="mt-2 italic text-sm">Tool: Google Analytics 4, Mixpanel, Amplitude, or custom on-chain analytics (Dune, Flipside).</p>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B Attribution:</strong> Track form fills, demo requests, trial sign-ups tied to cookie ID. Sync with CRM (HubSpot, Salesforce) to follow lead → opportunity → closed-won. Multi-touch models show which content assists vs closes. Marketing ops often owns attribution model and reporting. Tool: HubSpot, Marketo, Bizible, Dreamdata.</p>
@@ -322,12 +333,14 @@ Retention (still active 90d later): 68%`}</CodeBlock>
               <li><strong>DataForSEO API:</strong> Keyword research, difficulty scores, CPC values. Paid but cheap (~$100/month for small teams).</li>
             </ul>
 
-            <p className="mt-3 font-medium">Web3-Specific:</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Dune Analytics:</strong> On-chain behavior tracking. Create custom dashboards showing TVL, tx volume, user retention by acquisition source. Free (paid for private dashboards).</li>
-              <li><strong>Flipside Crypto:</strong> Alternative to Dune, similar capabilities. Query blockchain data.</li>
-              <li><strong>Mixpanel or Amplitude:</strong> Track wallet connects, first transaction, power user milestones. Tie content touchpoints to on-chain behavior.</li>
-            </ul>
+            <Web3Content>
+              <p className="mt-3 font-medium">Web3-Specific:</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>Dune Analytics:</strong> On-chain behavior tracking. Create custom dashboards showing TVL, tx volume, user retention by acquisition source. Free (paid for private dashboards).</li>
+                <li><strong>Flipside Crypto:</strong> Alternative to Dune, similar capabilities. Query blockchain data.</li>
+                <li><strong>Mixpanel or Amplitude:</strong> Track wallet connects, first transaction, power user milestones. Tie content touchpoints to on-chain behavior.</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B Tools:</strong> HubSpot or Salesforce (CRM + marketing automation), Clearbit or ZoomInfo (lead enrichment), Bizible or Dreamdata (multi-touch attribution), Looker or Tableau (BI dashboards), SEMrush or Ahrefs (keyword tracking and competitive analysis).</p>

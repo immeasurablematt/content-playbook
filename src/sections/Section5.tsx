@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function Section5Content() {
   return (
@@ -20,14 +21,16 @@ export function Section5Content() {
             <p>In my experience, Web3 social strategy centers on Crypto Twitter (CT), Discord, Telegram, and increasingly Farcaster. Web2 leans LinkedIn, Instagram, and TikTok. The structure below works for both—just swap the platforms and adjust for culture (CT = meme-heavy and fast-paced; LinkedIn = professional and polished).</p>
             <p className="mt-2">Map social threads to your messaging matrix regardless of platform: Post 1 = pain point (hook); Posts 2–3 = capability and feature function (education); Post 4 = vision of use (emotional close). Track which pain points drive the most engagement and double down.</p>
 
-            <p className="mt-3 font-medium">Web3 Platform Priority (what I've used):</p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li><strong>Crypto Twitter (CT):</strong> #1 for awareness, alpha sharing, community building. Fast, meme-driven, reply-guy culture.</li>
-              <li><strong>Discord:</strong> Community hub, support, governance, long-form discussions. Critical for retention.</li>
-              <li><strong>Telegram:</strong> Real-time alpha, announcements, tight-knit groups. Lower moderation overhead than Discord.</li>
-              <li><strong>Farcaster:</strong> Emerging Web3-native social graph. Early adopter community, crypto-focused.</li>
-              <li><strong>Governance Forums:</strong> Long-form proposals, technical discussions, protocol decisions.</li>
-            </ul>
+            <Web3Content>
+              <p className="mt-3 font-medium">Web3 Platform Priority (what I've used):</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Crypto Twitter (CT):</strong> #1 for awareness, alpha sharing, community building. Fast, meme-driven, reply-guy culture.</li>
+                <li><strong>Discord:</strong> Community hub, support, governance, long-form discussions. Critical for retention.</li>
+                <li><strong>Telegram:</strong> Real-time alpha, announcements, tight-knit groups. Lower moderation overhead than Discord.</li>
+                <li><strong>Farcaster:</strong> Emerging Web3-native social graph. Early adopter community, crypto-focused.</li>
+                <li><strong>Governance Forums:</strong> Long-form proposals, technical discussions, protocol decisions.</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Platform Priority:</strong> LinkedIn (B2B, thought leadership, recruiting), Instagram (B2C, visual brands, lifestyle), TikTok (B2C, viral potential, younger demos), YouTube (tutorials, long-form content, SEO), Twitter/X (real-time news, customer support, brand personality), webinars and podcasts (trust-building, lead gen).</p>
@@ -76,29 +79,31 @@ export function Section5Content() {
         <AccordionItem value="kol">
           <AccordionTrigger>KOL Collaboration Strategy (Web3-Specific)</AccordionTrigger>
           <AccordionContent>
-            <p><strong>What I've learned about Web3 KOLs:</strong> Key Opinion Leaders (KOLs) in crypto have outsized influence—a single thread from a respected trader can drive millions in volume. Unlike Web2 influencers (follower count = value), Web3 KOLs are valued for alpha quality and trust.</p>
+            <Web3Content>
+              <p><strong>What I've learned about Web3 KOLs:</strong> Key Opinion Leaders (KOLs) in crypto have outsized influence—a single thread from a respected trader can drive millions in volume. Unlike Web2 influencers (follower count = value), Web3 KOLs are valued for alpha quality and trust.</p>
 
-            <p className="mt-3 font-medium">Identifying the right KOLs:</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Tier 1 (Mega KOLs):</strong> 100K+ followers, broad crypto audience, high engagement. Examples: @cobie, @DegenSpartan, @HsakaTrades. Use sparingly for major launches.</li>
-              <li><strong>Tier 2 (Niche KOLs):</strong> 10K–100K followers, specific niche (DeFi, NFTs, L2s). Higher trust, better conversion for targeted campaigns.</li>
-              <li><strong>Tier 3 (Micro KOLs):</strong> 1K–10K followers, tight community, very high engagement rate. Best ROI for ongoing partnerships.</li>
-            </ul>
+              <p className="mt-3 font-medium">Identifying the right KOLs:</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>Tier 1 (Mega KOLs):</strong> 100K+ followers, broad crypto audience, high engagement. Examples: @cobie, @DegenSpartan, @HsakaTrades. Use sparingly for major launches.</li>
+                <li><strong>Tier 2 (Niche KOLs):</strong> 10K–100K followers, specific niche (DeFi, NFTs, L2s). Higher trust, better conversion for targeted campaigns.</li>
+                <li><strong>Tier 3 (Micro KOLs):</strong> 1K–10K followers, tight community, very high engagement rate. Best ROI for ongoing partnerships.</li>
+              </ul>
 
-            <p className="mt-3 font-medium">Collaboration approaches I've used:</p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li><strong>Organic alpha sharing:</strong> Give KOLs early access, let them discover value and share naturally. Most authentic, hardest to scale.</li>
-              <li><strong>Paid threads/reviews:</strong> Sponsored content clearly disclosed. Works for awareness, lower trust than organic.</li>
-              <li><strong>Airdrops/token allocations:</strong> Give KOLs a stake in the protocol's success. Aligns incentives long-term.</li>
-              <li><strong>Advisory/ambassador roles:</strong> Ongoing relationship with input on product/marketing. Best for major launches.</li>
-            </ul>
+              <p className="mt-3 font-medium">Collaboration approaches I've used:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Organic alpha sharing:</strong> Give KOLs early access, let them discover value and share naturally. Most authentic, hardest to scale.</li>
+                <li><strong>Paid threads/reviews:</strong> Sponsored content clearly disclosed. Works for awareness, lower trust than organic.</li>
+                <li><strong>Airdrops/token allocations:</strong> Give KOLs a stake in the protocol's success. Aligns incentives long-term.</li>
+                <li><strong>Advisory/ambassador roles:</strong> Ongoing relationship with input on product/marketing. Best for major launches.</li>
+              </ul>
 
-            <p className="mt-3 font-medium">Red flags to avoid:</p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li>KOLs who shill everything (no credibility, audience knows it's always paid)</li>
-              <li>Fake engagement (bought followers, bot comments—check engagement rate)</li>
-              <li>No audience overlap (ETH maxi promoting Solana project = mismatch)</li>
-            </ul>
+              <p className="mt-3 font-medium">Red flags to avoid:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>KOLs who shill everything (no credibility, audience knows it's always paid)</li>
+                <li>Fake engagement (bought followers, bot comments—check engagement rate)</li>
+                <li>No audience overlap (ETH maxi promoting Solana project = mismatch)</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Influencer Marketing:</strong> Instagram/TikTok influencers measured by follower count and engagement rate. Typical structure: flat fee per post/video, affiliate codes for tracking, long-term brand ambassador deals. FTC disclosure requirements stricter than Web3. ROI easier to measure (promo codes, affiliate links).</p>
@@ -109,24 +114,26 @@ export function Section5Content() {
         <AccordionItem value="spaces">
           <AccordionTrigger>Spaces & AMAs (Web3 Community Engagement)</AccordionTrigger>
           <AccordionContent>
-            <p><strong>Why Spaces/AMAs matter in Web3:</strong> Real-time audio builds trust faster than text. I've found that a single well-run Space can generate more community goodwill than 50 tweets. Also creates content to clip and repurpose.</p>
+            <Web3Content>
+              <p><strong>Why Spaces/AMAs matter in Web3:</strong> Real-time audio builds trust faster than text. I've found that a single well-run Space can generate more community goodwill than 50 tweets. Also creates content to clip and repurpose.</p>
 
-            <p className="mt-3 font-medium">Format types:</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Twitter Spaces:</strong> Best for broad awareness, live Q&A, announcements. Record and clip for content. Host 1–2x/month for active community.</li>
-              <li><strong>Discord Stage Channels:</strong> Deeper community engagement, governance discussions, technical deep-dives. Lower broadcast reach than Spaces.</li>
-              <li><strong>Telegram voice chats:</strong> Smaller groups, international audiences (timezones matter), more intimate. Good for regional communities.</li>
-              <li><strong>AMAs (Ask Me Anything):</strong> Text-based (Reddit, Discord, Telegram) or audio. High transparency signal—open to all questions.</li>
-            </ul>
+              <p className="mt-3 font-medium">Format types:</p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>Twitter Spaces:</strong> Best for broad awareness, live Q&A, announcements. Record and clip for content. Host 1–2x/month for active community.</li>
+                <li><strong>Discord Stage Channels:</strong> Deeper community engagement, governance discussions, technical deep-dives. Lower broadcast reach than Spaces.</li>
+                <li><strong>Telegram voice chats:</strong> Smaller groups, international audiences (timezones matter), more intimate. Good for regional communities.</li>
+                <li><strong>AMAs (Ask Me Anything):</strong> Text-based (Reddit, Discord, Telegram) or audio. High transparency signal—open to all questions.</li>
+              </ul>
 
-            <p className="mt-3 font-medium">Best practices I've learned:</p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li><strong>Schedule for timezone coverage:</strong> Rotate times to hit US, Europe, Asia. Or run 2–3 sessions for major announcements.</li>
-              <li><strong>Promote 48h in advance minimum:</strong> Pin in Discord, tweet 2–3x, Telegram announcement.</li>
-              <li><strong>Have a moderator + speaker:</strong> Mod manages queue, mutes trolls, keeps flow. Speaker focuses on content.</li>
-              <li><strong>Clip and repurpose:</strong> Turn 60-min Space into 5–10 short clips for Twitter, TikTok, YouTube Shorts.</li>
-              <li><strong>Follow up with summary thread:</strong> Not everyone can attend live—recap key points in a thread within 24h.</li>
-            </ul>
+              <p className="mt-3 font-medium">Best practices I've learned:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Schedule for timezone coverage:</strong> Rotate times to hit US, Europe, Asia. Or run 2–3 sessions for major announcements.</li>
+                <li><strong>Promote 48h in advance minimum:</strong> Pin in Discord, tweet 2–3x, Telegram announcement.</li>
+                <li><strong>Have a moderator + speaker:</strong> Mod manages queue, mutes trolls, keeps flow. Speaker focuses on content.</li>
+                <li><strong>Clip and repurpose:</strong> Turn 60-min Space into 5–10 short clips for Twitter, TikTok, YouTube Shorts.</li>
+                <li><strong>Follow up with summary thread:</strong> Not everyone can attend live—recap key points in a thread within 24h.</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Live Event Equivalents:</strong> Webinars (B2B lead gen, 30-60 min structured presentations with Q&A), Instagram/TikTok Lives (B2C, product launches, behind-the-scenes), LinkedIn Lives (thought leadership, panel discussions), YouTube livestreams (long-form, tutorials, gaming).</p>
@@ -160,22 +167,24 @@ export function Section5Content() {
           <AccordionTrigger>Per-Stage Content Plan</AccordionTrigger>
           <AccordionContent>
             <p><strong>Purpose</strong> — Align social content with the funnel (see Content Funnel Map in Section 1). Each stage has different formats and CTAs. The structure works for both Web3 and Web2—just swap the examples and platforms.</p>
-            <p className="mt-3 font-medium">By stage (Web3 primary examples):</p>
-            <table className="my-3 w-full border-collapse text-sm">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="w-28 py-2 text-left font-medium">Stage</th>
-                  <th className="py-2 text-left font-medium">Web3 Social Focus</th>
-                  <th className="py-2 text-left font-medium">Web3 Formats / CTAs</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-stone-100"><td className="py-2 font-medium">Awareness</td><td className="py-2">Reach, education, ecosystem positioning</td><td className="py-2">Protocol explainers, "What is [tech]", ecosystem news, alpha threads, memes; CTA: follow, RT, join Discord</td></tr>
-                <tr className="border-b border-stone-100"><td className="py-2 font-medium">Consideration</td><td className="py-2">Trust, differentiation, use cases</td><td className="py-2">How-to threads, DEX/protocol comparisons, TVL milestones, case study snippets, Dune dashboard shares; CTA: read docs, join Telegram, watch Space recording</td></tr>
-                <tr className="border-b border-stone-100"><td className="py-2 font-medium">Decision</td><td className="py-2">Conversion, wallet connects, first transaction</td><td className="py-2">Product features, "try now" with wallet connect, limited incentives (airdrops, rewards), social proof (volume, users); CTA: connect wallet, start trading, earn rewards</td></tr>
-                <tr className="border-b border-stone-100"><td className="py-2 font-medium">Retention & Advocacy</td><td className="py-2">Loyalty, UGC, community growth</td><td className="py-2">User wins (big trades, profits), power user tips, governance participation, referral rewards; CTA: share your trade, invite friends, vote on proposal</td></tr>
-              </tbody>
-            </table>
+            <Web3Content>
+              <p className="mt-3 font-medium">By stage (Web3 primary examples):</p>
+              <table className="my-3 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-200">
+                    <th className="w-28 py-2 text-left font-medium">Stage</th>
+                    <th className="py-2 text-left font-medium">Web3 Social Focus</th>
+                    <th className="py-2 text-left font-medium">Web3 Formats / CTAs</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-stone-100"><td className="py-2 font-medium">Awareness</td><td className="py-2">Reach, education, ecosystem positioning</td><td className="py-2">Protocol explainers, "What is [tech]", ecosystem news, alpha threads, memes; CTA: follow, RT, join Discord</td></tr>
+                  <tr className="border-b border-stone-100"><td className="py-2 font-medium">Consideration</td><td className="py-2">Trust, differentiation, use cases</td><td className="py-2">How-to threads, DEX/protocol comparisons, TVL milestones, case study snippets, Dune dashboard shares; CTA: read docs, join Telegram, watch Space recording</td></tr>
+                  <tr className="border-b border-stone-100"><td className="py-2 font-medium">Decision</td><td className="py-2">Conversion, wallet connects, first transaction</td><td className="py-2">Product features, "try now" with wallet connect, limited incentives (airdrops, rewards), social proof (volume, users); CTA: connect wallet, start trading, earn rewards</td></tr>
+                  <tr className="border-b border-stone-100"><td className="py-2 font-medium">Retention & Advocacy</td><td className="py-2">Loyalty, UGC, community growth</td><td className="py-2">User wins (big trades, profits), power user tips, governance participation, referral rewards; CTA: share your trade, invite friends, vote on proposal</td></tr>
+                </tbody>
+              </table>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Per-Stage Examples:</strong></p>

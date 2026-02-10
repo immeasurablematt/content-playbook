@@ -7,6 +7,7 @@ import {
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function Section2Content() {
   return (
@@ -33,8 +34,10 @@ export function Section2Content() {
           <AccordionContent>
             <p>People searching these terms are ready to buy. They don't need education or nurturing.</p>
             <p><strong>Characteristics:</strong> Direct product/service category searches; searcher already knows the solution type; high commercial intent; often high competition but worth fighting for.</p>
-            <p className="mt-2"><strong>Examples I've targeted [DeFi/Web3]:</strong> "best Solana DEX", "Solana DEX aggregator", "decentralized perp exchange", "best decentralized derivatives platform", "Solana swap platform", "on-chain perpetual futures".</p>
-            <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "decentralized GPU platform", "GPU cloud computing service", "distributed GPU infrastructure", "bare metal GPU hosting", "decentralized AI compute".</p>
+            <Web3Content>
+              <p className="mt-2"><strong>Examples I've targeted [DeFi/Web3]:</strong> "best Solana DEX", "Solana DEX aggregator", "decentralized perp exchange", "best decentralized derivatives platform", "Solana swap platform", "on-chain perpetual futures".</p>
+              <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "decentralized GPU platform", "GPU cloud computing service", "distributed GPU infrastructure", "bare metal GPU hosting", "decentralized AI compute".</p>
+            </Web3Content>
             <p><strong>Content Formats:</strong> Product/service landing pages, feature comparison pages, pricing pages optimized for these terms, "Best [category]" listicles that position your product.</p>
 
             <Web2Callout>
@@ -49,8 +52,10 @@ export function Section2Content() {
           <AccordionContent>
             <p>People searching these are comparing options or looking to switch. They're deep in the buying process.</p>
             <p><strong>Characteristics:</strong> Indicates active product evaluation; often underestimated search volume (tools show zero, reality differs); lower competition than category keywords; very high conversion rates.</p>
-            <p className="mt-2"><strong>Examples I've used [DeFi/Web3]:</strong> "Jupiter vs Raydium", "Hyperliquid vs dYdX", "best Hyperliquid alternatives", "Jupiter vs 1inch comparison", "dYdX alternatives for perpetual futures", "Raydium vs Orca swap comparison", "how to reduce swap slippage on Solana".</p>
-            <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "AWS GPU pricing vs [Your Product]", "CoreWeave alternatives", "Lambda Labs vs [Your Product]", "Paperspace alternatives for AI training", "RunPod vs [Your Product] comparison".</p>
+            <Web3Content>
+              <p className="mt-2"><strong>Examples I've used [DeFi/Web3]:</strong> "Jupiter vs Raydium", "Hyperliquid vs dYdX", "best Hyperliquid alternatives", "Jupiter vs 1inch comparison", "dYdX alternatives for perpetual futures", "Raydium vs Orca swap comparison", "how to reduce swap slippage on Solana".</p>
+              <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "AWS GPU pricing vs [Your Product]", "CoreWeave alternatives", "Lambda Labs vs [Your Product]", "Paperspace alternatives for AI training", "RunPod vs [Your Product] comparison".</p>
+            </Web3Content>
             <p><strong>Content Formats:</strong> Head-to-head comparison articles, "X Alternatives" listicles, feature comparison tables, migration guides from competitors.</p>
 
             <Web2Callout>
@@ -66,8 +71,10 @@ export function Section2Content() {
           <AccordionContent>
             <p>These keywords indicate someone has a problem your product solves, even if they're not explicitly searching for your solution type yet.</p>
             <p><strong>Characteristics:</strong> Problem-aware, not necessarily solution-aware; still have buying intent (some fraction will purchase); often "how to" queries; medium competition; higher volume than Tier 1 & 2, lower conversion than Tier 1 & 2.</p>
-            <p className="mt-2"><strong>Examples I've targeted [DeFi/Web3]:</strong> "how to reduce swap slippage on Solana", "how to find best DEX prices automatically", "how to trade perpetual futures on-chain", "how to avoid front-running on DEX swaps", "how to maximize liquidity provider returns", "how to get started with DeFi trading".</p>
-            <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "how to reduce GPU training costs", "how to scale AI inference workloads", "how to migrate from AWS to decentralized GPU", "how to manage distributed GPU clusters", "how to optimize GPU utilization for AI".</p>
+            <Web3Content>
+              <p className="mt-2"><strong>Examples I've targeted [DeFi/Web3]:</strong> "how to reduce swap slippage on Solana", "how to find best DEX prices automatically", "how to trade perpetual futures on-chain", "how to avoid front-running on DEX swaps", "how to maximize liquidity provider returns", "how to get started with DeFi trading".</p>
+              <p className="mt-2"><strong>Examples [GPU/Infra]:</strong> "how to reduce GPU training costs", "how to scale AI inference workloads", "how to migrate from AWS to decentralized GPU", "how to manage distributed GPU clusters", "how to optimize GPU utilization for AI".</p>
+            </Web3Content>
             <p><strong>Content Formats:</strong> How-to guides that present your product as a solution, problem-solution tutorials, technical implementation guides, best practices articles.</p>
 
             <Web2Callout>
@@ -105,13 +112,15 @@ export function Section2Content() {
               <li>"What do prospects say they've already tried before talking to us?" — Failed solutions indicate problem awareness → JTBD keywords.</li>
               <li>"What objections do you hear most often?" — Objections reveal concerns → create content addressing them.</li>
             </ol>
-            <p className="mt-3"><strong>Question Set 5: Web3-Specific Discovery</strong> (ask customers):</p>
-            <ol className="list-decimal pl-6 mt-1 space-y-1" start={13}>
-              <li>"Which chains or L2s are you most active on?" — Chain-specific keywords (Solana, Base, Arbitrum).</li>
-              <li>"Where do you go to find alpha or research protocols?" — Distribution channels for content (CT, Discord, Dune).</li>
-              <li>"What metrics do you track most closely?" — TVL, APY, transaction volume, slippage → keyword opportunities.</li>
-              <li>"Which DEXs or protocols have you switched away from, and why?" — Competitor comparison content gold.</li>
-            </ol>
+            <Web3Content>
+              <p className="mt-3"><strong>Question Set 5: Web3-Specific Discovery</strong> (ask customers):</p>
+              <ol className="list-decimal pl-6 mt-1 space-y-1" start={13}>
+                <li>"Which chains or L2s are you most active on?" — Chain-specific keywords (Solana, Base, Arbitrum).</li>
+                <li>"Where do you go to find alpha or research protocols?" — Distribution channels for content (CT, Discord, Dune).</li>
+                <li>"What metrics do you track most closely?" — TVL, APY, transaction volume, slippage → keyword opportunities.</li>
+                <li>"Which DEXs or protocols have you switched away from, and why?" — Competitor comparison content gold.</li>
+              </ol>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2-Specific Questions (B2B SaaS):</strong> "What's your current tech stack?" "What tools did you evaluate before choosing us?" "What's your biggest bottleneck right now?" "How do you measure success for this tool category?" "Who else was involved in the buying decision?"</p>

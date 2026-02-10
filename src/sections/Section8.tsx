@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function Section8Content() {
   return (
@@ -55,12 +56,14 @@ export function Section8Content() {
               <li>Repurposes new blog and case study content into threads, posts, and clips per cadence.</li>
               <li>Responsible for reply SLA and escalation; proactive engagement in community.</li>
             </ul>
-            <p className="mt-3"><strong>Web3-Specific Roles (add to above):</strong></p>
-            <ul className="list-disc pl-6 space-y-0.5">
-              <li><strong>Community Manager:</strong> Owns Discord, Telegram moderation; answers technical questions; escalates bugs/exploits; weekly community sentiment report to team. Often coordinates with social owner on CT replies and Spaces.</li>
-              <li><strong>DevRel (Developer Relations):</strong> Writes technical documentation, sample code, integration guides; speaks at conferences and hackathons; publishes dev-focused blog content (often bypasses standard brief process for speed). Bridges product/eng and marketing.</li>
-              <li><strong>Tokenomics/On-Chain Analyst:</strong> Provides data for case studies and content (TVL, tx volume, user cohorts from Dune/Flipside); validates claims in marketing content; creates dashboards content can link to. Not always marketing-org but collaborates closely.</li>
-            </ul>
+            <Web3Content>
+              <p className="mt-3"><strong>Web3-Specific Roles (add to above):</strong></p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Community Manager:</strong> Owns Discord, Telegram moderation; answers technical questions; escalates bugs/exploits; weekly community sentiment report to team. Often coordinates with social owner on CT replies and Spaces.</li>
+                <li><strong>DevRel (Developer Relations):</strong> Writes technical documentation, sample code, integration guides; speaks at conferences and hackathons; publishes dev-focused blog content (often bypasses standard brief process for speed). Bridges product/eng and marketing.</li>
+                <li><strong>Tokenomics/On-Chain Analyst:</strong> Provides data for case studies and content (TVL, tx volume, user cohorts from Dune/Flipside); validates claims in marketing content; creates dashboards content can link to. Not always marketing-org but collaborates closely.</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2-Specific Roles:</strong> SDR/BDR teams (prospecting, qualifying MQLs from content), Product Marketing (positioning, launches, competitive intel, sales enablement), Analyst Relations (Gartner, Forrester briefings), Demand Gen (paid campaigns, ABM, webinars), Marketing Ops (CRM, attribution, reporting automation).</p>

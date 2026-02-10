@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function SectionEmailContent() {
   return (
@@ -18,20 +19,22 @@ export function SectionEmailContent() {
         <AccordionItem value="context">
           <AccordionTrigger>Email in Web3 Context</AccordionTrigger>
           <AccordionContent>
-            <p><strong>Why email matters less (but still matters) in Web3:</strong></p>
-            <ul className="list-disc pl-6 space-y-1 mt-2">
-              <li><strong>Primary channels elsewhere:</strong> Discord, Telegram, and CT are where communities live. Email is secondary.</li>
-              <li><strong>Wallet-first identity:</strong> Users often connect wallets without providing email. You have on-chain behavior but no inbox access.</li>
-              <li><strong>Skepticism of centralized platforms:</strong> Web3 users are wary of "Web2-style" marketing emails. Approach must be value-first, never spammy.</li>
-            </ul>
+            <Web3Content>
+              <p><strong>Why email matters less (but still matters) in Web3:</strong></p>
+              <ul className="list-disc pl-6 space-y-1 mt-2">
+                <li><strong>Primary channels elsewhere:</strong> Discord, Telegram, and CT are where communities live. Email is secondary.</li>
+                <li><strong>Wallet-first identity:</strong> Users often connect wallets without providing email. You have on-chain behavior but no inbox access.</li>
+                <li><strong>Skepticism of centralized platforms:</strong> Web3 users are wary of "Web2-style" marketing emails. Approach must be value-first, never spammy.</li>
+              </ul>
 
-            <p className="mt-3"><strong>Where email still wins in Web3:</strong></p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Onboarding sequences:</strong> After wallet connect, guide users through first transaction, staking, governance.</li>
-              <li><strong>Protocol updates and governance:</strong> Major announcements, governance proposals, security updates. Higher deliverability than Discord pings.</li>
-              <li><strong>Re-engagement for dormant wallets:</strong> "We noticed you haven't traded in 30 days" with incentive to return.</li>
-              <li><strong>Educational drip campaigns:</strong> For complex protocols (DeFi, derivatives), email educates over time without overwhelming.</li>
-            </ul>
+              <p className="mt-3"><strong>Where email still wins in Web3:</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>Onboarding sequences:</strong> After wallet connect, guide users through first transaction, staking, governance.</li>
+                <li><strong>Protocol updates and governance:</strong> Major announcements, governance proposals, security updates. Higher deliverability than Discord pings.</li>
+                <li><strong>Re-engagement for dormant wallets:</strong> "We noticed you haven't traded in 30 days" with incentive to return.</li>
+                <li><strong>Educational drip campaigns:</strong> For complex protocols (DeFi, derivatives), email educates over time without overwhelming.</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Email Priority:</strong> Email is often the #1 or #2 marketing channel. MQL nurturing, lifecycle emails (onboarding, activation, retention), abandoned cart, upsell/cross-sell, newsletters, event promotions. Much higher volume and sophistication (segmentation, automation, A/B testing at scale).</p>
@@ -44,8 +47,9 @@ export function SectionEmailContent() {
           <AccordionContent>
             <p><strong>Goal:</strong> Guide new users from wallet connection to first meaningful action (swap, stake, vote, trade) within 7 days. In my experience, if they don't complete a transaction within 7 days, activation rate drops dramatically.</p>
 
-            <p className="mt-3 font-medium">Example 3-email onboarding sequence (Jupiter, DEX aggregator):</p>
-            <CodeBlock title="Email 1: Welcome + First Swap (Day 0, 5 min after wallet connect)">{`Subject: Welcome to Jupiter—Get the Best Swap Price in 60 Seconds
+            <Web3Content>
+              <p className="mt-3 font-medium">Example 3-email onboarding sequence (Jupiter, DEX aggregator):</p>
+              <CodeBlock title="Email 1: Welcome + First Swap (Day 0, 5 min after wallet connect)">{`Subject: Welcome to Jupiter—Get the Best Swap Price in 60 Seconds
 
 Hi [Name or "Trader"],
 
@@ -105,6 +109,7 @@ Questions? Concerns? Reply to this email.
 — Jupiter Team
 
 P.S. New to Solana DeFi? [Link to beginner guide]`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B SaaS Onboarding Sequence:</strong> Day 0: Welcome + setup checklist. Day 2: Feature highlights + tutorial videos. Day 5: Case study + ROI calculator. Day 7: Book a demo with customer success. Day 14: "Need help?" + support resources. Day 21: Upsell to paid plan or additional features. Day 30: NPS survey.</p>
@@ -115,7 +120,8 @@ P.S. New to Solana DeFi? [Link to beginner guide]`}</CodeBlock>
         <AccordionItem value="governance">
           <AccordionTrigger>Protocol Updates & Governance Notifications</AccordionTrigger>
           <AccordionContent>
-            <p><strong>Use case:</strong> Major protocol upgrades, governance proposals, security updates, token economics changes. These are high-importance, low-frequency emails. I've found deliverability is better than Discord for critical announcements (Discord notifications get missed).</p>
+            <Web3Content>
+              <p><strong>Use case:</strong> Major protocol upgrades, governance proposals, security updates, token economics changes. These are high-importance, low-frequency emails. I've found deliverability is better than Discord for critical announcements (Discord notifications get missed).</p>
 
             <p className="mt-3 font-medium">Best practices:</p>
             <ul className="list-disc pl-6 space-y-1">
@@ -149,6 +155,7 @@ You hold [X] $JUP tokens. Cast your vote:
 Read full proposal and discussion: [Forum Link]
 
 — Jupiter Governance Team`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Product Update Emails:</strong> "What's New in [Product] This Month" with feature highlights, changelog, tutorial links. Sent monthly or quarterly. Optional: NPS survey embedded to gauge satisfaction. Typical segments: active users, power users, churned users.</p>
@@ -159,7 +166,8 @@ Read full proposal and discussion: [Forum Link]
         <AccordionItem value="reengagement">
           <AccordionTrigger>Re-Engagement for Dormant Wallets</AccordionTrigger>
           <AccordionContent>
-            <p><strong>The challenge:</strong> Users connect wallet, maybe make one trade, then disappear. Unlike Web2 where you can track login activity, in Web3 you track on-chain behavior (last transaction, last swap, last stake).</p>
+            <Web3Content>
+              <p><strong>The challenge:</strong> Users connect wallet, maybe make one trade, then disappear. Unlike Web2 where you can track login activity, in Web3 you track on-chain behavior (last transaction, last swap, last stake).</p>
 
             <p className="mt-3 font-medium">Trigger-based re-engagement (examples):</p>
             <ul className="list-disc pl-6 space-y-1">
@@ -187,6 +195,7 @@ Questions? Reply to this email or hop in Discord: [link]
 — Jupiter Team
 
 P.S. If you're done with Jupiter, no hard feelings. [Unsubscribe]`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Re-Engagement Campaigns:</strong> "We Miss You" emails with discount code or free trial extension. Win-back series (3-5 emails over 30 days) with progressively stronger offers. Exit surveys for churned users: "Why did you leave?" Reactivation based on product updates: "We fixed [pain point you complained about]".</p>
@@ -199,13 +208,15 @@ P.S. If you're done with Jupiter, no hard feelings. [Unsubscribe]`}</CodeBlock>
           <AccordionContent>
             <p><strong>Use case:</strong> Complex protocols (DeFi, perpetual futures, staking) require education over time. I've found that dumping everything in one email overwhelms users. Drip it out over 2–4 weeks.</p>
 
-            <p className="mt-3 font-medium">Example educational drip (Hyperliquid, perpetual DEX):</p>
+            <Web3Content>
+              <p className="mt-3 font-medium">Example educational drip (Hyperliquid, perpetual DEX):</p>
             <p><strong>Week 1:</strong> "What are Perpetual Futures?" (basics, vs spot trading, leverage explained)</p>
             <p><strong>Week 2:</strong> "How to Place Your First Perp Trade on Hyperliquid" (step-by-step, screenshots)</p>
             <p><strong>Week 3:</strong> "Risk Management: How to Use Stop-Losses and Take-Profits" (protect your capital)</p>
             <p><strong>Week 4:</strong> "Advanced: Funding Rates and How to Use Them" (pro trader tactics)</p>
 
             <p className="mt-3"><strong>Delivery cadence:</strong> One email per week, same day/time. Users can opt out if too frequent. Track engagement: open rates, click-throughs, and most importantly—do educated users trade more?</p>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Educational Nurture Campaigns:</strong> Lead magnets (ebook, webinar) trigger 5–7 email drip. Day 0: Deliver resource. Day 2: Highlight key takeaway #1. Day 5: Key takeaway #2 + case study. Day 9: Related resource. Day 14: "Ready to implement? Book a demo." Often tied to lead scoring (engaged recipients = hot leads).</p>
@@ -216,7 +227,8 @@ P.S. If you're done with Jupiter, no hard feelings. [Unsubscribe]`}</CodeBlock>
         <AccordionItem value="segmentation">
           <AccordionTrigger>Segmentation by On-Chain Behavior</AccordionTrigger>
           <AccordionContent>
-            <p><strong>The advantage in Web3:</strong> Every action is on-chain and verifiable. You can segment by actual behavior, not self-reported surveys. In my experience, this makes segmentation more accurate than most Web2 scenarios.</p>
+            <Web3Content>
+              <p><strong>The advantage in Web3:</strong> Every action is on-chain and verifiable. You can segment by actual behavior, not self-reported surveys. In my experience, this makes segmentation more accurate than most Web2 scenarios.</p>
 
             <p className="mt-3 font-medium">Segmentation dimensions I've used:</p>
             <ul className="list-disc pl-6 space-y-1">
@@ -260,6 +272,7 @@ You've made [X] swaps on Jupiter. Here are 5 tips to save even more:
 [CTA: Explore Features]
 
 — Jupiter Team`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B Segmentation:</strong> Company size (SMB, mid-market, enterprise), industry vertical, product usage (free, paid, power user), engagement score (email opens, logins, feature usage), lifecycle stage (trial, onboarding, active, at-risk, churned). Typical tool: HubSpot, Salesforce, Segment for tracking.</p>

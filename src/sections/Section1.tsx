@@ -7,6 +7,7 @@ import {
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function Section1Content() {
   return (
@@ -56,7 +57,10 @@ export function Section1Content() {
             <p><strong>1. Core Values & Motivations</strong> — What brought them to your product category? What do they care about?</p>
             <p>Examples: Web3: Financial freedom vs privacy vs decentralization vs tech experimentation. B2B SaaS: Cost reduction vs innovation leadership vs risk mitigation. Enterprise: Compliance vs competitive advantage vs operational efficiency. Someone motivated by sovereignty needs different messaging than someone motivated by experimentation. This shapes your entire tone.</p>
             <p><strong>2. Success Definition (in context of your product)</strong> — What does winning look like for them? Examples: Crypto native: Financial independence, alpha generation, early access. Startup founder: Product-market fit, fundraising, rapid scaling. Enterprise buyer: Career advancement, risk mitigation, measurable ROI.</p>
-            <p><strong>3. Where They Actually Spend Time (Distribution Strategy)</strong> — Your "watering holes" determine where you show up and how you communicate. In my experience working with Web3 protocols, I've found these are the critical channels: Crypto natives: CT (Crypto Twitter), Discord, Telegram, Farcaster, governance forums. DeFi traders: Crypto Twitter, protocol Discords, Dune Analytics, DeFiLlama. Infrastructure builders: GitHub, protocol forums, technical documentation sites, Discord dev channels. Your content and partnerships should meet them where they already are, not where you wish they were.</p>
+            <p><strong>3. Where They Actually Spend Time (Distribution Strategy)</strong> — Your "watering holes" determine where you show up and how you communicate.
+            <Web3Content>
+              <p>In my experience working with Web3 protocols, I've found these are the critical channels: Crypto natives: CT (Crypto Twitter), Discord, Telegram, Farcaster, governance forums. DeFi traders: Crypto Twitter, protocol Discords, Dune Analytics, DeFiLlama. Infrastructure builders: GitHub, protocol forums, technical documentation sites, Discord dev channels. Your content and partnerships should meet them where they already are, not where you wish they were.</p>
+            </Web3Content></p>
 
             <Web2Callout>
               <p><strong>Web2 Distribution Channels:</strong> Technical builders: GitHub, Stack Overflow, Reddit, Hacker News. Enterprise buyers: LinkedIn, industry conferences, analyst reports (Gartner, Forrester). Startup founders: Product Hunt, Indie Hackers, YC community, LinkedIn. B2B SaaS buyers: G2, Capterra, industry Slack communities, webinars.</p>
@@ -96,7 +100,9 @@ In the context of our product, success means: [Specific, measurable outcome they
             <p><strong>Prioritization:</strong> (1) Which segment has the highest conversion rate? (2) Which has the highest lifetime value? (3) Which is easiest to reach (distribution advantage)? (4) Which provides best word-of-mouth/viral growth? Focus 70% of effort on your #1 segment, 30% on #2. Ignore #3+ until you've saturated the first two.</p>
             <p className="mt-3"><strong>Context-Dependent Messaging:</strong> I've learned that the same audience might need different messaging based on market conditions. In Web3, this is critical:</p>
             
-            <p className="mt-2"><strong>Bull Market vs Bear Market (Crypto/Web3):</strong> Bull = speed, opportunity capture, FOMO prevention ("Don't miss the next 100x"), aggressive calls to action. Bear = safety, sustainability, long-term value ("Build during the bear"), focus on fundamentals and utility over speculation. Jupiter adapted their messaging from "fastest swaps" (bull) to "most reliable liquidity" (bear).</p>
+            <Web3Content>
+              <p className="mt-2"><strong>Bull Market vs Bear Market (Crypto/Web3):</strong> Bull = speed, opportunity capture, FOMO prevention ("Don't miss the next 100x"), aggressive calls to action. Bear = safety, sustainability, long-term value ("Build during the bear"), focus on fundamentals and utility over speculation. Jupiter adapted their messaging from "fastest swaps" (bull) to "most reliable liquidity" (bear).</p>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Market Context Examples:</strong></p>
@@ -180,19 +186,21 @@ In the context of our product, success means: [Specific, measurable outcome they
               <li><strong>Vision of use = cinematic</strong> — Show the feature in action with specific, emotional detail; don't just explain it.</li>
             </ul>
 
-            <h4 className="mt-6 font-semibold">Example: Unified Gas Tank (Web3)</h4>
-            <p><strong>Pain Point:</strong> You spot a play on Solana but you don't have any SOL for gas. You're stuck swapping, bridging, waiting. The opportunity slips by while you're scrambling for the right token. Again.</p>
-            <p><strong>Capability:</strong> Move across chains instantly without thinking about gas logistics.</p>
-            <p><strong>Feature Function:</strong> Deposit USDC once into a universal gas tank that covers transactions across 36 blockchains automatically.</p>
-            <p><strong>Vision of Use:</strong> You're bridging from Ethereum to Solana and the move is happening NOW. No time to source gas. You execute immediately. Your timing is perfect and you watch half of CT scrambling on your timeline.</p>
-            <p><strong>Benefit:</strong> Never miss a time-sensitive opportunity because of gas management again.</p>
+            <Web3Content>
+              <h4 className="mt-6 font-semibold">Example: Unified Gas Tank (Web3)</h4>
+              <p><strong>Pain Point:</strong> You spot a play on Solana but you don't have any SOL for gas. You're stuck swapping, bridging, waiting. The opportunity slips by while you're scrambling for the right token. Again.</p>
+              <p><strong>Capability:</strong> Move across chains instantly without thinking about gas logistics.</p>
+              <p><strong>Feature Function:</strong> Deposit USDC once into a universal gas tank that covers transactions across 36 blockchains automatically.</p>
+              <p><strong>Vision of Use:</strong> You're bridging from Ethereum to Solana and the move is happening NOW. No time to source gas. You execute immediately. Your timing is perfect and you watch half of CT scrambling on your timeline.</p>
+              <p><strong>Benefit:</strong> Never miss a time-sensitive opportunity because of gas management again.</p>
 
-            <h4 className="mt-6 font-semibold">Example: Best Price Aggregation (Jupiter, Solana DEX)</h4>
-            <p><strong>Pain Point:</strong> You're swapping on a single DEX and getting slippage that eats your gains. You know there are better prices out there across multiple pools, but checking them all manually is impossible. You're leaving money on the table with every trade.</p>
-            <p><strong>Capability:</strong> Get the best possible swap price across all Solana DEXs instantly without the manual work.</p>
-            <p><strong>Feature Function:</strong> Smart routing algorithm that checks prices across all major Solana DEXs (Orca, Raydium, Serum) and automatically splits your order for optimal execution.</p>
-            <p><strong>Vision of Use:</strong> You're trading volatile assets and every basis point matters. You execute a large SOL-to-USDC swap. Jupiter routes it across three pools simultaneously, saving you 0.8% compared to a single DEX. That's $800 on a $100k trade—instant alpha.</p>
-            <p><strong>Benefit:</strong> Maximize returns on every trade without manual price checking or complex routing logic.</p>
+              <h4 className="mt-6 font-semibold">Example: Best Price Aggregation (Jupiter, Solana DEX)</h4>
+              <p><strong>Pain Point:</strong> You're swapping on a single DEX and getting slippage that eats your gains. You know there are better prices out there across multiple pools, but checking them all manually is impossible. You're leaving money on the table with every trade.</p>
+              <p><strong>Capability:</strong> Get the best possible swap price across all Solana DEXs instantly without the manual work.</p>
+              <p><strong>Feature Function:</strong> Smart routing algorithm that checks prices across all major Solana DEXs (Orca, Raydium, Serum) and automatically splits your order for optimal execution.</p>
+              <p><strong>Vision of Use:</strong> You're trading volatile assets and every basis point matters. You execute a large SOL-to-USDC swap. Jupiter routes it across three pools simultaneously, saving you 0.8% compared to a single DEX. That's $800 on a $100k trade—instant alpha.</p>
+              <p><strong>Benefit:</strong> Maximize returns on every trade without manual price checking or complex routing logic.</p>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>B2B SaaS Example: CRM Contact Enrichment</strong></p>

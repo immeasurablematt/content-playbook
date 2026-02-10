@@ -10,6 +10,8 @@ import { Section5Content } from "@/sections/Section5";
 import { SectionEmailContent } from "@/sections/SectionEmail";
 import { SectionReportingContent } from "@/sections/SectionReporting";
 import { Section8Content } from "@/sections/Section8";
+import { EcosystemProvider } from "@/context/EcosystemContext";
+import { EcosystemToggle } from "@/components/EcosystemToggle";
 import { ChevronDown } from "lucide-react";
 
 const SECTION_COMPONENTS = [
@@ -109,8 +111,10 @@ export default function App() {
   }
 
   return (
+    <EcosystemProvider>
     <div className="min-h-screen">
       <Hero />
+      <EcosystemToggle />
       <main className="relative">
         <div className="mx-auto max-w-3xl px-6 md:max-w-4xl lg:max-w-5xl">
           <div className="lg:mr-64">
@@ -143,5 +147,6 @@ export default function App() {
       </main>
       <Footer />
     </div>
+    </EcosystemProvider>
   );
 }

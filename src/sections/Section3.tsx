@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
+import { Web3Content } from "@/components/Web3Content";
 
 export function Section3Content() {
   return (
@@ -120,8 +121,9 @@ export function Section3Content() {
 - [CTA: Try [Your Product] free for 7 days, no credit card]`}</CodeBlock>
             <p className="mt-3"><strong>The Pattern:</strong> (1) Hook with pain point. (2) Provide immediate value (comparison table). (3) Detail the problem with status quo. (4) Present your solution. (5) Prove it with specific data. (6) Address objections honestly. (7) Remove conversion friction. (8) Clear CTA.</p>
 
-            <p className="mt-4 font-medium">Example 2: "Jupiter vs Raydium: Best Solana DEX for Traders" (Tier 2 Comparison, Web3)</p>
-            <CodeBlock title="Conversion outline">{`- Why DEX Choice Matters for Solana Traders [hook: slippage, fees, failed txs]
+            <Web3Content>
+              <p className="mt-4 font-medium">Example 2: "Jupiter vs Raydium: Best Solana DEX for Traders" (Tier 2 Comparison, Web3)</p>
+              <CodeBlock title="Conversion outline">{`- Why DEX Choice Matters for Solana Traders [hook: slippage, fees, failed txs]
 - Quick Comparison: Jupiter vs Raydium [immediate value table with routing, fees, liquidity]
 - How Raydium Works: Direct Pool Trading [explain single-source trading, limitations]
 - How Jupiter Works: Smart Route Aggregation [position our advantage: multi-DEX routing]
@@ -129,6 +131,7 @@ export function Section3Content() {
 - When Raydium Makes Sense vs When Jupiter Wins [honest: small trades vs large trades, new tokens vs established]
 - Getting Started with Jupiter: 3-Minute Setup [remove friction, wallet connect flow]
 - [CTA: Start swapping with Jupiter—connect wallet now]`}</CodeBlock>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B Example:</strong> "HubSpot vs [Your CRM]: Best for Growth Teams". Outline: Hidden Costs in HubSpot Enterprise Plans → Quick Feature Comparison Table → Breaking Down HubSpot's Pricing Tiers → How [Your CRM] Works Differently → Real Cost Comparison: 5 Team Sizes → When HubSpot Wins vs When [Your CRM] Wins → Migration Guide → CTA: Start Free Trial.</p>
@@ -151,21 +154,25 @@ export function Section3Content() {
             </ol>
             <p className="mt-3"><strong>CTA Copy Variation</strong> — Don't use same CTA copy 4 times. Vary based on context. I've found these angles work well:</p>
 
-            <p className="mt-2 font-medium">Web3/DeFi Examples (Jupiter, Hyperliquid):</p>
-            <ul className="list-disc pl-6 mt-1 space-y-1">
-              <li><strong>Speed Angle:</strong> "Get best swap prices in 1 second. No KYC, no waitlist. Start trading on Jupiter."</li>
-              <li><strong>Cost Angle:</strong> "Save 0.5-2% on every swap. Jupiter routes across all Solana DEXs automatically. Connect wallet."</li>
-              <li><strong>Simplicity Angle:</strong> "One click, best price. No manual DEX hopping. Swap with Jupiter now."</li>
-              <li><strong>Proof Angle:</strong> "$10B+ in swaps. Trusted by 500K+ traders. See why Jupiter is #1 on Solana."</li>
-            </ul>
+            <Web3Content>
+              <p className="mt-2 font-medium">Web3/DeFi Examples (Jupiter, Hyperliquid):</p>
+              <ul className="list-disc pl-6 mt-1 space-y-1">
+                <li><strong>Speed Angle:</strong> "Get best swap prices in 1 second. No KYC, no waitlist. Start trading on Jupiter."</li>
+                <li><strong>Cost Angle:</strong> "Save 0.5-2% on every swap. Jupiter routes across all Solana DEXs automatically. Connect wallet."</li>
+                <li><strong>Simplicity Angle:</strong> "One click, best price. No manual DEX hopping. Swap with Jupiter now."</li>
+                <li><strong>Proof Angle:</strong> "$10B+ in swaps. Trusted by 500K+ traders. See why Jupiter is #1 on Solana."</li>
+              </ul>
+            </Web3Content>
 
-            <p className="mt-2 font-medium">GPU/Infra Examples:</p>
-            <ul className="list-disc pl-6 mt-1 space-y-1">
-              <li><strong>Speed Angle:</strong> "Deploy H100s in under 2 minutes. No contracts, no waitlists. Access [Your Product] now."</li>
-              <li><strong>Cost Angle:</strong> "Cut GPU costs by 90%. Enterprise-grade H100s at a fraction of AWS pricing. See pricing."</li>
-              <li><strong>Simplicity Angle:</strong> "Skip the DevOps complexity. Bare metal with root access, managed for you. Try [Your Product]."</li>
-              <li><strong>Scale Angle:</strong> "300K+ GPUs across 138 countries. Scale workloads without bottlenecks. Start building."</li>
-            </ul>
+            <Web3Content>
+              <p className="mt-2 font-medium">GPU/Infra Examples:</p>
+              <ul className="list-disc pl-6 mt-1 space-y-1">
+                <li><strong>Speed Angle:</strong> "Deploy H100s in under 2 minutes. No contracts, no waitlists. Access [Your Product] now."</li>
+                <li><strong>Cost Angle:</strong> "Cut GPU costs by 90%. Enterprise-grade H100s at a fraction of AWS pricing. See pricing."</li>
+                <li><strong>Simplicity Angle:</strong> "Skip the DevOps complexity. Bare metal with root access, managed for you. Try [Your Product]."</li>
+                <li><strong>Scale Angle:</strong> "300K+ GPUs across 138 countries. Scale workloads without bottlenecks. Start building."</li>
+              </ul>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 B2B SaaS CTA Examples:</strong></p>
@@ -176,7 +183,9 @@ export function Section3Content() {
             </Web2Callout>
             <p className="mt-3"><strong>Step 5: Internal Linking for Conversion Funnels</strong> — Pattern: Tier 3 (JTBD) → Tier 2 (Comparison) → Tier 1 (Category) → Product Page. Example: Article "How to Reduce AI Training Costs" (Tier 3): link "decentralized GPU platforms" → "Best Decentralized GPU Platforms" (Tier 1); "compared to AWS" → "AWS vs [Your Product] GPU Pricing" (Tier 2); "our case study with [Customer]" → case study with conversion CTA. Link placement: Within first 300 words link to most relevant bottom-of-funnel content; throughout body 3-5 contextual links; in CTA sections link to product or comparison content; avoid linking to other top-of-funnel content (keeps readers in conversion funnel).</p>
 
-            <p className="mt-2"><strong>Web3-Specific:</strong> Link to on-chain proof—Dune dashboards showing TVL, transaction volume, user growth. Example: "Jupiter processes $2B+ in weekly volume" → link to Dune dashboard. This builds trust because the data is independently verifiable.</p>
+            <Web3Content>
+              <p className="mt-2"><strong>Web3-Specific:</strong> Link to on-chain proof—Dune dashboards showing TVL, transaction volume, user growth. Example: "Jupiter processes $2B+ in weekly volume" → link to Dune dashboard. This builds trust because the data is independently verifiable.</p>
+            </Web3Content>
 
             <Web2Callout>
               <p><strong>Web2 Proof Links:</strong> Case studies, analyst reports (Gartner, Forrester), third-party reviews (G2, Capterra), customer testimonials, ROI calculators.</p>
