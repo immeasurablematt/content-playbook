@@ -8,6 +8,7 @@ export const SECTIONS = [
   { id: "email-marketing", title: "Email Marketing Framework", number: 7 },
   { id: "performance-reporting", title: "Performance Reporting & Analytics", number: 8 },
   { id: "team-collaboration", title: "Team Collaboration Patterns", number: 9 },
+  { id: "ai-production", title: "AI-Assisted Production Systems", number: 10 },
 ] as const;
 
 export type SectionId = (typeof SECTIONS)[number]["id"];

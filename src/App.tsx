@@ -10,6 +10,7 @@ import { Section5Content } from "@/sections/Section5";
 import { SectionEmailContent } from "@/sections/SectionEmail";
 import { SectionReportingContent } from "@/sections/SectionReporting";
 import { Section8Content } from "@/sections/Section8";
+import { Section10Content } from "@/sections/Section10";
 import { EcosystemProvider } from "@/context/EcosystemContext";
 import { EcosystemToggle } from "@/components/EcosystemToggle";
 import { ChevronDown } from "lucide-react";
@@ -24,6 +25,7 @@ const SECTION_COMPONENTS = [
   SectionEmailContent,
   SectionReportingContent,
   Section8Content,
+  Section10Content,
 ] as const;
 
 function Hero() {
