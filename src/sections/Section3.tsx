@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
@@ -15,10 +9,10 @@ export function Section3Content() {
         I built these briefs, creation processes, and optimization principles to force conversion-first thinking. Works across Web3 and Web2.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
-        <AccordionItem value="brief">
-          <AccordionTrigger>Content Brief Development (Pain Point SEO Method)</AccordionTrigger>
-          <AccordionContent>
+      <div className="mt-8 space-y-12">
+        <div id="brief" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Content Brief Development (Pain Point SEO Method)</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Traditional Brief Elements:</strong> Target keyword, word count, competing content analysis, outline.</p>
             <p className="mt-2"><strong>Pain Point SEO Brief Additions:</strong></p>
             <p><strong>Buying Intent Analysis:</strong> What problem is the searcher trying to solve? Where are they in the buying journey? What solution types are they comparing? What objections might they have? What would make them convert on this page?</p>
@@ -100,12 +94,12 @@ export function Section3Content() {
 
 ## Notes
 [Any additional context, competitive intel, or strategic considerations]`}</CodeBlock>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="creation">
-          <AccordionTrigger>Content Creation Process (Conversion-Optimized)</AccordionTrigger>
-          <AccordionContent>
+        <div id="creation" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Content Creation Process (Conversion-Optimized)</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Step 1: Research with Conversion Lens</strong> — Don't just research the topic. Research: What proof would convince this searcher? What objections need addressing? What competitor claims need countering? What unique data can we provide?</p>
             <p className="mt-3"><strong>Step 2: Outline for Conversion Journey</strong> — Traditional outline flows by topic logic. Conversion outline flows by persuasion logic.</p>
             <p className="mt-2 font-medium">Example: "AWS GPU Pricing vs [Your Product]" (Tier 2 Comparison)</p>
@@ -202,12 +196,12 @@ export function Section3Content() {
               <li>Is there friction to trial/demo? (Remove it.)</li>
               <li>Could a skeptical reader find reasons to convert?</li>
             </ul>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="optimization">
-          <AccordionTrigger>Content Optimization Principles</AccordionTrigger>
-          <AccordionContent>
+        <div id="optimization" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Content Optimization Principles</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Writing Style:</strong> Lead with concrete value, not philosophy; use specific numbers over vague claims; short paragraphs (2-3 sentences max); active voice, present tense; remove marketing jargon; no em dashes, minimal emojis.</p>
             <p className="mt-2"><strong>Structure:</strong> Frontload key information; use H2s that tell a complete story; include scannable lists and tables; break up long sections with visuals/CTAs; end with clear next action.</p>
             <p className="mt-2"><strong>Technical Depth:</strong> Match audience expertise level; include code examples where relevant; explain complex concepts simply; provide both overview and deep-dive options; link to technical documentation.</p>
@@ -216,9 +210,9 @@ export function Section3Content() {
             <p><strong>Specificity Builds Trust:</strong> Bad: "Significantly faster deployment". Good: "Deploy H100 clusters in 90 seconds vs 3-5 days with AWS".</p>
             <p><strong>Address Objections Proactively:</strong> Don't wait for reader to think of objections. Address them: "Concerned about decentralized reliability? Our 99.9% uptime across 138 countries exceeds most centralized providers."</p>
             <p><strong>Make Conversion Frictionless:</strong> Bad CTA: "Contact sales to learn more". Good CTA: "Start free trial (no credit card required, 5-minute setup)".</p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

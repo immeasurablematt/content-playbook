@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
@@ -15,10 +9,10 @@ export function Section4Content() {
         I developed this process to get customers to participate, run conversion-focused interviews, and structure case studies that support SEO and close deals. Works across Web3 protocols and Web2 SaaS—the structure is universal.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
-        <AccordionItem value="anatomy">
-          <AccordionTrigger>Anatomy of a Case Study</AccordionTrigger>
-          <AccordionContent>
+      <div className="mt-8 space-y-12">
+        <div id="anatomy" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Anatomy of a Case Study</h3>
+          <div className="mt-4 space-y-3">
             <p>Effective case studies follow a consistent shape: an impact card above the fold, then Challenge → Solution & Implementation → Results, with optional technical details and takeaways. This structure matches what converts (proof, numbers, quotes) and what supports content (Tier 1/2/3 keywords).</p>
             <p className="mt-3 font-medium">Standard structure:</p>
             <ol className="list-decimal pl-6 space-y-2">
@@ -30,12 +24,12 @@ export function Section4Content() {
               <li><strong>CTA</strong> — Try product, contact sales, or read related content.</li>
             </ol>
             <p className="mt-3 text-sm text-ink-muted">Use a cost comparison table (e.g. Provider | Total cost | vs baseline) when the story is cost-focused; it reinforces the key result and is highly scannable.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="participate">
-          <AccordionTrigger>Getting Customers to Participate</AccordionTrigger>
-          <AccordionContent>
+        <div id="participate" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Getting Customers to Participate</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>The challenge:</strong> Case studies are your strongest conversion content, but customers are busy, cautious about sharing competitive intel, or don't see the value. Strategy and incentives matter.</p>
             <p className="mt-2 font-medium">Customer identification:</p>
             <p><strong>Tier 1 (pursue actively):</strong> Impressive, quantifiable results; recognizable brands in your target market; customers who switched from a specific competitor; vocal advocates.</p>
@@ -59,12 +53,12 @@ Hi [Name],
 We'd like to feature [Company] in a case study about [specific achievement]: prominent placement, social promotion, backlink, content you can reuse. Draft for approval before publishing. Would 30 minutes next week work?`}</CodeBlock>
             <p className="mt-2 font-medium">Incentives:</p>
             <p>Monetary (credits, extended terms, discount). Exposure (webinar, guest post, social spotlight, press intro). Relationship (product access, beta, executive events). Match to company stage—startups often value exposure; enterprises often prefer relationship perks.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="interview">
-          <AccordionTrigger>Interview Guide (Phase-Based)</AccordionTrigger>
-          <AccordionContent>
+        <div id="interview" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Interview Guide (Phase-Based)</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Why phase-based:</strong> Structure the call so you get company context, pre-product situation, decision process, implementation, and results in order. That maps directly to Challenge → Solution → Results in the case study. Always get full name, role, company, and consent to quote.</p>
             <p className="mt-2 font-medium">Intro (2–3 min)</p>
             <ul className="list-disc pl-6 space-y-0.5">
@@ -120,12 +114,12 @@ We'd like to feature [Company] in a case study about [specific achievement]: pro
 
             <p className="mt-3 font-medium">Conversion-specific (Pain Point SEO)</p>
             <p>Use case studies as proof for Tier 1/2/3 content. Ask: "If a company was comparing us to [competitor you replaced], what would you tell them?" "What's the one metric that made this decision a no-brainer?" "What would you say to someone hesitant about [common objection]?" Use answers in comparison content, key results, and objection handling.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="template">
-          <AccordionTrigger>Case Study Template (Conversion-Optimized)</AccordionTrigger>
-          <AccordionContent>
+        <div id="template" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Case Study Template (Conversion-Optimized)</h3>
+          <div className="mt-4 space-y-3">
             <p className="font-medium">Quick reference (matches Anatomy):</p>
             <ul className="list-disc pl-6 mt-1 space-y-0.5 text-sm">
               <li><strong>Impact card:</strong> [Customer] | [Industry]. The Challenge: [one sentence]. Key Results: bullets (cost %, time, scale). Hero quote. CTA.</li>
@@ -224,10 +218,10 @@ Smart contract architecture, Hyperliquid API integration, risk management parame
 Deep liquidity transforms user experience. On-chain execution can match CEX quality. Integration complexity was lower than expected.
 [Related: "Best Decentralized Perpetual Exchanges" | "Hyperliquid vs dYdX Comparison"]`}</CodeBlock>
             </Web3Content>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-      </Accordion>
+      </div>
     </>
   );
 }

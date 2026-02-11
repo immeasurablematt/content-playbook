@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
 
@@ -14,10 +8,8 @@ export function Section5Content() {
         I built this social playbook working across Crypto Twitter, Discord, Telegram, and Web2 platforms. The engagement principles are universal—the channels and culture differ.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
-        <AccordionItem value="overview">
-          <AccordionTrigger>Social Media Playbook (Overview)</AccordionTrigger>
-          <AccordionContent>
+      <div className="mt-8 space-y-12">
+        <div id="overview" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Social Media Playbook (Overview)</h3><div className="mt-4 space-y-3">
             <p>In my experience, Web3 social strategy centers on Crypto Twitter (CT), Discord, Telegram, and increasingly Farcaster. Web2 leans LinkedIn, Instagram, and TikTok. The structure below works for both—just swap the platforms and adjust for culture (CT = meme-heavy and fast-paced; LinkedIn = professional and polished).</p>
             <p className="mt-2">Map social threads to your messaging matrix regardless of platform: Post 1 = pain point (hook); Posts 2–3 = capability and feature function (education); Post 4 = vision of use (emotional close). Track which pain points drive the most engagement and double down.</p>
 
@@ -35,12 +27,9 @@ export function Section5Content() {
             <Web2Callout>
               <p><strong>Web2 Platform Priority:</strong> LinkedIn (B2B, thought leadership, recruiting), Instagram (B2C, visual brands, lifestyle), TikTok (B2C, viral potential, younger demos), YouTube (tutorials, long-form content, SEO), Twitter/X (real-time news, customer support, brand personality), webinars and podcasts (trust-building, lead gen).</p>
             </Web2Callout>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="content-mix">
-          <AccordionTrigger>Content Mix %</AccordionTrigger>
-          <AccordionContent>
+        <div id="content-mix" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Content Mix %</h3><div className="mt-4 space-y-3">
             <p><strong>Purpose</strong> — Allocate share of voice across content types so the feed isn't all promo or all fluff. Adjust by platform and goal; revisit quarterly.</p>
             <p className="mt-3 font-medium">Example mix (starting point—adjust for platform culture):</p>
             <ul className="list-disc pl-6 space-y-1">
@@ -54,12 +43,9 @@ export function Section5Content() {
               <p><strong>Web2 Content Mix Note:</strong> B2B tends toward 50%+ educational (whitepapers, webinars, case studies), less meme/personality. B2C consumer brands lean harder into personality (25–30%) and engagement (35–40%).</p>
             </Web2Callout>
             <p className="mt-3"><strong>How to set and adjust:</strong> Start with the mix above; measure engagement rate, clicks, and conversions by type. If promo underperforms, test more value-first hooks. If educational gets no action, add clearer CTAs. Document your chosen % in the playbook and review each quarter.</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="schedule">
-          <AccordionTrigger>Posting Schedule & Cadence</AccordionTrigger>
-          <AccordionContent>
+        <div id="schedule" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Posting Schedule & Cadence</h3><div className="mt-4 space-y-3">
             <p><strong>Purpose</strong> — Consistency beats random bursts. Define minimum frequency and ideal times so content is batched and predictable.</p>
             <p className="mt-3 font-medium">Guidelines:</p>
             <ul className="list-disc pl-6 space-y-1">
@@ -73,12 +59,9 @@ export function Section5Content() {
             <Web2Callout>
               <p><strong>Web2 Posting Cadence:</strong> LinkedIn 3–5/week (M/W/F best), Instagram 4–7/week (daily stories + 3–4 feed posts), TikTok daily for algorithm, YouTube 1–2/week (consistency over volume), Twitter/X 3–10/day depending on brand.</p>
             </Web2Callout>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="kol">
-          <AccordionTrigger>KOL Collaboration Strategy (Web3-Specific)</AccordionTrigger>
-          <AccordionContent>
+        <div id="kol" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">KOL Collaboration Strategy (Web3-Specific)</h3><div className="mt-4 space-y-3">
             <Web3Content>
               <p><strong>What I've learned about Web3 KOLs:</strong> Key Opinion Leaders (KOLs) in crypto have outsized influence—a single thread from a respected trader can drive millions in volume. Unlike Web2 influencers (follower count = value), Web3 KOLs are valued for alpha quality and trust.</p>
 
@@ -108,12 +91,9 @@ export function Section5Content() {
             <Web2Callout>
               <p><strong>Web2 Influencer Marketing:</strong> Instagram/TikTok influencers measured by follower count and engagement rate. Typical structure: flat fee per post/video, affiliate codes for tracking, long-term brand ambassador deals. FTC disclosure requirements stricter than Web3. ROI easier to measure (promo codes, affiliate links).</p>
             </Web2Callout>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="spaces">
-          <AccordionTrigger>Spaces & AMAs (Web3 Community Engagement)</AccordionTrigger>
-          <AccordionContent>
+        <div id="spaces" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Spaces & AMAs (Web3 Community Engagement)</h3><div className="mt-4 space-y-3">
             <Web3Content>
               <p><strong>Why Spaces/AMAs matter in Web3:</strong> Real-time audio builds trust faster than text. I've found that a single well-run Space can generate more community goodwill than 50 tweets. Also creates content to clip and repurpose.</p>
 
@@ -138,12 +118,9 @@ export function Section5Content() {
             <Web2Callout>
               <p><strong>Web2 Live Event Equivalents:</strong> Webinars (B2B lead gen, 30-60 min structured presentations with Q&A), Instagram/TikTok Lives (B2C, product launches, behind-the-scenes), LinkedIn Lives (thought leadership, panel discussions), YouTube livestreams (long-form, tutorials, gaming).</p>
             </Web2Callout>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="engagement">
-          <AccordionTrigger>Reply Guy / Engagement Playbook</AccordionTrigger>
-          <AccordionContent>
+        <div id="engagement" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Reply Guy / Engagement Playbook</h3><div className="mt-4 space-y-3">
             <p><strong>Purpose</strong> — Turn replies and mentions into a repeatable process: who responds, when, how, and when to escalate. "Reply guy" = the voice that shows up in comments and DMs in brand voice. In Web3, this is critical—CT reply guy culture rewards witty, fast, authentic responses.</p>
 
             <p className="mt-3 font-medium">Core rules (adapted for Web3 vs Web2):</p>
@@ -160,12 +137,9 @@ export function Section5Content() {
             </Web2Callout>
 
             <p className="mt-3">Template: "Reply SLA: [X] hours. Owner: [name]. Escalate: [list] → [owner]. Proactive: [X] comments per week in [channels/accounts]. CT engagement: [X] replies/day to community and KOLs."</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="per-stage">
-          <AccordionTrigger>Per-Stage Content Plan</AccordionTrigger>
-          <AccordionContent>
+        <div id="per-stage" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Per-Stage Content Plan</h3><div className="mt-4 space-y-3">
             <p><strong>Purpose</strong> — Align social content with the funnel (see Content Funnel Map in Section 1). Each stage has different formats and CTAs. The structure works for both Web3 and Web2—just swap the examples and platforms.</p>
             <Web3Content>
               <p className="mt-3 font-medium">By stage (Web3 primary examples):</p>
@@ -195,9 +169,8 @@ export function Section5Content() {
             </Web2Callout>
 
             <p className="mt-3">Map your content mix % to these stages (e.g. most educational = awareness/consideration; most promo = decision). Per-stage plan should match the Full-Funnel Content Map in Section 1.</p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+        </div></div>
+      </div>
     </>
   );
 }

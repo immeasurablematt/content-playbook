@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
 
@@ -14,10 +8,10 @@ export function Section8Content() {
         I built these systems and workflows working across Web3 protocols and Web2 SaaS teams. The roles adapt (add DevRel, Community Manager for Web3), but the flow is universal.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
-        <AccordionItem value="flow">
-          <AccordionTrigger>How It All Fits Together</AccordionTrigger>
-          <AccordionContent>
+      <div className="mt-8 space-y-12">
+        <div id="flow" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">How It All Fits Together</h3>
+          <div className="mt-4 space-y-3">
             <p>Everything in Sections 1–5 runs in sequence. Strategy sets the inputs; keywords and clusters feed the calendar; briefs and case studies feed production; social repurposes and engages. Define ownership and cadence at each step so nothing sits in a silo.</p>
             <p className="mt-3 font-medium">End-to-end flow:</p>
             <ol className="list-decimal pl-6 space-y-2">
@@ -29,12 +23,12 @@ export function Section8Content() {
               <li><strong>Social Media (Section 5)</strong> — Content mix, schedule, engagement, per-stage plan. Owner: one person (or rotation). Cadence: batch weekly/biweekly; repurpose every new Tier 1/2 article and case study into threads/posts; reply SLA per playbook.</li>
             </ol>
             <p className="mt-3 text-sm text-ink-muted">Keep a single source of truth for: keyword backlog (tier, cluster, status), content calendar (brief → draft → review → publish), case study pipeline (outreach → interview → draft → approval), and proof asset library (case studies, quotes, metrics by use case/competitor).</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="roles">
-          <AccordionTrigger>Roles & Responsibilities</AccordionTrigger>
-          <AccordionContent>
+        <div id="roles" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Roles & Responsibilities</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Strategist (or strategy + SEO)</strong></p>
             <ul className="list-disc pl-6 space-y-0.5">
               <li>Owns Content Strategy (Section 1) and Pain Point SEO (Section 2): goals, audience, messaging matrix, keyword research, tier classification, cluster plan.</li>
@@ -70,12 +64,12 @@ export function Section8Content() {
             </Web2Callout>
 
             <p className="mt-3"><strong>Feedback loop:</strong> Review conversion data monthly (conversions by article, by tier); share what's working; adjust CTA copy, proof elements, and prioritization. Evolve briefs and playbook from real results.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="handoff">
-          <AccordionTrigger>Briefing & Handoff</AccordionTrigger>
-          <AccordionContent>
+        <div id="handoff" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Briefing & Handoff</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>What the strategist provides before the writer starts:</strong></p>
             <ul className="list-disc pl-6 space-y-0.5">
               <li>Full brief using the Pain Point SEO brief template (Section 3): keyword, tier, intent analysis, conversion strategy, CTAs, proof elements, outline, internal linking.</li>
@@ -90,23 +84,23 @@ export function Section8Content() {
               <li>Approved draft → publish; then trigger repurposing (social) and internal link updates (other articles linking to this one).</li>
             </ol>
             <p className="mt-3"><strong>Timing:</strong> Brief due 1–2 weeks before writer start date so writer can clarify questions. Avoid "brief and draft due same week"—writer needs time to research and request proof assets.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="review">
-          <AccordionTrigger>Review & Approval Workflow</AccordionTrigger>
-          <AccordionContent>
+        <div id="review" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Review & Approval Workflow</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Stages:</strong> (1) Outline review (optional but recommended for Tier 1/2)—strategist checks conversion logic and CTA placement before full draft. (2) Draft review—strategist (and optionally stakeholder) reviews against brief and checklist.</p>
             <p className="mt-2"><strong>Who reviews:</strong> Strategist always. For Tier 1/2 or high-visibility pieces, add one stakeholder (product, marketing lead) for a single round; avoid design-by-committee.</p>
             <p className="mt-2"><strong>Criteria:</strong> Conversion strategy implemented; CTAs in place and contextual; proof elements included; product positioning matches tier; voice/tone aligned; internal links per brief.</p>
             <p className="mt-2"><strong>Timeline:</strong> Set expectations up front (e.g. 5 business days per round, max 2 rounds). Return feedback in one batch, not drip-fed.</p>
             <p className="mt-2"><strong>When blocked:</strong> Legal/PR concerns—ask what's addressable (anonymize, remove metrics, soften claim); escalate with clear ask; don't let draft sit without a path to yes or no.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="checklist">
-          <AccordionTrigger>Pre-Publish Checklist</AccordionTrigger>
-          <AccordionContent>
+        <div id="checklist" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Pre-Publish Checklist</h3>
+          <div className="mt-4 space-y-3">
             <p>Run this before publishing any article. Ties directly to Section 3 conversion strategy.</p>
             <ul className="list-disc pl-6 mt-2 space-y-0.5">
               <li>CTA placement matches brief (after intro, mid-content, after proof, end).</li>
@@ -118,12 +112,12 @@ export function Section8Content() {
               <li>Intro addresses searcher problem; objections addressed before final CTA.</li>
             </ul>
             <p className="mt-3 text-sm text-ink-muted">If any item is missing, fix before publish. This keeps conversion quality consistent and avoids "publish and forget."</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="cadences">
-          <AccordionTrigger>Cadences & Rituals</AccordionTrigger>
-          <AccordionContent>
+        <div id="cadences" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Cadences & Rituals</h3>
+          <div className="mt-4 space-y-3">
             <p>Build a rhythm so strategy, production, and learning stay aligned.</p>
             <p className="mt-3 font-medium">Weekly:</p>
             <ul className="list-disc pl-6 space-y-0.5">
@@ -143,12 +137,12 @@ export function Section8Content() {
               <li>Content mix (Section 5): adjust % by type if engagement or conversions warrant.</li>
               <li>Cluster phasing (Section 2): are you on plan (category → competitor → JTBD)? Double down on highest-converting clusters.</li>
             </ul>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="case-social">
-          <AccordionTrigger>Case Study & Social Workflows</AccordionTrigger>
-          <AccordionContent>
+        <div id="case-social" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Case Study & Social Workflows</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Case study pipeline:</strong></p>
             <ul className="list-disc pl-6 space-y-0.5">
               <li>Owner: strategist or dedicated PM. Outreach per Section 4 (tiers, timing, templates, incentives).</li>
@@ -162,9 +156,9 @@ export function Section8Content() {
               <li>Batching: weekly or biweekly batch of social content from recent blog + case studies; align to content mix % and per-stage plan (Section 5).</li>
               <li>Engagement: one person (or rotation) owns reply SLA and proactive commenting; escalate complaints or PR risk per Section 5 playbook.</li>
             </ul>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

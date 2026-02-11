@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
@@ -15,10 +9,10 @@ export function SectionReportingContent() {
         I built this reporting framework after seeing too many teams drown in vanity metrics. Track what drives conversions, revenue, and protocol health—not just traffic.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
-        <AccordionItem value="dashboard">
-          <AccordionTrigger>Pain Point SEO Metrics Dashboard</AccordionTrigger>
-          <AccordionContent>
+      <div className="mt-8 space-y-12">
+        <div id="dashboard" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Pain Point SEO Metrics Dashboard</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Purpose:</strong> Track content performance by what matters—conversions and revenue influence, not just traffic. This dashboard structure works for Web3 and Web2; swap the metrics based on your business model.</p>
 
             <p className="mt-3 font-medium">Core Metrics (Pain Point SEO Method):</p>
@@ -94,12 +88,12 @@ TVL Influenced: $843,200
 Ranking: #2 (up from #5 last month)
 Status: 🟢 Green (high conversion, ranking up)`}</CodeBlock>
             </Web3Content>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="zones">
-          <AccordionTrigger>Green/Yellow/Orange/Red Zone System</AccordionTrigger>
-          <AccordionContent>
+        <div id="zones" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Green/Yellow/Orange/Red Zone System</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>What I use:</strong> A simple color-coding system to quickly assess content performance. Traffic is NOT the primary input—conversion rate and business impact are.</p>
 
             <p className="mt-3 font-medium">Zone Definitions:</p>
@@ -143,12 +137,12 @@ Status: 🟢 Green (high conversion, ranking up)`}</CodeBlock>
             <Web2Callout>
               <p><strong>Web2 B2B Zone Tweaks:</strong> Green = {'>'} 5% MQL conversion (Tier 1/2), {'>'} 1% (Tier 3). Yellow = 2–5% (Tier 1/2). Measure pipeline $ influenced instead of just conversions—higher impact visibility to leadership.</p>
             </Web2Callout>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="success-metrics">
-          <AccordionTrigger>Content Success Metrics (4 Categories)</AccordionTrigger>
-          <AccordionContent>
+        <div id="success-metrics" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Content Success Metrics (4 Categories)</h3>
+          <div className="mt-4 space-y-3">
             <p>I organize success metrics into four buckets: SEO Performance, Engagement, Business Impact, and Efficiency. Track all four to get a complete picture.</p>
 
             <p className="mt-3 font-medium">1. SEO Performance Metrics</p>
@@ -197,12 +191,12 @@ Retention (still active 90d later): 68%`}</CodeBlock>
               <li><strong>Cost per Conversion:</strong> (Total content cost / Total conversions). Compare to paid acquisition cost (PPC, etc.).</li>
               <li><strong>ROI:</strong> (Revenue influenced / Content cost) × 100. Content ROI often beats paid channels 5–10x.</li>
             </ul>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="cadence">
-          <AccordionTrigger>Reporting Cadence (Weekly / Monthly / Quarterly)</AccordionTrigger>
-          <AccordionContent>
+        <div id="cadence" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Reporting Cadence (Weekly / Monthly / Quarterly)</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>Why cadence matters:</strong> Different metrics matter at different time horizons. Weekly = operations. Monthly = performance. Quarterly = strategy.</p>
 
             <p className="mt-3 font-medium">Weekly Reporting (Operational)</p>
@@ -275,12 +269,12 @@ Retention (still active 90d later): 68%`}</CodeBlock>
             <Web2Callout>
               <p><strong>Web2 B2B Quarterly Report Add:</strong> Marketing-sourced pipeline $ (how much opportunity pipeline came from content), Sales cycle impact (do content-engaged leads close faster?), Content-assisted deals (multi-touch attribution showing content influence on closed deals). Tie to company revenue targets.</p>
             </Web2Callout>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="attribution">
-          <AccordionTrigger>Attribution Models (Last-Touch vs Multi-Touch)</AccordionTrigger>
-          <AccordionContent>
+        <div id="attribution" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Attribution Models (Last-Touch vs Multi-Touch)</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>The challenge:</strong> Users rarely convert on first visit. They read multiple articles, visit from different channels, research over days or weeks. Which content gets credit?</p>
 
             <p className="mt-3 font-medium">Attribution Models I've Used:</p>
@@ -318,12 +312,12 @@ Retention (still active 90d later): 68%`}</CodeBlock>
             </Web2Callout>
 
             <p className="mt-3"><strong>Practical Advice:</strong> Start with last-touch. It's better than guessing. Upgrade to position-based when you have 6+ months of data and can invest in tracking setup.</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="tools">
-          <AccordionTrigger>Tools & Stack</AccordionTrigger>
-          <AccordionContent>
+        <div id="tools" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Tools & Stack</h3>
+          <div className="mt-4 space-y-3">
             <p><strong>What I use for reporting (Web3 and Web2):</strong></p>
 
             <p className="mt-3 font-medium">Core Analytics:</p>
@@ -354,9 +348,9 @@ Retention (still active 90d later): 68%`}</CodeBlock>
             </ul>
 
             <p className="mt-3 italic text-sm">Avoid over-tooling. Start with free tools (GSC, GA4, Sheets). Add paid tools only when you're blocked without them.</p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
@@ -16,10 +10,8 @@ export function Section1Content() {
         I built this framework across Web3 and Web2 projects to nail goals, audience, brand voice, messaging matrix, content funnel, and content pillars that actually drive conversions.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
-        <AccordionItem value="goals">
-          <AccordionTrigger>Goals & Objectives</AccordionTrigger>
-          <AccordionContent>
+      <div className="mt-8 space-y-12">
+        <div id="goals" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Goals & Objectives</h3><div className="mt-4 space-y-3">
             <p><strong>Primary Goal</strong> — One clear, top-level outcome (e.g. "Grow followers and increase engagement on [channel]," "Generate MQLs from organic content," "Establish thought leadership in [category]"). Everything else supports this.</p>
             <p className="mt-2"><strong>Specific Objectives (Time-Bound, Quantified)</strong> — Set 3-month (or quarter) objectives with numbers so you can measure progress and adjust. Base targets on historical data when available.</p>
             <p className="mt-2 font-medium">Example structure:</p>
@@ -29,24 +21,18 @@ export function Section1Content() {
             </ul>
             <p className="mt-2"><strong>Baseline / Historical Context</strong> — Document where you are now: current metric values, growth over the last 6–12 months, and why the chosen targets are realistic. Refer back when reporting.</p>
             <p className="mt-2"><strong>Template:</strong> Primary goal: [one sentence]. Objectives: (1) [Metric] from [current] to [target] by [date]; (2) [Metric] from [current] to [target]. Baseline: [source and numbers].</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="brand-voice">
-          <AccordionTrigger>Brand Voice & Tone</AccordionTrigger>
-          <AccordionContent>
+        <div id="brand-voice" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Brand Voice & Tone</h3><div className="mt-4 space-y-3">
             <p><strong>Definition</strong> — A short statement of who the brand sounds like (e.g. "Champion of decentralization and self-custody," "Irreverent and bold—like Deadpool," "Mentor, not hero: wise, battle-tested"). This shapes every piece of content.</p>
             <p className="mt-2"><strong>Purpose</strong> — Why this voice: cut through noise, differentiate from competitors, build community, make complex topics approachable, spark engagement.</p>
             <p className="mt-2"><strong>Core Voice Characteristics</strong> — 3–5 traits with one-line descriptions (e.g. Witty, Bold, Supportive, Pragmatic). Optional: tone scale (e.g. "If Wall Street is 1 and Deadpool is 10, we're 5–7.5").</p>
             <p className="mt-2"><strong>Do's and Don'ts</strong> — Do: [e.g. drop pop-culture refs, keep it conversational, sneak in subtle flexes]. Don't: [e.g. go full corporate, use stuffy terms, dry vibes].</p>
             <p className="mt-2"><strong>Branded Elements</strong> — Approved emoji, hashtags, or visual cues that stay consistent (e.g. 🟣💜 for a purple brand). Use sparingly but consistently.</p>
             <p className="mt-2">Align voice with your Audience Definition and Product Messaging Matrix so tone supports pain points and vision of use.</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="audience">
-          <AccordionTrigger>Audience Definition</AccordionTrigger>
-          <AccordionContent>
+        <div id="audience" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Audience Definition</h3><div className="mt-4 space-y-3">
             <Blockquote>
               You can't build a growth flywheel if you don't know who you're building for or why they can't live without your product. Skip this step and your marketing will be dry, generic, and ineffective.
             </Blockquote>
@@ -111,12 +97,9 @@ In the context of our product, success means: [Specific, measurable outcome they
             </Web2Callout>
 
             <p className="mt-2">Your product messaging matrix (below) should be adapted for these contexts, not built as a single static document.</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="messaging">
-          <AccordionTrigger>Product Messaging Matrix</AccordionTrigger>
-          <AccordionContent>
+        <div id="messaging" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Product Messaging Matrix</h3><div className="mt-4 space-y-3">
             <p><strong>Why it matters:</strong> I developed this approach because most marketing leads with features and benefits and skips the middle layer—the pain and how users actually feel it. Without that, there's no "aha" moment and no opening for a decision. This approach forces pain-first, user-language messaging.</p>
             <p className="mt-3"><strong>The structure:</strong></p>
             <pre className="my-3 rounded-lg border border-stone-200 bg-stone-50 p-3 font-mono text-sm">PAIN POINT → CAPABILITY → FEATURE FUNCTION → VISION OF USE → BENEFIT</pre>
@@ -221,12 +204,9 @@ In the context of our product, success means: [Specific, measurable outcome they
               <li><strong>Sales:</strong> Pain opens discovery; capability qualifies; vision of use closes.</li>
             </ul>
             <p className="mt-2 text-sm text-ink-muted">Track what resonates (which pain points, which visions get shared) and iterate the matrix from real feedback.</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="funnel-map">
-          <AccordionTrigger>Content Funnel Map</AccordionTrigger>
-          <AccordionContent>
+        <div id="funnel-map" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Content Funnel Map</h3><div className="mt-4 space-y-3">
             <p><strong>Purpose</strong> — Map content types and goals to each stage of the buyer journey so every asset has a clear role and success metric. Use this to plan campaigns, assign KPIs, and avoid creating content that doesn't move people toward conversion.</p>
             <p className="mt-3"><strong>Funnel stages (definitions):</strong></p>
             <ul className="list-disc pl-6 space-y-1">
@@ -252,12 +232,9 @@ In the context of our product, success means: [Specific, measurable outcome they
               </tbody>
             </table>
             <p className="mt-3">Align this map with your Content Pillar Architecture and Product Messaging Matrix: pain points and visions of use can be mapped to stages (e.g. pain = awareness/consideration, vision of use = decision).</p>
-          </AccordionContent>
-        </AccordionItem>
+        </div></div>
 
-        <AccordionItem value="pillars">
-          <AccordionTrigger>Content Pillar Architecture</AccordionTrigger>
-          <AccordionContent>
+        <div id="pillars" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Content Pillar Architecture</h3><div className="mt-4 space-y-3">
             <p><strong>Overview:</strong> Content pillars organize your content into strategic clusters that drive conversions, not just topical coverage. The key is structuring clusters by buying intent, not just subject matter.</p>
             <p className="mt-3"><strong>Hub & Spoke Model:</strong> Hub Page = comprehensive guide targeting primary keyword. Spoke Pages = supporting content targeting related keywords. Internal Linking = systematic cross-linking between hub and spoke. Conversion Path = CTAs placed strategically throughout cluster.</p>
             <p className="mt-3 font-medium">Pain Point SEO priority:</p>
@@ -283,9 +260,8 @@ TOP OF FUNNEL (Only After Exhausting Above):
 ├─ Educational Keywords → Explainer Content
 └─ Awareness Keywords → Thought Leadership`}</CodeBlock>
             <p className="mt-3 italic">For the full priority formula, cluster templates, and implementation phasing, see Pain Point SEO.</p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+        </div></div>
+      </div>
     </>
   );
 }

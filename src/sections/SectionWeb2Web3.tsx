@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Blockquote } from "@/components/Blockquote";
 import { Web3Content } from "@/components/Web3Content";
 import { Web2Content } from "@/components/Web2Content";
@@ -19,11 +13,11 @@ export function SectionWeb2Web3Content() {
         In my experience working across both Web2 and Web3 ecosystems over the past decade, I've found that marketing objectives diverge significantly due to their underlying structures, business models, and user behaviors. Web2 is typically centralized, product-focused, and revenue-driven through subscriptions or ads, while Web3 is decentralized, community-oriented, and often tied to blockchain metrics like user engagement and network effects.
       </p>
 
-      <Accordion type="single" collapsible className="mt-8 w-full">
+      <div className="mt-8 space-y-12">
         <Web2Content>
-          <AccordionItem value="web2-objectives">
-            <AccordionTrigger>Web2 Marketing Objectives: The Traditional Funnel</AccordionTrigger>
-            <AccordionContent>
+          <div id="web2-objectives" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Web2 Marketing Objectives: The Traditional Funnel</h3>
+            <div className="mt-4 space-y-3">
               <p>I developed my initial framework in the Web2 world, where marketing revolves around a classic sales funnel (often AIDA: Awareness, Interest, Desire, Action) aimed at driving users from discovery to long-term loyalty. The ultimate goal is usually monetizing through a subscription-as-a-service (SaaS) model, where recurring revenue is king.</p>
 
               <h4 className="mt-4 font-semibold">Generating New Traffic and Awareness</h4>
@@ -51,14 +45,14 @@ export function SectionWeb2Web3Content() {
               </ul>
 
               <p className="mt-3"><strong>Challenges:</strong> High competition for attention, rising ad costs, and privacy regulations (e.g., GDPR) can complicate tracking.</p>
-            </AccordionContent>
-          </AccordionItem>
+            </div>
+          </div>
         </Web2Content>
 
         <Web3Content>
-          <AccordionItem value="web3-objectives">
-            <AccordionTrigger>Web3 Marketing Objectives: Ecosystem Growth and On-Chain Metrics</AccordionTrigger>
-            <AccordionContent>
+          <div id="web3-objectives" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Web3 Marketing Objectives: Ecosystem Growth and On-Chain Metrics</h3>
+            <div className="mt-4 space-y-3">
               <p>When I transitioned to Web3 marketing, I found that it flips the script—it's less about centralized sales and more about decentralized participation. Projects often rely on tokens, smart contracts, and community governance, so objectives center on network vitality rather than just revenue. Awareness is still foundational, but the real wins come from active, on-chain engagement that boosts token value and ecosystem health.</p>
 
               <h4 className="mt-4 font-semibold">Growing Awareness</h4>
@@ -84,13 +78,13 @@ export function SectionWeb2Web3Content() {
               </ul>
 
               <p className="mt-3"><strong>Challenges I've navigated:</strong> Volatility, regulatory uncertainty, and "crypto winters" can tank metrics. Plus, metrics are public on-chain, so transparency is a double-edged sword.</p>
-            </AccordionContent>
-          </AccordionItem>
+            </div>
+          </div>
         </Web3Content>
 
-        <AccordionItem value="key-differences">
-          <AccordionTrigger>Key Differences and Strategic Implications</AccordionTrigger>
-          <AccordionContent>
+        <div id="key-differences" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Key Differences and Strategic Implications</h3>
+          <div className="mt-4 space-y-3">
             <p>Over the years, I've identified the critical distinctions that shape how I approach strategy in each ecosystem:</p>
 
             <table className="my-4 w-full border-collapse text-sm">
@@ -131,12 +125,12 @@ export function SectionWeb2Web3Content() {
             </table>
 
             <p className="mt-3"><strong>Overlaps I've leveraged:</strong> Both need awareness, but Web3 often borrows Web2 tactics (e.g., SEO for project sites) while adding crypto-specific ones like bounty programs. Hybrid "Web2.5" approaches are emerging (e.g., Reddit's NFTs for community engagement).</p>
-          </AccordionContent>
-        </AccordionItem>
+          </div>
+        </div>
 
-        <AccordionItem value="blending">
-          <AccordionTrigger>Strategic Implications: Blending Web2 and Web3</AccordionTrigger>
-          <AccordionContent>
+        <div id="blending" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Strategic Implications: Blending Web2 and Web3</h3>
+          <div className="mt-4 space-y-3">
             <Blockquote>
               In my experience, building a strategy for a specific project means thinking about blending elements—e.g., use Web2 funnels to onboard into Web3 ecosystems. The methodology is universal. The examples adapt.
             </Blockquote>
@@ -152,9 +146,9 @@ export function SectionWeb2Web3Content() {
             </ul>
 
             <p className="mt-3">The framework is universal. The channels, examples, and metrics shift based on your ecosystem. This playbook gives you both.</p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

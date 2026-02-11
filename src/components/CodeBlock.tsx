@@ -12,7 +12,7 @@ export function CodeBlock({ children, className, title }: Props) {
       {title && (
         <p className="mb-1 text-xs font-medium text-ink-muted">{title}</p>
       )}
-      <pre className="overflow-x-auto rounded-lg border border-stone-200 bg-stone-50 px-4 py-3 font-mono text-sm leading-relaxed text-ink">
+      <pre className="overflow-x-auto rounded-lg bg-code-bg px-4 py-3 font-mono text-sm leading-relaxed text-code-text">
         <code>{children}</code>
       </pre>
     </div>

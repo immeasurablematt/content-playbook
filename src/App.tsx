@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { TableOfContents } from "@/components/TableOfContents";
-import { SECTIONS, type SectionId } from "@/data/sections";
+import { useEffect, useState } from "react";
+import type { SectionId } from "@/data/sections";
 import { SectionWeb2Web3Content } from "@/sections/SectionWeb2Web3";
 import { Section1Content } from "@/sections/Section1";
 import { Section2Content } from "@/sections/Section2";
@@ -10,64 +9,23 @@ import { Section5Content } from "@/sections/Section5";
 import { SectionEmailContent } from "@/sections/SectionEmail";
 import { SectionReportingContent } from "@/sections/SectionReporting";
 import { Section8Content } from "@/sections/Section8";
-import { Section10Content } from "@/sections/Section10";
 import { EcosystemProvider } from "@/context/EcosystemContext";
-import { EcosystemToggle } from "@/components/EcosystemToggle";
-import { ChevronDown } from "lucide-react";
+import { ThreePaneLayout } from "@/components/layout/ThreePaneLayout";
+import type { ComponentType } from "react";
 
-const SECTION_COMPONENTS = [
-  SectionWeb2Web3Content,
-  Section1Content,
-  Section2Content,
-  Section3Content,
-  Section4Content,
-  Section5Content,
-  SectionEmailContent,
-  SectionReportingContent,
-  Section8Content,
-  Section10Content,
-] as const;
-
-function Hero() {
-  return (
-    <header className="relative flex min-h-[85vh] flex-col items-center justify-center px-6 pt-24 pb-16 text-center md:pt-32">
-      <div className="mx-auto max-w-3xl">
-        <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink md:text-5xl lg:text-6xl">
-          Content Marketing Playbook & Strategy
-        </h1>
-        <p className="mt-4 text-xl text-ink-muted md:text-2xl">Matthew Baggetta</p>
-        <p className="mt-6 max-w-xl mx-auto text-sm text-ink-muted leading-relaxed">
-          Everything below was developed over 10+ years as a content marketer and strategist across Web3 and Web2—from DeFi protocols to SaaS platforms. The methodology is universal. The native lens is Web3.
-        </p>
-        <div className="mt-12 flex justify-center">
-          <a
-            href={`#${SECTIONS[0].id}`}
-            className="flex flex-col items-center gap-1 text-ink-muted transition-colors hover:text-ink"
-            aria-label="Scroll to content"
-          >
-            <span className="text-sm">Explore</span>
-            <ChevronDown className="h-6 w-6 animate-bounce" />
-          </a>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="border-t border-stone-200 py-12">
-      <div className="mx-auto max-w-3xl px-6 text-center text-sm text-ink-muted">
-        <p>Content Marketing Playbook & Strategy</p>
-        <p className="mt-1">Matthew Baggetta</p>
-      </div>
-    </footer>
-  );
-}
+const SECTION_COMPONENTS: Record<SectionId, ComponentType> = {
+  "web2-vs-web3": SectionWeb2Web3Content,
+  "content-strategy": Section1Content,
+  "pain-point-seo": Section2Content,
+  "content-production": Section3Content,
+  "case-study": Section4Content,
+  "social-media": Section5Content,
+  "email-marketing": SectionEmailContent,
+  "performance-reporting": SectionReportingContent,
+  "team-collaboration": Section8Content,
+};
 
 export default function App() {
-  const [activeId, setActiveId] = useState<SectionId | null>(null);
-  const sectionRefs = useRef<Map<string, HTMLElement>>(new Map());
   const [gateChecked, setGateChecked] = useState(false);
 
   useEffect(() => {
@@ -80,75 +38,17 @@ export default function App() {
       .catch(() => setGateChecked(true));
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            const id = entry.target.id as SectionId;
-            if (SECTIONS.some((s) => s.id === id)) setActiveId(id);
-          }
-        }
-      },
-      { rootMargin: "-20% 0px -60% 0px", threshold: 0 }
-    );
-    sectionRefs.current.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
-  const setRef = (id: string) => (el: HTMLElement | null) => {
-    if (el) sectionRefs.current.set(id, el);
-  };
-
-  const scrollToSection = (id: SectionId) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   if (!gateChecked) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-stone-50">
-        <p className="text-sm text-ink-muted">Loading…</p>
+      <div className="flex min-h-screen items-center justify-center bg-warm-bg">
+        <p className="text-sm text-ink-muted">Loading...</p>
       </div>
     );
   }
 
   return (
     <EcosystemProvider>
-    <div className="min-h-screen">
-      <Hero />
-      <EcosystemToggle />
-      <main className="relative">
-        <div className="mx-auto max-w-3xl px-6 md:max-w-4xl lg:max-w-5xl">
-          <div className="lg:mr-64">
-            {SECTIONS.map(({ id, title, number }, i) => {
-              const Content = SECTION_COMPONENTS[i];
-              return (
-                <section
-                  key={id}
-                  id={id}
-                  ref={setRef(id)}
-                  className="scroll-mt-28 border-t border-stone-200 py-16 md:py-20"
-                >
-                  <div className="mx-auto max-w-3xl px-0">
-                    <span className="text-sm font-medium uppercase tracking-wider text-accent">
-                      Section {number}
-                    </span>
-                    <h2 className="mt-2 font-serif text-3xl font-semibold text-ink md:text-4xl">
-                      {title}
-                    </h2>
-                    <div className="mt-8 prose prose-stone max-w-none prose-headings:font-serif prose-headings:text-ink prose-p:text-ink/90 prose-li:text-ink/90 prose-strong:text-ink prose-table:text-sm">
-                      <Content />
-                    </div>
-                  </div>
-                </section>
-              );
-            })}
-          </div>
-        </div>
-        <TableOfContents activeId={activeId} onNavigate={scrollToSection} />
-      </main>
-      <Footer />
-    </div>
+      <ThreePaneLayout sectionComponents={SECTION_COMPONENTS} />
     </EcosystemProvider>
   );
 }

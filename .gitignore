@@ -6,3 +6,4 @@ dist
 .DS_Store
 content-playbook-microsite-v2
 content-playbook-microsite copy
+scripts/sync-notion.py
