@@ -2752,7 +2752,7 @@ You have a content engine that:
 
 **That's the system. That's the edge.**
 
-### Reddit Strategy & Community Engagement
+## SECTION 7: Reddit Strategy & Community Engagement
 
 **Why Reddit matters in 2026:** Reddit is the dark horse of organic reach. While everyone fights over Twitter/X algorithm changes and LinkedIn's professional echo chamber, Reddit users actively seek solutions to specific problems. Unlike other platforms, Reddit rewards genuine value over follower count or engagement baiting.
 
@@ -2920,7 +2920,7 @@ Instead of "Ask me anything," flip it:
 **The Reddit Multiplier Effect:**
 Unlike other platforms, Reddit content has incredible longevity. A valuable post can continue generating traffic and engagement for months or years. Google also indexes Reddit heavily, so SEO benefits compound over time.
 
-## SECTION 7: Email Marketing Framework
+## SECTION 8: Email Marketing Framework
 
 I've found that email marketing in Web3 is less central than in Web2, but still critical for onboarding, governance, and re-engagement. The principles are universal—the triggers and segmentation shift.
 Email in Web3 Context
@@ -3126,7 +3126,7 @@ Testing and optimization:
 **[WEB2 EQUIVALENT]**
 **Web2 Email Best Practices:** Personalization (merge tags for name, company, behavior), dynamic content (show different content blocks per segment), automated workflows (trigger-based, lifecycle), A/B testing at scale (subject line, CTA, design), compliance (CAN-SPAM, GDPR), email validation (clean list regularly). Tools: SendGrid, Mailchimp, HubSpot, Klaviyo.
 ---
-## SECTION 8: Performance Reporting & Analytics
+## SECTION 9: Performance Reporting & Analytics
 
 I built this reporting framework after seeing too many teams drown in vanity metrics. Track what drives conversions, revenue, and protocol health—not just traffic.
 Pain Point SEO Metrics Dashboard
@@ -3425,7 +3425,7 @@ Reporting & Dashboards:
 - **Notion or Airtable:** Content calendar, keyword backlog, zone audit tracking. Lightweight project management.
 Avoid over-tooling. Start with free tools (GSC, GA4, Sheets). Add paid tools only when you're blocked without them.
 ---
-## SECTION 9: Team Collaboration Patterns
+## SECTION 10: Team Collaboration Patterns
 
 I built these systems and workflows working across Web3 protocols and Web2 SaaS teams. The roles adapt (add DevRel, Community Manager for Web3), but the flow is universal.
 How It All Fits Together
