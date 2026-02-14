@@ -2751,6 +2751,175 @@ You have a content engine that:
 - Produces video content that compounds across YouTube, LinkedIn, Twitter, Instagram
 
 **That's the system. That's the edge.**
+
+### Reddit Strategy & Community Engagement
+
+**Why Reddit matters in 2026:** Reddit is the dark horse of organic reach. While everyone fights over Twitter/X algorithm changes and LinkedIn's professional echo chamber, Reddit users actively seek solutions to specific problems. Unlike other platforms, Reddit rewards genuine value over follower count or engagement baiting.
+
+**Web3 vs Web2 Reddit Strategy:**
+
+**Web3 Reddit Approach:**
+- **r/CryptoCurrency (2.7M):** Mainstream crypto discussions, market sentiment, news
+- **r/ethereum (1.8M):** Technical discussions, protocol updates, developer community  
+- **r/DeFi (800K):** Yield strategies, protocol reviews, alpha sharing
+- **r/solana (400K):** Solana ecosystem, NFTs, gaming
+- **Niche protocol subreddits:** r/Uniswap, r/AAVE, r/Chainlink for specific protocols
+- **r/CryptoMoonShots (1.5M):** Higher risk, meme potential (approach carefully)
+
+**Web2 Reddit Approach:**
+- **r/entrepreneur (1M):** Startup stories, business advice, tool recommendations
+- **r/marketing (700K):** Campaign breakdowns, strategy discussions, tool reviews  
+- **r/startups (800K):** Growth tactics, fundraising, product launches
+- **r/SaaS (200K):** B2B software, pricing strategies, user acquisition
+- **Industry-specific subs:** r/webdev, r/digitalmarketing, r/sales
+
+**Content Framework That Works:**
+
+**1. The "Case Study + Lesson" Post (Best ROI)**
+Structure:
+```
+Title: "I spent $10K testing [strategy] across 5 Web3 protocols. Here's what actually worked:"
+
+Post:
+- Context: Why I ran this test
+- Method: Exactly what I did (screenshots/data)
+- Results: Numbers (engagement, conversions, costs)
+- Insights: 3-5 specific takeaways
+- Tools: What I used (with honest pros/cons)
+- Questions: What should I test next?
+```
+
+**Why it works:** Provides genuine value, shows actual data, invites discussion. Reddit users can smell marketing from miles away—this feels like community contribution.
+
+**2. The "Tool/Method Breakdown" (Authority Building)**
+```
+Title: "I've used [tool/strategy] for 18 months across Web3 marketing. Here's an honest breakdown:"
+
+Post:
+- Background: My experience level/context
+- What it does well: Specific use cases with examples
+- Where it falls short: Honest limitations/frustrations  
+- Comparison: vs alternatives (brief)
+- Best for: Ideal user profile
+- Pricing reality: Hidden costs, value assessment
+```
+
+**3. The "Ask Reddit" (Community Intelligence)**
+```
+Title: "What's your biggest frustration with [category] right now?"
+
+Post:
+- Your experience: Brief background
+- The pattern you're seeing: Specific problem
+- Your hypothesis: What you think is happening
+- The ask: Their perspective/experience
+- Value back: Promise to share aggregated insights
+```
+
+**Advanced Reddit Tactics:**
+
+**Cross-Subreddit Content Strategy:**
+Same core insight, different angles for different communities:
+
+**Core insight:** "Most crypto marketing fails because it talks features, not outcomes"
+
+- **r/CryptoCurrency:** "Why your favorite altcoin isn't pumping: Marketing breakdown"
+- **r/ethereum:** "Technical superiority ≠ adoption: Lessons from failed dApps"  
+- **r/marketing:** "What crypto taught me about product-market fit communication"
+- **r/entrepreneur:** "Why B2B SaaS can learn from crypto marketing"
+
+**The "Reverse AMA" Strategy:**
+Instead of "Ask me anything," flip it:
+- "I want to understand [problem] better. What's your experience?"
+- Aggregate responses into valuable content
+- Share insights back to community (builds reputation)
+- Use learnings for product development/content strategy
+
+**Reddit-Specific Success Metrics:**
+
+**Don't track typical social metrics. Reddit is different:**
+
+**Quality Metrics:**
+- Comment-to-upvote ratio (higher = better engagement)
+- Quality of comments (questions, follow-ups, shared experiences)
+- Cross-posts to other relevant subreddits (organic amplification)
+- DM inquiries about working together
+- Mentions in other posts/comments over time
+
+**Conversion Tracking:**
+- Traffic to website with reddit UTM parameters
+- Email signups from Reddit traffic (conversion rate typically 2-4x higher than social)
+- Demo requests/consultation bookings
+- GitHub stars/forks (for technical content)
+
+**Authority Building:**
+- Post karma growth in target subreddits
+- Recognition from moderators/community leaders
+- Invitations to participate in AMAs or community projects
+- Other users referencing your posts/insights
+
+**Reddit Content Calendar:**
+
+**Weekly cadence:**
+- **Monday:** Industry analysis/trend post (thought leadership)
+- **Wednesday:** Tool review/case study (practical value)  
+- **Friday:** Community question/discussion starter (engagement)
+
+**Monthly themes:**
+- Week 1: Strategy/big picture content
+- Week 2: Tactical/how-to content
+- Week 3: Tool/resource reviews
+- Week 4: Community insights/crowdsourced content
+
+**Subreddit-Specific Rules (Critical):**
+
+**Before posting ANYWHERE:**
+1. **Read the rules** (seriously—each sub is different)
+2. **Check recent posts** for similar content (avoid duplicates)
+3. **Lurk for 1-2 weeks** to understand culture and tone
+4. **Start with comments** before original posts (build credibility)
+
+**Common Reddit Marketing Mistakes:**
+- ❌ Posting same content across multiple subs simultaneously
+- ❌ Being too promotional too early
+- ❌ Not engaging with commenters on your posts
+- ❌ Arguing with critics instead of acknowledging feedback
+- ❌ Using obviously marketing-friendly language
+
+**✅ Reddit Best Practices:**
+- Genuine curiosity and questions in titles
+- Personal experience and specific examples
+- Honest assessments (including failures/limitations)
+- Active participation in comments
+- Value-first approach (help before ask)
+
+**Long-term Reddit Strategy:**
+
+**Months 1-2:** Pure value contribution
+- Comment thoughtfully on others' posts
+- Share insights without promotion
+- Build recognition in target communities
+
+**Months 3-4:** Strategic content creation
+- Original posts focused on insights/case studies
+- Minimal self-promotion (maybe bio link only)
+- Continue heavy comment engagement
+
+**Months 5+:** Thought leadership
+- Regular high-value content series
+- Community members start recognizing your expertise  
+- Strategic mentions of your work when genuinely relevant
+- Invitations to collaborate or contribute
+
+**Reddit Integration with Other Channels:**
+- Use Reddit insights to inform Twitter/LinkedIn content
+- Turn successful Reddit posts into newsletter content
+- Screenshot quality Reddit discussions for social proof
+- Use Reddit questions as YouTube/podcast topics
+
+**The Reddit Multiplier Effect:**
+Unlike other platforms, Reddit content has incredible longevity. A valuable post can continue generating traffic and engagement for months or years. Google also indexes Reddit heavily, so SEO benefits compound over time.
+
 ## SECTION 7: Email Marketing Framework
 
 I've found that email marketing in Web3 is less central than in Web2, but still critical for onboarding, governance, and re-engagement. The principles are universal—the triggers and segmentation shift.
