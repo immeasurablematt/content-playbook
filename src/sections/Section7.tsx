@@ -1,4 +1,3 @@
-import { Accordion } from "@/components/Accordion";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
@@ -14,8 +13,9 @@ export function Section7Content() {
         <div id="web3-vs-web2-reddit" className="scroll-mt-header pb-10 border-b border-stone-200">
           <h3 className="font-serif text-2xl font-semibold text-ink">Web3 vs Web2 Reddit Strategy</h3>
           <div className="mt-6 grid lg:grid-cols-2 gap-8">
-            <Web3Content title="Web3 Reddit Approach">
+            <Web3Content>
               <div className="space-y-4">
+                <h4 className="font-semibold text-ink">Web3 Reddit Approach</h4>
                 <div>
                   <p className="font-semibold text-ink">Top Subreddits:</p>
                   <ul className="mt-2 space-y-1 text-sm">
@@ -29,8 +29,9 @@ export function Section7Content() {
               </div>
             </Web3Content>
 
-            <Web2Callout title="Web2 Reddit Approach">
+            <Web2Callout>
               <div className="space-y-4">
+                <h4 className="font-semibold text-ink">Web2 Reddit Approach</h4>
                 <div>
                   <p className="font-semibold text-ink">Top Subreddits:</p>
                   <ul className="mt-2 space-y-1 text-sm">
@@ -49,18 +50,15 @@ export function Section7Content() {
         <div id="content-frameworks" className="scroll-mt-header pb-10 border-b border-stone-200">
           <h3 className="font-serif text-2xl font-semibold text-ink">Content Frameworks That Work</h3>
           
-          <Accordion
-            items={[
-              {
-                title: "1. The 'Case Study + Lesson' Post (Best ROI)",
-                content: (
-                  <div className="space-y-4">
-                    <p><strong>Why it works:</strong> Provides genuine value, shows actual data, invites discussion. Reddit users can smell marketing from miles away—this feels like community contribution.</p>
-                    
-                    <div className="bg-stone-50 p-4 rounded-lg">
-                      <p className="font-semibold mb-2">Structure:</p>
-                      <CodeBlock 
-                        code={`Title: "I spent $10K testing [strategy] across 5 Web3 protocols. Here's what actually worked:"
+          <div className="mt-6 space-y-8">
+            <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
+              <h4 className="font-semibold text-ink mb-3">1. The "Case Study + Lesson" Post (Best ROI)</h4>
+              <p className="mb-4"><strong>Why it works:</strong> Provides genuine value, shows actual data, invites discussion. Reddit users can smell marketing from miles away—this feels like community contribution.</p>
+              
+              <div className="bg-white p-4 rounded border">
+                <p className="font-semibold mb-2">Structure:</p>
+                <CodeBlock>
+{`Title: "I spent $10K testing [strategy] across 5 Web3 protocols. Here's what actually worked:"
 
 Post:
 - Context: Why I ran this test  
@@ -69,18 +67,14 @@ Post:
 - Insights: 3-5 specific takeaways
 - Tools: What I used (with honest pros/cons)
 - Questions: What should I test next?`}
-                        language="text" 
-                      />
-                    </div>
-                  </div>
-                )
-              },
-              {
-                title: "2. The 'Tool/Method Breakdown' (Authority Building)",
-                content: (
-                  <div className="space-y-4">
-                    <CodeBlock 
-                      code={`Title: "I've used [tool/strategy] for 18 months across Web3 marketing. Here's an honest breakdown:"
+                </CodeBlock>
+              </div>
+            </div>
+
+            <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
+              <h4 className="font-semibold text-ink mb-3">2. The "Tool/Method Breakdown" (Authority Building)</h4>
+              <CodeBlock>
+{`Title: "I've used [tool/strategy] for 18 months across Web3 marketing. Here's an honest breakdown:"
 
 Post:
 - Background: My experience level/context
@@ -89,17 +83,13 @@ Post:
 - Comparison: vs alternatives (brief)
 - Best for: Ideal user profile
 - Pricing reality: Hidden costs, value assessment`}
-                      language="text" 
-                    />
-                  </div>
-                )
-              },
-              {
-                title: "3. The 'Ask Reddit' (Community Intelligence)",
-                content: (
-                  <div className="space-y-4">
-                    <CodeBlock 
-                      code={`Title: "What's your biggest frustration with [category] right now?"
+              </CodeBlock>
+            </div>
+
+            <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
+              <h4 className="font-semibold text-ink mb-3">3. The "Ask Reddit" (Community Intelligence)</h4>
+              <CodeBlock>
+{`Title: "What's your biggest frustration with [category] right now?"
 
 Post:
 - Your experience: Brief background
@@ -107,13 +97,9 @@ Post:
 - Your hypothesis: What you think is happening
 - The ask: Their perspective/experience
 - Value back: Promise to share aggregated insights`}
-                      language="text" 
-                    />
-                  </div>
-                )
-              }
-            ]}
-          />
+              </CodeBlock>
+            </div>
+          </div>
         </div>
 
         <div id="subreddit-selection" className="scroll-mt-header pb-10 border-b border-stone-200">
@@ -265,8 +251,8 @@ Post:
 
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
               <h4 className="font-semibold text-blue-900 mb-3">Twitter Thread Template</h4>
-              <CodeBlock 
-                code={`"This Reddit user made $100K in <12 months.
+              <CodeBlock>
+{`"This Reddit user made $100K in <12 months.
 
 Here's the entire playbook:
 
@@ -295,8 +281,7 @@ This founder did the opposite:
 Credit: u/founder_name on Reddit
 
 What's the best SaaS advice you've received?"`}
-                language="text" 
-              />
+              </CodeBlock>
             </div>
           </div>
         </div>

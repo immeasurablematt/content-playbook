@@ -52,6 +52,14 @@ export const SUBSECTION_MAP: Record<SectionId, Subsection[]> = {
     { id: "engagement", title: "Engagement Playbook" },
     { id: "per-stage", title: "Per-Stage Content" },
   ],
+  "reddit-strategy": [
+    { id: "web3-vs-web2-reddit", title: "Web3 vs Web2 Reddit Strategy" },
+    { id: "content-frameworks", title: "Content Frameworks That Work" },
+    { id: "subreddit-selection", title: "Strategic Subreddit Selection" },
+    { id: "execution-framework", title: "Weekly Execution Framework" },
+    { id: "results-metrics", title: "Real Results & Success Metrics" },
+    { id: "content-repurposing", title: "Content Repurposing System" },
+  ],
   "email-marketing": [
     { id: "context", title: "Email in Context" },
     { id: "onboarding", title: "Onboarding Sequences" },
