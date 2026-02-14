@@ -6,6 +6,7 @@ import { Section2Content } from "@/sections/Section2";
 import { Section3Content } from "@/sections/Section3";
 import { Section4Content } from "@/sections/Section4";
 import { Section5Content } from "@/sections/Section5";
+import { Section7Content } from "@/sections/Section7";
 import { SectionEmailContent } from "@/sections/SectionEmail";
 import { SectionReportingContent } from "@/sections/SectionReporting";
 import { Section8Content } from "@/sections/Section8";
@@ -20,6 +21,7 @@ const SECTION_COMPONENTS: Record<SectionId, ComponentType> = {
   "content-production": Section3Content,
   "case-study": Section4Content,
   "social-media": Section5Content,
+  "reddit-strategy": Section7Content,
   "email-marketing": SectionEmailContent,
   "performance-reporting": SectionReportingContent,
   "team-collaboration": Section8Content,
