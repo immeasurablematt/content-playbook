@@ -1,3 +1,4 @@
+import { Blockquote } from "@/components/Blockquote";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
 
@@ -137,6 +138,25 @@ export function Section8Content() {
               <li>Content mix (Section 5): adjust % by type if engagement or conversions warrant.</li>
               <li>Cluster phasing (Section 2): are you on plan (category → competitor → JTBD)? Double down on highest-converting clusters.</li>
             </ul>
+          </div>
+        </div>
+
+        <div id="single-source-of-truth" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">Single Source of Truth</h3>
+          <div className="mt-4 space-y-3">
+            <Blockquote>
+              Without a single source of truth, keyword work gets duplicated, briefs get lost, case studies stall in limbo, and nobody knows what's published vs in draft. This is the operational backbone of the whole system.
+            </Blockquote>
+            <p>Maintain one document or workspace (Notion, Airtable, or Sheets) covering all four of these:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Keyword backlog</strong> — tier classification (1/2/3), cluster assignment, status (not started / brief in progress / in draft / published). Visible to strategist and writers at all times.</li>
+              <li><strong>Content calendar</strong> — brief → draft → review → publish pipeline with owners and due dates. Briefs due 1–2 weeks before writer start. No brief, no assignment.</li>
+              <li><strong>Case study pipeline</strong> — outreach → interview scheduled → draft in review → client approval → published. Pipeline review monthly. Target 3× the case studies you need per quarter in active outreach.</li>
+              <li><strong>Proof asset library</strong> — completed case studies tagged by: chain, protocol category (DEX, lending, L2, infra, governance), on-chain metric type (TVL, DAUs, tx volume, wallet retention), and competitor displaced. KOL quotes, Dune dashboard links, and benchmark data accessible to writers when briefing.</li>
+            </ul>
+            <Web3Content>
+              <p className="mt-3"><strong>Web3-specific additions:</strong> Tag case studies with which on-chain metrics they demonstrate (TVL growth, slippage reduction, DAU lift). Link to live Dune or DeFiLlama dashboards for independent verification. Writers can pull these live data points directly into briefs instead of requesting client-side data every time.</p>
+            </Web3Content>
           </div>
         </div>
 

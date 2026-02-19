@@ -14,6 +14,37 @@ export function Section5Content() {
             <p className="mt-2">Map social threads to your messaging matrix regardless of platform: Post 1 = pain point (hook); Posts 2–3 = capability and feature function (education); Post 4 = vision of use (emotional close). Track which pain points drive the most engagement and double down.</p>
 
             <Web3Content>
+              <h4 className="mt-4 font-semibold">Thread Structure (Mapped to Messaging Matrix)</h4>
+              <table className="my-3 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-200">
+                    <th className="py-2 text-left font-medium">Post</th>
+                    <th className="py-2 text-left font-medium">Matrix element</th>
+                    <th className="py-2 text-left font-medium">CT example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">Post 1</td>
+                    <td className="py-2">Pain point (hook)</td>
+                    <td className="py-2">"You spot a play on Solana but you're out of SOL for gas. The opportunity slips by while you're scrambling."</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">Posts 2–3</td>
+                    <td className="py-2">Capability + feature function (education)</td>
+                    <td className="py-2">How the unified gas tank works across 36 chains; one USDC deposit covers all transactions automatically</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">Post 4</td>
+                    <td className="py-2">Vision of use (emotional close)</td>
+                    <td className="py-2">"You execute immediately. Your timing is perfect. Half of CT is still scrambling." → CTA: connect wallet</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="mt-2 text-sm text-ink-muted">Track which pain points drive the most engagement and double down. In a bull market, lead with speed and opportunity. In a bear, lead with reliability and fundamentals. Update thread structures when market sentiment shifts significantly.</p>
+            </Web3Content>
+
+            <Web3Content>
               <p className="mt-3 font-medium">Web3 Platform Priority (what I've used):</p>
               <ul className="list-disc pl-6 space-y-0.5">
                 <li><strong>Crypto Twitter (CT):</strong> #1 for awareness, alpha sharing, community building. Fast, meme-driven, reply-guy culture.</li>

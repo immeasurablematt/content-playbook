@@ -10,6 +10,10 @@ import { Section7Content } from "@/sections/Section7";
 import { SectionEmailContent } from "@/sections/SectionEmail";
 import { SectionReportingContent } from "@/sections/SectionReporting";
 import { Section8Content } from "@/sections/Section8";
+import { SectionDistributionContent } from "@/sections/SectionDistribution";
+import { SectionBriefingContent } from "@/sections/SectionBriefing";
+import { SectionKolFlywheelContent } from "@/sections/SectionKolFlywheel";
+import { SectionCampaignOrchestrationContent } from "@/sections/SectionCampaignOrchestration";
 import { EcosystemProvider } from "@/context/EcosystemContext";
 import { ThreePaneLayout } from "@/components/layout/ThreePaneLayout";
 import type { ComponentType } from "react";
@@ -25,6 +29,10 @@ const SECTION_COMPONENTS: Record<SectionId, ComponentType> = {
   "email-marketing": SectionEmailContent,
   "performance-reporting": SectionReportingContent,
   "team-collaboration": Section8Content,
+  "distribution-strategy": SectionDistributionContent,
+  "briefing-handoff": SectionBriefingContent,
+  "kol-flywheel": SectionKolFlywheelContent,
+  "campaign-orchestration": SectionCampaignOrchestrationContent,
 };
 
 export default function App() {

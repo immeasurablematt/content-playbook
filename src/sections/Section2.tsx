@@ -139,6 +139,9 @@ Intent Tier Multipliers:
 - JTBD Keywords: 2.0
 - Informational: 0.5`}</CodeBlock>
             <p className="mt-2">This formula systematically deprioritizes high-volume, low-intent keywords that traditional SEO would chase.</p>
+            <Web3Content>
+              <p className="mt-2 text-sm text-ink-muted"><strong>Web3 note on CPC:</strong> Crypto keyword CPCs can be volatile and inflated by exchange advertising budgets. Cross-check CPC signals against community language and BD feedback — don't rely on CPC alone. Also check CT: what terms do community members use when recommending a protocol? This is often more reliable signal than tool-reported CPC in Web3.</p>
+            </Web3Content>
           </div>
         </div>
 
@@ -200,6 +203,22 @@ Intent Tier Multipliers:
             <p><strong>Critical shift in metrics:</strong> Traditional SEO tracks traffic, rankings, and domain authority. Pain Point SEO tracks conversions by article, conversion rate by keyword tier, and revenue influenced by content.</p>
             <p className="mt-2"><strong>What to track in Google Analytics:</strong> Set up events for product signups from blog posts, demo requests from specific articles, free trial starts, and contact form submissions from content. Use last-click (and optionally first-click) attribution.</p>
             <p className="mt-2"><strong>Key insight:</strong> The article ranked 16th for traffic can generate the most conversions. Prioritize by conversion rank, not traffic rank.</p>
+            <Web3Content>
+              <p className="mt-3 font-medium">Web3 Conversion Events to Track (set up UTM parameters from day one):</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>Wallet connects from blog CTAs</li>
+                <li>Discord/Telegram joins from content</li>
+                <li>On-chain transactions from content-referred sessions (cross-reference with Dune where possible)</li>
+                <li>Inbound BD inquiries mentioning content</li>
+              </ul>
+              <p className="mt-3"><strong>Optimization matrix for Web3:</strong></p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>High traffic + low wallet connects:</strong> Sharpen CTAs to wallet connect language, add on-chain proof, strengthen protocol positioning</li>
+                <li><strong>Low traffic + high wallet connects:</strong> Improve content to rank higher, build cluster around this article — this is your most valuable piece</li>
+                <li><strong>High traffic + high wallet connects:</strong> Maintain, use as primary internal link destination, replicate format across similar keywords</li>
+                <li><strong>Low traffic + low wallet connects:</strong> Deprioritize; redirect to stronger content or archive after 6 months</li>
+              </ul>
+            </Web3Content>
             <p className="mt-3 font-medium">Optimization:</p>
             <ul className="list-disc pl-6 space-y-1 mt-1">
               <li><strong>High traffic + low conversions:</strong> Improve CTAs; add product mentions; consider archiving if top-of-funnel.</li>

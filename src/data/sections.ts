@@ -9,6 +9,10 @@ export const SECTIONS = [
   { id: "email-marketing", title: "Email Marketing Framework", number: 8 },
   { id: "performance-reporting", title: "Performance Reporting & Analytics", number: 9 },
   { id: "team-collaboration", title: "Team Collaboration Patterns", number: 10 },
+  { id: "distribution-strategy", title: "Distribution Strategy Beyond Social", number: 11 },
+  { id: "briefing-handoff", title: "Briefing, Handoff & Review", number: 12 },
+  { id: "kol-flywheel", title: "Content × KOL Integration Flywheel", number: 13 },
+  { id: "campaign-orchestration", title: "Cross-Channel Campaign Orchestration", number: 14 },
 ] as const;
 
 export type SectionId = (typeof SECTIONS)[number]["id"];
@@ -24,6 +28,10 @@ export const SECTION_COLORS: Record<number, string> = {
   8: "bg-orange-600",
   9: "bg-cyan-600",
   10: "bg-indigo-600",
+  11: "bg-fuchsia-600",
+  12: "bg-lime-600",
+  13: "bg-sky-600",
+  14: "bg-red-600",
 };
 
 export const SECTION_BORDER_COLORS: Record<number, string> = {
@@ -37,6 +45,10 @@ export const SECTION_BORDER_COLORS: Record<number, string> = {
   8: "border-orange-600",
   9: "border-cyan-600",
   10: "border-indigo-600",
+  11: "border-fuchsia-600",
+  12: "border-lime-600",
+  13: "border-sky-600",
+  14: "border-red-600",
 };
 
 export const SECTION_TEXT_COLORS: Record<number, string> = {
@@ -50,4 +62,8 @@ export const SECTION_TEXT_COLORS: Record<number, string> = {
   8: "text-orange-600",
   9: "text-cyan-600",
   10: "text-indigo-600",
+  11: "text-fuchsia-600",
+  12: "text-lime-600",
+  13: "text-sky-600",
+  14: "text-red-600",
 };

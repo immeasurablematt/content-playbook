@@ -51,6 +51,33 @@ Worth a conversation?`}</CodeBlock>
 Hi [Name],
 
 We'd like to feature [Company] in a case study about [specific achievement]: prominent placement, social promotion, backlink, content you can reuse. Draft for approval before publishing. Would 30 minutes next week work?`}</CodeBlock>
+            <Web3Content>
+              <h4 className="mt-4 font-semibold">Web3 Customer Identification Tiers</h4>
+              <p><strong>Tier 1 (pursue actively):</strong> Impressive on-chain results (TVL growth, DAU lift, tx volume spike), recognizable protocols or dApps, projects that migrated from a competing protocol, vocal community advocates or KOLs who use the product.</p>
+              <p className="mt-2"><strong>Tier 2 (opportunistic):</strong> Satisfied clients with solid results, smaller protocols willing to trade co-promotion for credibility, emerging or novel use cases that demonstrate ecosystem breadth.</p>
+              <p className="mt-2"><strong>Tier 3 (strategic):</strong> Well-known ecosystem partners or ecosystem-adjacent projects that validate a new vertical, use cases that map directly to highest-value keywords, projects with strong CT or Discord presence who can amplify the case study organically.</p>
+              <h4 className="mt-4 font-semibold">Web3 Outreach Timing</h4>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Best:</strong> 60–90 days after a meaningful on-chain milestone (TVL target hit, DAU record, protocol upgrade)</li>
+                <li><strong>Good:</strong> After a governance win, token launch, or ecosystem integration goes live</li>
+                <li><strong>Avoid:</strong> During TGE chaos, after a protocol incident or exploit, during bear market sentiment lows</li>
+              </ul>
+              <CodeBlock title="Web3 Value Exchange Template">{`Subject: Quick question + an opportunity
+
+Hi [Name], noticed [Protocol] just hit [on-chain milestone — TVL target, DAU record, etc.].
+We're putting together a case study to document how you got there.
+
+What's in it for you: co-branded promotion across our CT and newsletter,
+featured placement with backlinks, and visibility to our ecosystem network.
+
+Worth a quick call?`}</CodeBlock>
+              <h4 className="mt-4 font-semibold">Web3 Incentives</h4>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Exposure:</strong> CT thread promotion, Discord AMA feature, newsletter spotlight, co-branded content</li>
+                <li><strong>Ecosystem:</strong> Token allocation or whitelist consideration (where appropriate), governance participation support, introductions to ecosystem partners</li>
+              </ul>
+              <p className="mt-2 text-sm text-ink-muted">Match to project stage — early-stage protocols value ecosystem exposure and credibility; established protocols value co-promotion reach and amplification.</p>
+            </Web3Content>
             <p className="mt-2 font-medium">Incentives:</p>
             <p>Monetary (credits, extended terms, discount). Exposure (webinar, guest post, social spotlight, press intro). Relationship (product access, beta, executive events). Match to company stage—startups often value exposure; enterprises often prefer relationship perks.</p>
           </div>
@@ -166,6 +193,18 @@ What worked well. Lessons learned. Advice for others.
             <p>Target: "[Use case] case study", "[Industry] case study [category]", "[Metric/outcome] case study", "[Competitor] alternative case study". Link from comparison and JTBD articles to case studies; link from case studies back to product and comparison pages.</p>
 
             <Web3Content>
+              <h4 className="mt-4 font-semibold">Web3 Conversion-Specific Interview Questions</h4>
+              <p>Use these when the case study will be used as proof for Tier 1/2 SEO content:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>"If another protocol was comparing us to [competitor you replaced], what would you tell them?"</li>
+                <li>"What's the one on-chain metric that made this decision a no-brainer?"</li>
+                <li>"What would you say to someone hesitant about [common objection: smart contract risk, liquidity depth, chain support]?"</li>
+                <li>"How has this changed your DAU/MAU ratios or wallet retention?"</li>
+                <li>"Can we link to a Dune dashboard showing the impact?"</li>
+              </ul>
+            </Web3Content>
+
+            <Web3Content>
               <p className="mt-3 font-medium">Web3 Case Study Results (Key Metrics):</p>
               <ul className="list-disc pl-6 space-y-0.5">
                 <li><strong>TVL growth:</strong> "$50M → $200M TVL in 90 days" (with Dune dashboard link)</li>
@@ -217,6 +256,30 @@ Smart contract architecture, Hyperliquid API integration, risk management parame
 ## Key Takeaways
 Deep liquidity transforms user experience. On-chain execution can match CEX quality. Integration complexity was lower than expected.
 [Related: "Best Decentralized Perpetual Exchanges" | "Hyperliquid vs dYdX Comparison"]`}</CodeBlock>
+            </Web3Content>
+          </div>
+        </div>
+
+        <div id="case-study-seo" className="scroll-mt-header pb-10 border-b border-stone-200">
+          <h3 className="font-serif text-2xl font-semibold text-ink">SEO for Case Studies</h3>
+          <div className="mt-4 space-y-3">
+            <p>Case studies double as high-converting SEO content. Target keywords that capture evaluation-stage search intent.</p>
+            <p className="mt-2"><strong>Target keyword patterns:</strong></p>
+            <ul className="list-disc pl-6 space-y-0.5">
+              <li>"[Use case] case study"</li>
+              <li>"[Industry] case study [category]"</li>
+              <li>"[Metric/outcome] case study" — e.g. "TVL growth case study", "wallet retention case study"</li>
+              <li>"[Competitor] alternative case study"</li>
+            </ul>
+            <p className="mt-3"><strong>Internal linking:</strong> Link from comparison and JTBD articles to case studies. Link from case studies back to the client's product or comparison pages. Case studies are the strongest proof element for Tier 1 and Tier 2 keywords — they convert browsers into inquiries.</p>
+            <Web3Content>
+              <p className="mt-3"><strong>Web3 case study link targets:</strong></p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>From "Best [chain] DEX aggregator" (T1) → case study showing TVL growth after integration</li>
+                <li>From "[Competitor] vs [Protocol]" (T2) → case study showing protocol switch and results</li>
+                <li>From "How to reduce slippage on Solana" (T3) → case study showing slippage improvement</li>
+              </ul>
+              <p className="mt-2">Link from case studies to Dune dashboards for independent on-chain verification — this is a trust signal unique to Web3 that Web2 case studies can't replicate.</p>
             </Web3Content>
           </div>
         </div>

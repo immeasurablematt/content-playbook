@@ -17,6 +17,19 @@ export function Section3Content() {
             <p className="mt-2"><strong>Pain Point SEO Brief Additions:</strong></p>
             <p><strong>Buying Intent Analysis:</strong> What problem is the searcher trying to solve? Where are they in the buying journey? What solution types are they comparing? What objections might they have? What would make them convert on this page?</p>
             <p><strong>Conversion Strategy:</strong> Primary CTA (where in content, what offer); secondary CTAs (contextual variations); product positioning (how aggressive, how subtle); proof elements needed (case study, data, testimonials); comparison framing (if Tier 2 keyword).</p>
+            <Web3Content>
+              <h4 className="mt-4 font-semibold">Web3 Brief: Additional Required Fields</h4>
+              <p><strong>Pain Point Score:</strong> (Volume ÷ KD) × CPC × Intent Multiplier. This is a prioritization formula: Volume ÷ KD measures how achievable the ranking is relative to search demand; CPC signals commercial intent (what advertisers pay to reach this searcher is a strong proxy for how close they are to a decision); Intent Multiplier weights keywords closer to a wallet-connect moment higher.</p>
+              <p className="mt-2"><strong>Web3 Proof Elements Required (replace generic placeholders):</strong></p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>On-chain data: TVL, DAUs, tx volume, slippage savings — from Dune Analytics, DeFiLlama, or Nansen</li>
+                <li>Protocol case study with before/after on-chain metrics</li>
+                <li>KOL quotes (attributed) or community testimonials</li>
+                <li>Benchmark comparisons (vs competing protocols, verified on-chain)</li>
+              </ul>
+              <p className="mt-2"><strong>Web3 CTA Language:</strong> "Connect your wallet in 30 seconds — no KYC" not "Start your free trial". "Try the protocol" not "Sign up". "Join [X] traders" not "Join our community".</p>
+              <p className="mt-2"><strong>UTM tracking note:</strong> Attribution setup is a week-one task, not an afterthought. Without UTM parameters on every CTA, you'll have no way to prove content ROI at month 3. Set this up before the first article publishes.</p>
+            </Web3Content>
             <p className="mt-3 font-medium">Pain Point SEO Content Brief Template (A5):</p>
             <CodeBlock title="Full brief template — copy and adapt">{`# Content Brief: [Article Title]
 

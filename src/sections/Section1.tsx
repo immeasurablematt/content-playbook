@@ -21,6 +21,26 @@ export function Section1Content() {
             </ul>
             <p className="mt-2"><strong>Baseline / Historical Context</strong> — Document where you are now: current metric values, growth over the last 6–12 months, and why the chosen targets are realistic. Refer back when reporting.</p>
             <p className="mt-2"><strong>Template:</strong> Primary goal: [one sentence]. Objectives: (1) [Metric] from [current] to [target] by [date]; (2) [Metric] from [current] to [target]. Baseline: [source and numbers].</p>
+            <Web3Content>
+              <h4 className="mt-6 font-semibold">Web3 Goals & Objectives (Specifics)</h4>
+              <p className="mt-2"><strong>Primary Goal examples:</strong></p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>"Grow CT following and increase engagement rate among DeFi-native audience"</li>
+                <li>"Establish thought leadership in [protocol category] on Crypto Twitter"</li>
+                <li>"Drive wallet connects and on-chain DAUs through organic content"</li>
+                <li>"Increase TVL by building authority content that ranks for high-intent DeFi keywords"</li>
+              </ul>
+              <p className="mt-3"><strong>Specific Objectives (3-month, with numbers):</strong></p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li>Increase CT smart followers by X–Y% in 3 months</li>
+                <li>Grow Discord/Telegram community by X members</li>
+                <li>Reach X wallet connects/month from organic content</li>
+                <li>Achieve X keywords in top 10 for [protocol category] terms</li>
+                <li>Increase DAUs by X% tracked against content publish cadence</li>
+                <li>Grow TVL by X% with content-influenced attribution</li>
+              </ul>
+              <p className="mt-3"><strong>Baseline / Historical Context:</strong> Document where the client is now — current on-chain metrics, community size, content output, keyword rankings, and CT engagement rate. Pull from Dune Analytics, DeFiLlama, and Google Search Console. This establishes the benchmark all reporting is measured against.</p>
+            </Web3Content>
         </div></div>
 
         <div id="brand-voice" className="scroll-mt-header pb-10 border-b border-stone-200"><h3 className="font-serif text-2xl font-semibold text-ink">Brand Voice & Tone</h3><div className="mt-4 space-y-3">
@@ -38,11 +58,35 @@ export function Section1Content() {
             </Blockquote>
             <p><strong>The Problem with Vague Audiences:</strong></p>
             <p>"Crypto users" or "B2B SaaS buyers" or "enterprise customers" are too broad to be useful. You need specificity across multiple dimensions to create messaging that resonates.</p>
+            <Web3Content>
+              <Blockquote>
+                On CT/X audience intelligence: CT is a primary research source for Web3 audience definition. Analyse which KOLs the target audience follows, which topics they engage with, which pain points surface repeatedly in threads, and what language they use. This informs voice, messaging, and content angles directly — not just distribution channels.
+              </Blockquote>
+            </Web3Content>
             <h3 className="mt-6 font-semibold">Step 1: Define Your Primary Audience</h3>
             <p>Work through these dimensions to build a crisp, actionable audience definition:</p>
             <p><strong>1. Core Values & Motivations</strong> — What brought them to your product category? What do they care about?</p>
             <p>Examples: Web3: Financial freedom vs privacy vs decentralization vs tech experimentation. B2B SaaS: Cost reduction vs innovation leadership vs risk mitigation. Enterprise: Compliance vs competitive advantage vs operational efficiency. Someone motivated by sovereignty needs different messaging than someone motivated by experimentation. This shapes your entire tone.</p>
+            <Web3Content>
+              <p className="mt-2">Web3 motivations cluster into four archetypes. Know which one dominates for your primary segment — they need completely different messaging:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Financial freedom and alpha generation</strong> — traders, degens. Lead with speed, execution quality, and opportunity.</li>
+                <li><strong>Privacy and self-custody</strong> — sovereignty-first users. Lead with trust, security, and control.</li>
+                <li><strong>Decentralization ideology</strong> — governance participants, ecosystem builders. Lead with mission, transparency, and community.</li>
+                <li><strong>Tech experimentation and building</strong> — developers, protocol contributors. Lead with reliability, documentation, and infrastructure quality.</li>
+              </ul>
+            </Web3Content>
             <p><strong>2. Success Definition (in context of your product)</strong> — What does winning look like for them? Examples: Crypto native: Financial independence, alpha generation, early access. Startup founder: Product-market fit, fundraising, rapid scaling. Enterprise buyer: Career advancement, risk mitigation, measurable ROI.</p>
+            <Web3Content>
+              <p className="mt-2">Web3 success definitions by segment:</p>
+              <ul className="list-disc pl-6 space-y-0.5">
+                <li><strong>Retail trader:</strong> Best execution price, lowest slippage, fastest transactions</li>
+                <li><strong>DeFi power user:</strong> Highest yield, capital efficiency, multi-chain flexibility</li>
+                <li><strong>Protocol developer / builder:</strong> Reliable infrastructure, good documentation, active dev community</li>
+                <li><strong>DAO contributor / governance participant:</strong> Transparency, accountability, meaningful participation</li>
+                <li><strong>Liquidity provider (LP):</strong> Sustainable yields, low impermanent loss risk, deep pools</li>
+              </ul>
+            </Web3Content>
             <p><strong>3. Where They Actually Spend Time (Distribution Strategy)</strong> — Your "watering holes" determine where you show up and how you communicate.
             <Web3Content>
               <p>In my experience working with Web3 protocols, I've found these are the critical channels: Crypto natives: CT (Crypto Twitter), Discord, Telegram, Farcaster, governance forums. DeFi traders: Crypto Twitter, protocol Discords, Dune Analytics, DeFiLlama. Infrastructure builders: GitHub, protocol forums, technical documentation sites, Discord dev channels. Your content and partnerships should meet them where they already are, not where you wish they were.</p>

@@ -1,3 +1,4 @@
+import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Web2Callout } from "@/components/Web2Callout";
 import { Web3Content } from "@/components/Web3Content";
@@ -350,6 +351,328 @@ Retention (still active 90d later): 68%`}</CodeBlock>
             <p className="mt-3 italic text-sm">Avoid over-tooling. Start with free tools (GSC, GA4, Sheets). Add paid tools only when you're blocked without them.</p>
           </div>
         </div>
+
+        <Web3Content>
+          <div id="client-reporting-templates" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Client Reporting Templates (Web3)</h3>
+            <div className="mt-4 space-y-3">
+              <Blockquote>
+                Traffic is vanity; conversions are sanity. Every report should answer one question above all others: is our content moving on-chain metrics and inbound inquiries for this client?
+              </Blockquote>
+              <table className="my-4 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-200">
+                    <th className="py-2 text-left font-medium">Cadence</th>
+                    <th className="py-2 text-left font-medium">Format</th>
+                    <th className="py-2 text-left font-medium">Length</th>
+                    <th className="py-2 text-left font-medium">Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">Weekly</td>
+                    <td className="py-2">Async Telegram/Discord update</td>
+                    <td className="py-2">5–10 min to write</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">Monthly</td>
+                    <td className="py-2">Written report + 60-min strategy call</td>
+                    <td className="py-2">30–45 min to prepare</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">Quarterly</td>
+                    <td className="py-2">Full performance review + 90-min strategy session</td>
+                    <td className="py-2">2–3 hrs to prepare</td>
+                    <td className="py-2">Strategist + Account Lead</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="weekly-update-template" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Weekly Update Template (Async)</h3>
+            <div className="mt-4 space-y-3">
+              <p>Sent via Telegram or Discord at the end of each week. Keep it short — this is a pulse check, not a full report. Adapt tone to match the client's community vibe.</p>
+              <CodeBlock title="Weekly async update">{`📆 Week of [Date] — Content Update
+
+Published this week
+• [Article title] — Tier [1/2/3] — [target keyword]
+• [Article title] — Tier [1/2/3] — [target keyword]
+• Social: [X] posts across CT / [X] Discord posts / [X] Telegram posts
+
+Early signals
+• [Any ranking movement, early traffic, notable CT engagement, community response]
+
+In pipeline
+• [Article in draft] — due [date]
+• [Case study outreach status]
+
+Blockers / needs from client
+• [Anything needed: approval, proof assets, interview scheduling, on-chain data access]
+
+Next week
+• [What's being produced and published]`}</CodeBlock>
+            </div>
+          </div>
+
+          <div id="monthly-report-template" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Monthly Report Template</h3>
+            <div className="mt-4 space-y-3">
+              <p>Delivered as a written doc (Notion or Google Doc) before the monthly strategy call. Structure it so the client can read the headline numbers in 2 minutes, then dive deeper if they want.</p>
+              <CodeBlock title="Monthly report structure">{`[Client Name] — Monthly Report — [Month Year]
+
+🔖 HEADLINES (30-second read)
+• [X] articles published ([X] Tier 1/2, [X] Tier 3)
+• [X] social posts across CT, Discord, Telegram
+• Top performing article: [title] — [X] wallet connects / [X] community sign-ups / [X] inbound inquiries
+• Biggest ranking move: [keyword] moved from #[X] to #[X]
+• On-chain impact: [TVL change / DAU change / tx volume change if attributable]
+
+📄 CONTENT PUBLISHED
+| Article | Tier | Keyword | Published | Wallet Connects | Inbound | Zone |
+|---------|------|---------|-----------|-----------------|---------|------|
+| [Title] | T1   | [kw]    | [date]    | [X]             | [X]     | 🟢   |
+| [Title] | T2   | [kw]    | [date]    | [X]             | [X]     | 🟡   |
+
+Zone key: 🟢 Green (converting well) 🟡 Yellow (needs optimisation) 🟠 Orange (underperforming) 🔴 Red (zero conversions 90d+)
+
+📊 SEO PERFORMANCE
+| Metric             | This month | Last month | Trend |
+|--------------------|------------|------------|-------|
+| Organic sessions   |            |            |       |
+| Impressions (GSC)  |            |            |       |
+| Average CTR        |            |            |       |
+| Keywords in top 10 |            |            |       |
+| Keywords in top 3  |            |            |       |
+| New backlinks      |            |            |       |
+
+🔗 WEB3 IMPACT METRICS
+| Metric                          | This month | Last month | Trend |
+|---------------------------------|------------|------------|-------|
+| Wallet connects from content    |            |            |       |
+| TVL influenced (estimated)      |            |            |       |
+| Transaction volume influenced   |            |            |       |
+| Discord/community joins         |            |            |       |
+| Governance participation        |            |            |       |
+| Inbound inquiries               |            |            |       |
+
+Attribution note: Web3 impact metrics are estimated using UTM tracking on CTAs
+and cross-referencing with on-chain data (Dune, DeFiLlama). Treat as directional.
+
+📌 CASE STUDY PIPELINE
+| Client/Protocol | Status            | Next action    | Target publish |
+|-----------------|-------------------|----------------|----------------|
+| [Name]          | Outreach sent     | Follow up [date] | [month]      |
+| [Name]          | Interview scheduled | Interview [date] | [month]    |
+| [Name]          | Draft in review   | Client approval | [month]       |
+
+💡 INSIGHTS & RECOMMENDATIONS
+What worked this month:
+• [Specific insight]
+
+What needs attention:
+• [Specific issue + recommended action]
+
+Recommended priorities for next month:
+1. [Priority 1 with rationale]
+2. [Priority 2 with rationale]
+3. [Priority 3 with rationale]`}</CodeBlock>
+            </div>
+          </div>
+
+          <div id="quarterly-report-template" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Quarterly Report Template</h3>
+            <div className="mt-4 space-y-3">
+              <p>The quarterly report is a strategic document, not a metrics dump. It answers: are we on track against the 3-month objectives set at kickoff, and what does the next quarter look like?</p>
+              <CodeBlock title="Quarterly report structure">{`[Client Name] — Quarterly Review — Q[X] [Year]
+
+🎯 PROGRESS AGAINST OBJECTIVES
+Set at kickoff. Review each honestly.
+
+| Objective                         | Target  | Actual  | Status |
+|-----------------------------------|---------|---------|--------|
+| [e.g. Wallet connects from content] | [X/mo] | [X/mo] | ✅ / ⚠️ / ❌ |
+| [e.g. Keywords in top 10]          | [X]    | [X]    | ✅ / ⚠️ / ❌ |
+| [e.g. TVL influenced]              | [X]    | [X]    | ✅ / ⚠️ / ❌ |
+| [e.g. Inbound inquiries/mo]        | [X]    | [X]    | ✅ / ⚠️ / ❌ |
+
+📈 QUARTER-ON-QUARTER GROWTH
+| Metric                          | Q[X-1] | Q[X] | Change |
+|---------------------------------|--------|------|--------|
+| Organic sessions                |        |      |        |
+| Wallet connects from content    |        |      |        |
+| Conversion rate (Tier 1/2 avg)  |        |      |        |
+| Keywords in top 10              |        |      |        |
+| TVL influenced                  |        |      |        |
+| Inbound inquiries               |        |      |        |
+| Articles published              |        |      |        |
+| Case studies published          |        |      |        |
+
+🗂️ CONTENT ZONE AUDIT
+| Zone                     | # Articles | % of total | Action                                      |
+|--------------------------|------------|------------|---------------------------------------------|
+| 🟢 Green (converting)    |            |            | Maintain. Build cluster. Replicate format.  |
+| 🟡 Yellow (needs work)   |            |            | Optimise CTAs, add proof within 30 days.    |
+| 🟠 Orange (underperform) |            |            | Major rewrite or redirect.                  |
+| 🔴 Red (zero 90d+)       |            |            | Redirect to stronger content. Archive.      |
+
+Rule: 70% of next quarter's effort goes to Green articles. 25% to Yellow. 5% max to Orange/Red.
+
+🧠 STRATEGIC RECOMMENDATIONS FOR Q[X+1]
+Narrative positioning: [Has the client's narrative shifted? Competitor moves?]
+Content priorities: [Which clusters to build, which T1/2 to attack next]
+On-chain context: [Bull/bear conditions and how messaging should adapt]
+Distribution: [New channels, partner amplification, ecosystem publications]
+Q[X+1] objectives: [Proposed targets based on Q[X] trajectory]`}</CodeBlock>
+            </div>
+          </div>
+
+          <div id="strategy-call-agendas" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">Strategy Call Agenda Templates</h3>
+            <div className="mt-4 space-y-3">
+              <h4 className="mt-2 font-semibold">Weekly 60-Min Strategy Call</h4>
+              <table className="my-3 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-200">
+                    <th className="py-2 text-left font-medium">Time</th>
+                    <th className="py-2 text-left font-medium">Agenda item</th>
+                    <th className="py-2 text-left font-medium">Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">0–10 min</td>
+                    <td className="py-2">Content performance since last call — what published, early signals, any ranking or on-chain movement</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">10–25 min</td>
+                    <td className="py-2">Pipeline review — articles in draft, briefs in progress, blockers, proof assets needed</td>
+                    <td className="py-2">Strategist + Client</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">25–45 min</td>
+                    <td className="py-2">Strategic discussion — market feedback, ecosystem news, competitor moves, messaging adjustments</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">45–60 min</td>
+                    <td className="py-2">Action items and priorities for next week — who owns what, deadlines confirmed</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-sm text-ink-muted"><strong>Pre-call prep (strategist):</strong> Pull last week's analytics. Flag any Yellow/Orange zone articles. Check CT and ecosystem news relevant to the client's narrative. <strong>Pre-call prep (client):</strong> Any feedback on published content. Any on-chain events or protocol developments the strategy team should know about.</p>
+
+              <h4 className="mt-6 font-semibold">Monthly 60-Min Strategy Call</h4>
+              <table className="my-3 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-200">
+                    <th className="py-2 text-left font-medium">Time</th>
+                    <th className="py-2 text-left font-medium">Agenda item</th>
+                    <th className="py-2 text-left font-medium">Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">0–10 min</td>
+                    <td className="py-2">Monthly report walkthrough — headlines, key metrics, zone status</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">10–20 min</td>
+                    <td className="py-2">What worked / what didn't — content performance deep-dive, top and bottom performers</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">20–35 min</td>
+                    <td className="py-2">Case study pipeline — outreach status, interviews, approvals</td>
+                    <td className="py-2">Strategist + Client</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">35–50 min</td>
+                    <td className="py-2">Next month priorities — content calendar, keyword focus, distribution plan</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">50–60 min</td>
+                    <td className="py-2">Client feedback, open questions, relationship health</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4 className="mt-6 font-semibold">Quarterly 90-Min Strategy Session</h4>
+              <table className="my-3 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-200">
+                    <th className="py-2 text-left font-medium">Time</th>
+                    <th className="py-2 text-left font-medium">Agenda item</th>
+                    <th className="py-2 text-left font-medium">Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">0–15 min</td>
+                    <td className="py-2">Q[X] results vs objectives — honest assessment, what hit, what missed and why</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">15–30 min</td>
+                    <td className="py-2">Content zone audit and cluster review</td>
+                    <td className="py-2">Strategist</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">30–45 min</td>
+                    <td className="py-2">Market and ecosystem context — bull/bear conditions, competitor moves, narrative shifts</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">45–65 min</td>
+                    <td className="py-2">Q[X+1] strategy — objectives, content priorities, cluster plan, distribution focus</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">65–80 min</td>
+                    <td className="py-2">Relationship review — scope fit, team feedback, any engagement structure changes</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                  <tr className="border-b border-stone-100">
+                    <td className="py-2 font-medium">80–90 min</td>
+                    <td className="py-2">Confirm Q[X+1] objectives in writing, action items</td>
+                    <td className="py-2">Both</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="roi-calculation" className="scroll-mt-header pb-10 border-b border-stone-200">
+            <h3 className="font-serif text-2xl font-semibold text-ink">ROI Calculation</h3>
+            <div className="mt-4 space-y-3">
+              <p>Agree on the value-per-conversion at kickoff — not at the end of the quarter when you're trying to justify the retainer.</p>
+              <CodeBlock title="Content ROI formula">{`Content ROI = (Total conversions × estimated value per conversion) ÷ Total content cost
+
+Value per conversion — agree with client at kickoff:
+  DEX protocol → average 30-day transaction volume per new wallet
+  Lending protocol → average TVL per new depositor
+  Community campaign → agreed value per Discord member or governance participant
+
+Total content cost = Writer time + strategist time + tool costs + overhead
+
+Report at two timepoints:
+  1. End of first 90 days (operational baseline)
+  2. 6 months post-start (captures compounding SEO + retention effects)
+
+Attribution note: Use position-based model (40% first touch, 40% last touch,
+20% middle) once 6+ months of data is available.
+Start with last-touch — it's better than guessing.`}</CodeBlock>
+            </div>
+          </div>
+        </Web3Content>
       </div>
     </>
   );
