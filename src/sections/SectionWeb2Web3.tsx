@@ -6,11 +6,11 @@ export function SectionWeb2Web3Content() {
   return (
     <>
       <p className="lead text-lg text-ink-muted">
-        Why marketing objectives diverge across Web2 and Web3, and how I've adapted strategy frameworks to work in both ecosystems.
+        Web2 and Web3 don't just use different tools. They optimize for fundamentally different things.
       </p>
 
       <p className="mt-6">
-        In my experience working across both Web2 and Web3 ecosystems over the past decade, I've found that marketing objectives diverge significantly due to their underlying structures, business models, and user behaviors. Web2 is typically centralized, product-focused, and revenue-driven through subscriptions or ads, while Web3 is decentralized, community-oriented, and often tied to blockchain metrics like user engagement and network effects.
+        Web2 marketing is centralized and revenue-driven—you're moving users through a funnel toward subscriptions, purchases, or ad impressions. Web3 flips that. Projects are decentralized and community-owned, often built around tokens and governance. Marketing isn't about driving sales. It's about growing a network where users are stakeholders. Success is measured in on-chain activity, liquidity, and ecosystem health.
       </p>
 
       <div className="mt-8 space-y-12">
@@ -53,7 +53,7 @@ export function SectionWeb2Web3Content() {
           <div id="web3-objectives" className="scroll-mt-header pb-10 border-b border-stone-200">
             <h3 className="font-serif text-2xl font-semibold text-ink">Web3 Marketing Objectives: Ecosystem Growth and On-Chain Metrics</h3>
             <div className="mt-4 space-y-3">
-              <p>When I transitioned to Web3 marketing, I found that it flips the script—it's less about centralized sales and more about decentralized participation. Projects often rely on tokens, smart contracts, and community governance, so objectives center on network vitality rather than just revenue. Awareness is still foundational, but the real wins come from active, on-chain engagement that boosts token value and ecosystem health.</p>
+              <p>Web3 marketing centers on network vitality, not just revenue. Projects rely on tokens, smart contracts, and community governance, so objectives focus on active, on-chain engagement that boosts token value and ecosystem health.</p>
 
               <h4 className="mt-4 font-semibold">Growing Awareness</h4>
               <p>Similar to Web2 TOFU, but with a twist—it's often grassroots and viral. In my work, I've used tactics like airdrops, meme marketing, Twitter (X) spaces, Discord AMAs, and collaborations with KOLs (key opinion leaders). Metrics: Social media buzz, token mentions, and community size (e.g., followers or Telegram members). The goal is to educate on the project's utility in a skeptical space.</p>
