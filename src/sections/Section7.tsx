@@ -175,6 +175,35 @@ Post:
 
         <div id="results-metrics" className="scroll-mt-header pb-10 border-b border-stone-200">
           <h3 className="font-serif text-2xl font-semibold text-ink">Success Metrics to Track on Reddit</h3>
+          <div className="mt-4 space-y-6">
+            <ul className="space-y-2">
+              <li>• <strong>Comment-to-upvote ratio</strong> (higher = better engagement)</li>
+              <li>• <strong>Quality of comments</strong> (questions, follow-ups, shared experiences)</li>
+              <li>• <strong>Profile visits</strong> after posting</li>
+              <li>• <strong>DM inquiries</strong> about working together</li>
+              <li>• <strong>Cross-posts</strong> to other relevant subreddits</li>
+            </ul>
+
+            <div>
+              <h4 className="font-semibold text-ink mb-4">The Conversion Path</h4>
+              <div className="flex flex-wrap items-center gap-2 text-sm">
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">Helpful Reddit comment</span>
+                <span className="text-stone-400">→</span>
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">User checks profile</span>
+                <span className="text-stone-400">→</span>
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">Sees bio/links</span>
+                <span className="text-stone-400">→</span>
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">Clicks Twitter/website</span>
+                <span className="text-stone-400">→</span>
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">Follows</span>
+                <span className="text-stone-400">→</span>
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">Sees work over time</span>
+                <span className="text-stone-400">→</span>
+                <span className="rounded-lg bg-stone-100 px-3 py-2 font-medium text-ink">DMs or books call</span>
+              </div>
+              <p className="mt-3 text-sm text-ink-muted"><strong>Timeline:</strong> 2-8 weeks from first interaction to conversion.</p>
+            </div>
+          </div>
         </div>
 
         <div id="content-repurposing" className="scroll-mt-header">
