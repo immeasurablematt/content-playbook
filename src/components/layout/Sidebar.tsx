@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { SECTIONS, SECTION_TEXT_COLORS, type SectionId } from "@/data/sections";
 import { SUBSECTION_MAP } from "@/data/subsectionMap";
 import { cn } from "@/lib/utils";
@@ -18,6 +19,12 @@ export function Sidebar({
   open,
   onClose,
 }: Props) {
+  const [expandedId, setExpandedId] = useState<SectionId | null>(activeSectionId);
+
+  // Auto-expand when active section changes (e.g. from content pane navigation)
+  useEffect(() => {
+    setExpandedId(activeSectionId);
+  }, [activeSectionId]);
   return (
     <>
       {/* Mobile overlay */}
@@ -47,7 +54,12 @@ export function Sidebar({
                   <button
                     type="button"
                     onClick={() => {
-                      onNavigate(id);
+                      if (activeSectionId === id) {
+                        setExpandedId(expandedId === id ? null : id);
+                      } else {
+                        onNavigate(id);
+                        setExpandedId(id);
+                      }
                       if (window.innerWidth < 1024) onClose();
                     }}
                     className={cn(
@@ -72,14 +84,14 @@ export function Sidebar({
                       <ChevronRight
                         className={cn(
                           "ml-auto h-3.5 w-3.5 shrink-0 transition-transform",
-                          isActive ? "rotate-90 text-sidebar-active" : "text-sidebar-muted"
+                          expandedId === id ? "rotate-90 text-sidebar-active" : "text-sidebar-muted"
                         )}
                       />
                     )}
                   </button>
 
                   {/* Subsection list (only for active section) */}
-                  {isActive && subsections.length > 0 && (
+                  {expandedId === id && subsections.length > 0 && (
                     <ul className="ml-7 mt-1 space-y-0.5 border-l border-white/10 pl-3">
                       {subsections.map((sub) => (
                         <li key={sub.id}>
