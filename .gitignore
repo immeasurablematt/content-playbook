@@ -7,3 +7,5 @@ dist
 content-playbook-microsite-v2
 content-playbook-microsite copy
 scripts/sync-notion.py
+.vercel
+.env*.local

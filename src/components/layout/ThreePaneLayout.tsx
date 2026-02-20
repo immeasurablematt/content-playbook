@@ -57,7 +57,7 @@ export function ThreePaneLayout({ sectionComponents }: Props) {
       />
 
       {/* Main grid: sidebar gutter + content + AI panel gutter */}
-      <div className="pt-14 lg:pl-64 xl:pr-80">
+      <div className="pt-14 lg:pl-80 xl:pr-80">
         <ContentPane
           sectionId={sectionId}
           subsectionId={subsectionId}

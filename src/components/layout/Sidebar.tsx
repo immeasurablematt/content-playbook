@@ -31,7 +31,7 @@ export function Sidebar({
 
       <aside
         className={cn(
-          "fixed top-14 left-0 z-40 flex h-[calc(100vh-3.5rem)] w-64 flex-col bg-sidebar-bg transition-transform duration-200 lg:translate-x-0",
+          "fixed top-14 left-0 z-40 flex h-[calc(100vh-3.5rem)] w-80 flex-col bg-sidebar-bg transition-transform duration-200 lg:translate-x-0",
           open ? "translate-x-0" : "-translate-x-full"
         )}
       >
@@ -67,7 +67,7 @@ export function Sidebar({
                     >
                       {number}
                     </span>
-                    <span className="truncate">{title}</span>
+                    <span>{title}</span>
                     {subsections.length > 0 && (
                       <ChevronRight
                         className={cn(
