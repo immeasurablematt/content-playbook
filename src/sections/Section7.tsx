@@ -174,61 +174,7 @@ Post:
         </div>
 
         <div id="results-metrics" className="scroll-mt-header pb-10 border-b border-stone-200">
-          <h3 className="font-serif text-2xl font-semibold text-ink">Real Results & Success Metrics</h3>
-          
-          <div className="mt-6 grid lg:grid-cols-2 gap-8">
-            <div className="bg-stone-50 p-6 rounded-lg">
-              <h4 className="font-semibold text-ink mb-4">6-Month Results</h4>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span>Detailed comments posted:</span>
-                  <span className="font-semibold">47</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Long-form posts created:</span>
-                  <span className="font-semibold">8</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Karma earned:</span>
-                  <span className="font-semibold">1,200+</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Profile visits per week:</span>
-                  <span className="font-semibold">40+</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>DMs from potential clients:</span>
-                  <span className="font-semibold">12</span>
-                </div>
-                <div className="flex justify-between border-t pt-3">
-                  <span>Projects signed:</span>
-                  <span className="font-semibold text-green-600">3 ($18,000)</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Time invested:</span>
-                  <span className="font-semibold">3-4 hours/week</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-ink mb-3">Success Metrics to Track</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>• <strong>Comment-to-upvote ratio</strong> (higher = better engagement)</li>
-                  <li>• <strong>Quality of comments</strong> (questions, follow-ups, shared experiences)</li>
-                  <li>• <strong>Profile visits</strong> after posting</li>
-                  <li>• <strong>DM inquiries</strong> about working together</li>
-                  <li>• <strong>Cross-posts</strong> to other relevant subreddits</li>
-                </ul>
-              </div>
-              
-              <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-                <p className="text-sm text-amber-800"><strong>The Conversion Path:</strong> Helpful Reddit comment → User checks profile → Sees bio/links → Clicks Twitter/website → Follows → Sees work over time → Eventually DMs or books call</p>
-                <p className="text-sm text-amber-800 mt-2"><strong>Timeline:</strong> 2-8 weeks from first interaction to conversion.</p>
-              </div>
-            </div>
-          </div>
+          <h3 className="font-serif text-2xl font-semibold text-ink">Success Metrics to Track on Reddit</h3>
         </div>
 
         <div id="content-repurposing" className="scroll-mt-header">
