@@ -1,10 +1,9 @@
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
-import { Web3Content } from "@/components/Web3Content";
 
 export function SectionBriefingContent() {
   return (
-    <Web3Content>
+    <>
       <p className="lead text-lg text-ink-muted">
         The end-to-end process from keyword backlog to published article for Web3 and crypto clients. Defines who does what and when across strategy, writing, and social functions — and what constitutes a fully ready-to-publish piece.
       </p>
@@ -163,6 +162,6 @@ export function SectionBriefingContent() {
         </div>
 
       </div>
-    </Web3Content>
+    </>
   );
 }

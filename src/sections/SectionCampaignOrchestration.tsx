@@ -1,10 +1,9 @@
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
-import { Web3Content } from "@/components/Web3Content";
 
 export function SectionCampaignOrchestrationContent() {
   return (
-    <Web3Content>
+    <>
       <p className="lead text-lg text-ink-muted">
         Cross-channel campaign orchestration is how to plan and execute campaigns that run content, KOL, and partner channels simultaneously as a single integrated system. Reserve this model for moments that genuinely warrant it — protocol launches, major feature drops, liquidity pushes, narrative shifts. For steady-state work, channels run independently.
       </p>
@@ -377,6 +376,6 @@ Report at two timepoints:
         </div>
 
       </div>
-    </Web3Content>
+    </>
   );
 }

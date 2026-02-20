@@ -1,10 +1,9 @@
 import { Blockquote } from "@/components/Blockquote";
 import { CodeBlock } from "@/components/CodeBlock";
-import { Web3Content } from "@/components/Web3Content";
 
 export function SectionDistributionContent() {
   return (
-    <Web3Content>
+    <>
       <p className="lead text-lg text-ink-muted">
         Social repurposing is the starting point—not the finish line. This section covers every distribution channel beyond social: email, Reddit, content syndication, governance forums, and partner amplification, with a Web3-native lens throughout.
       </p>
@@ -311,6 +310,6 @@ CTA: one link, one ask`}</CodeBlock>
         </div>
 
       </div>
-    </Web3Content>
+    </>
   );
 }

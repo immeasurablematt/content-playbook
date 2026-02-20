@@ -1,9 +1,8 @@
 import { Blockquote } from "@/components/Blockquote";
-import { Web3Content } from "@/components/Web3Content";
 
 export function SectionKolFlywheelContent() {
   return (
-    <Web3Content>
+    <>
       <p className="lead text-lg text-ink-muted">
         The Content × KOL Integration Flywheel describes how owned content and KOL distribution reinforce each other in a closed loop — so each channel makes the other more effective. When running in steady state, this system compounds: content becomes better-sourced, KOL content becomes more credible, and audiences experience a coherent narrative across every touchpoint.
       </p>
@@ -176,6 +175,6 @@ export function SectionKolFlywheelContent() {
         </div>
 
       </div>
-    </Web3Content>
+    </>
   );
 }
