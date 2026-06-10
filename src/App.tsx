@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import type { SectionId } from "@/data/sections";
 import { SectionWeb2Web3Content } from "@/sections/SectionWeb2Web3";
 import { Section1Content } from "@/sections/Section1";
@@ -36,26 +35,6 @@ const SECTION_COMPONENTS: Record<SectionId, ComponentType> = {
 };
 
 export default function App() {
-  const [gateChecked, setGateChecked] = useState(false);
-
-  useEffect(() => {
-    fetch("/api/check", { credentials: "include" })
-      .then((r) => r.json())
-      .then((data) => {
-        setGateChecked(true);
-        if (!data.ok) window.location.href = "/unlock";
-      })
-      .catch(() => setGateChecked(true));
-  }, []);
-
-  if (!gateChecked) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-warm-bg">
-        <p className="text-sm text-ink-muted">Loading...</p>
-      </div>
-    );
-  }
-
   return (
     <EcosystemProvider>
       <ThreePaneLayout sectionComponents={SECTION_COMPONENTS} />
